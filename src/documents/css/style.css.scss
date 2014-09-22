@@ -4,28 +4,30 @@ $color-background-text: #FFF;  // colour that appears behind some text content.
 
 $color-focus: #ffcc00;
 $color-primary: #333;
-$color-link: #00be9d;
-$color-footer-link: $color-focus;
 $color-footer-background: #363636;
 $color-footer-foreground: #fff;
+$color-footer-text-field-background: #666;
 
+$color-link: #009fcb;
+$color-footer-link: $color-focus;
 $color-link-block: #fff;
-$color-link-block-background: #333333;
-$color-link-block-hover: #00bd9c;
-$color-link-block-active: #333333;
-$color-link-block-background-active: #00bd9c;
+$color-link-block-background: $color-primary;
+$color-link-block-hover: $color-link;
+$color-link-block-active: $color-primary;
+$color-link-block-background-active: $color-link-block-hover;
 $color-link-infusion-download: $color-link-block;
-$color-link-infusion-download-background: #00bd9c;
+$color-link-infusion-download-background: $color-link;
+$color-link-community-hover: $color-link;
 
 $color-header2: #808080;
 
 /* Other Variables */
+$row-width: 85.5rem; // override Foundation's width
 $focus-outline: 0.2rem solid $color-focus;
 $font-primary: 'Open Sans', sans-serif;
 $font-secondary: 'Roboto Slab', serif;
 $link-underline: 0.2em solid $color-link-block-hover;
-
-$column-padding: 0.5rem;
+$column-padding: 1rem;
 
 /* General Styles */
 
@@ -34,10 +36,21 @@ body {
     font-size: 14px;
 }
 
+@font-face {
+    font-family: 'fluid-star';
+    src:url('../fonts/fluid-star.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/fluid-star.eot'),
+        url('../fonts/fluid-star.ttf');
+}
+
 .fluid-web {
     font-family: $font-primary;
     color: $color-primary;
     padding: 0 1rem;
+
+    .row {
+        max-width: $row-width;
+    }
 
     h1, h2, h3 {
         font-family: $font-primary;
@@ -47,16 +60,6 @@ body {
     h1 {
         font-size: 4.75rem;
         font-weight: bolder;
-    }
-
-    h2 {
-        font-size: 1em;
-        text-transform: uppercase;
-        color: $color-header2;
-    }
-    h3 {
-        font-size: 1.4rem;
-        font-weight: bold;
     }
     
     p {
@@ -75,23 +78,24 @@ body {
         display: table;
         clear: both;
     }
-}
-
-/* Link styles */
-.fluid-web {
+    
+    // text that appears emphasized and bigger within content.
+    .fluid-web-emphasized-text {
+        font-family: $font-secondary;
+        font-size: 1.6rem;
+    }
     
     /* Links that appear within text content. */
-    .fluid-web-link-header,
-    .fluid-web-link {
+    .fluid-web-link-content {
         color: $color-link;
     }
     
-    .fluid-web-link:hover {
-        text-decoration: underline;
-    }
-
     .fluid-web-link-header:hover {
-        border-bottom: $link-underline;
+        border-bottom: 0.2rem solid $color-focus;
+    }
+    
+    .fluid-web-link-content:hover {
+        text-decoration: underline;
     }
 
     /* Read more Link */
@@ -106,90 +110,119 @@ body {
         color: $color-link;
     }
     
-    /* Link that appears with featured components / demos. */
-    .fluid-web-link-block {
-        display: inline-block;
-        padding: 0.5rem;
-        color: $color-link-block;
-        background: $color-link-block-background;
-        font-size: 1rem;
-        font-weight: normal;
-        
-        &:hover {
-            color: $color-link-block-hover;
-        }
-        
-        &:active {
-            color: $color-link-block-active;
-            background: $color-link-block-background-active;
-        }
-    }
-}
-
-/* Other styles */
-.fluid-web {
-    // Vertical spacing
-    .fluid-web-intro-paragraph1,
-    .fluid-web-intro-paragraph2,
-    .fluid-web-news,
-    .fluid-web-showcase,
-    .fluid-web-projects {
-        margin-bottom: 3rem;
-    }
-   
-    // Other styling
-    .fluid-web-date {
-        font-size: 0.7rem;
+    .fluid-web-link-readmore:focus {
+        outline: $focus-outline;
     }
 }
 
 /* Header and Navigation */
-
-.fluid-web .fluid-web-nav {
-    text-transform: uppercase;
-    
-    li {
-        margin-right: 1rem;
+.fluid-web .fluid-web-header {
+    height: 10rem;
+  
+    .fluid-web-logo-star:before {
+        content: '\e600';
+        font-family: 'fluid-star';
+        font-size: 3.5rem;
+    }
+  
+    .fluid-web-nav {
+        text-transform: uppercase;
+        margin-top: 4rem;
         
-        a.button {
-            background: none;
-            color: $color-primary;
-            font-weight: bolder !important; // Overrides Bootstrap's normal font-weight on .button class
-            border: none;
-            padding: 0.5rem;
-        }
+        li {
+            margin-right: 1rem;
+            
+            a.button {
+                background: none;
+                color: $color-primary;
+                font-weight: bolder !important; // Overrides Bootstrap's normal font-weight on .button class
+                border: none;
+                padding: 0.5rem;
+            }
+
+            a.button:hover,
+            a.button:focus {
+                outline: $focus-outline;
+            }
+            
+            a.button:active {
+                background-color: $color-primary;
+                color: $color-background;
+            }
+            
+            a.button.current{
+                border-bottom: 0.2rem solid $color-focus;
+            }
+            
+            a.button.current:hover {
+                outline: none;
+            }
+            
+            a.button.current:focus {
+                border-bottom: none;  
+            }
+        }    
+    }
+}
+
+.fluid-web.fluid-web-index {
+    h2 {
+        font-size: 1em;
+        text-transform: uppercase;
+        color: $color-header2;
+    }
+    h3 {
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    .fluid-web-date {
+        font-size: 0.7rem;
+    }
     
-        a.button:focus {
-            outline: $focus-outline;
-        }
-    }    
 }
 
 /* Text content that appears before showcase. */
 
-.fluid-web .fluid-web-intro {
-    .fluid-web-intro-paragraph1 {
-        font-family: $font-secondary;
-        font-size: 1.6rem;
-    }
+.fluid-web.fluid-web-index .fluid-web-intro-news {
+    margin-bottom:2rem;
     
+    a:focus {
+        border: none;
+        outline: $focus-outline;
+    }  
+
     .fluid-web-intro-paragraph1 .show-for-small-only span {
         display:block;
     }
+    
+    .fluid-web-news {
+        h3 {
+            margin-bottom: 0;
+        }
+        
+        h3 a {
+            color: $color-primary;
+        }
+        
+        h3 a:hover {
+            color: $color-link;
+            text-decoration: underline;
+        }
+    }
 }
 
-.fluid-web .fluid-web-news {
-    h3 {
-        margin-bottom: 0;
+
+.fluid-web.fluid-web-index .fluid-web-showcase {
+    margin-bottom: 5rem;
+  
+    .fluid-web-showcase-column-left {
+        padding: 0 0.5rem 0 0;
     }
     
-    h3 a {
-        color: $color-primary;
+    .fluid-web-showcase-column-right {
+        padding: 0 0 0 0.5rem;
     }
-}
-
-/* Showcase section */
-.fluid-web .fluid-web-showcase {
+    
     h2 {
         padding-left: $column-padding;
     }
@@ -203,8 +236,32 @@ body {
         margin-bottom: 1rem;
         
         a {
-            padding: 8.5rem 0 0 1rem;
+            display: inline-block;
             height: 12rem;
+            width: 100%;
+            padding: 0.3rem;
+            color: $color-link-block;
+            background: $color-link-block-background;
+        }
+            
+        a:hover {
+            color: $color-link-block-hover;
+        }
+            
+        a:active .fluid-web-showcase-item-text {
+            border: 0.2rem solid $color-link-block-background;
+            color: $color-link-block-active;
+            background: $color-link-block-background-active;
+        }
+        
+        a:focus .fluid-web-showcase-item-text {
+            border: 0.2rem solid $color-focus;
+            outline: 0.2rem solid $color-link-block-background;
+        }
+        
+        .fluid-web-showcase-item-text {
+            border: 0.2rem solid $color-link-block-background;
+            outline: 0.2rem solid $color-link-block-background;
         }
         
         a span {
@@ -233,7 +290,7 @@ body {
 
 @media only screen and (min-width: 40.063em) /* min-width 641px, medium screens */
 {
-    .fluid-web .fluid-web-showcase .fluid-web-showcase-item a {
+    .fluid-web.fluid-web-index .fluid-web-showcase .fluid-web-showcase-item a {
         height: 16rem;
         padding: 12.5rem 0 0 1rem;
     }
@@ -242,28 +299,32 @@ body {
 
 /* Community links section */
 
-.fluid-web .fluid-web-community {
-    background-color: #E5E5E5;
-    padding-top: 2rem;
+.fluid-web.fluid-web-index .fluid-web-community {
+    padding-top: 1rem;
     
     .fluid-web-community-list {
         display:flex;
         justify-content: center;
         flex-wrap: wrap;
-        
+               
         li {
+            margin-top: 0.5rem;
             margin-bottom: 2rem;
+            min-width: 8rem;
+             
         }    
 
         li a {
-            width: 5rem;
+            width: 7rem;
             display:block;
             text-align:center;
             margin-top: 5rem;
             position:relative;
+            color: $color-primary;
+            font-weight: bold;
         }
         
-        li a:before {
+        li .fluid-web-community-icon:before {
             border-radius: 50rem;
             background-color: #fff;
             width: 5rem;
@@ -271,7 +332,19 @@ body {
             content: '';
             position:absolute;
             top: -5rem;
-            left: 0rem;
+            left: 1rem;
+        }
+        
+        li a:focus {
+            outline: $focus-outline;
+        }
+        
+        li a:hover {
+            color: $color-link-community-hover;
+        }
+        
+        .fluid-web-community-icon {
+          
         }
     }
 }
@@ -344,10 +417,10 @@ body {
     }
     
     .fluid-web-projects-about-infusion .fluid-web-link-block {
-          color: $color-link-infusion-download;
-          background: $color-link-infusion-download-background;
-          display: inline-block;
-          margin-bottom: 0.5rem;
+        color: $color-link-infusion-download;
+        background: $color-link-infusion-download-background;
+        display: inline-block;
+        margin-bottom: 0.5rem;
     }
     
     .fluid-web-component-list {
@@ -370,6 +443,12 @@ body {
     }
 }
 
+.fluid-web.fluid-web-news {
+  .fluid-web-news-post-meta {
+      font-style: italic;
+  }
+}
+
 /* Footer */
 
 .fluid-web .fluid-web-footer {
@@ -381,15 +460,58 @@ body {
         color: $color-footer-link;
     }
     
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    a:active {
+        background-color: $color-footer-link;
+        color:  $color-footer-background;
+    }
+    
+    a:focus {
+        outline: 0.2rem solid $color-footer-link;
+    }
+    
     p {
-        margin-bottom: 3rem;
+        font-size: 0.8rem;
+        margin-bottom: 1.5rem;
     }
     
     .fluid-web-projectCoordinator-list {
-        margin-top: 3rem;
+        margin-top: 1.5rem;
+        font-size: 0.8rem;
     }
     
     .fluid-web-projectCoordinator-list dt, {
         margin-bottom: 0rem;
+        display:inline;
+    }
+    
+    .fluid-web-announcement-text-field {
+        background-color: $color-footer-text-field-background;
+        color: $color-footer-foreground;
+        border: 0.2rem solid $color-footer-text-field-background;
+        box-shadow: none;
+    }
+    
+    .fluid-web-announcement-text-field:focus {
+        border: 0.2rem solid $color-footer-link;
+    }
+    
+    .fluid-web-announcement-text-field-submit {
+        border: 0.2rem solid $color-footer-link;
+        background-color: $color-footer-link;
+        color: $color-footer-background;
+    }
+    
+    .fluid-web-announcement-text-field-submit:focus {
+        border: 0.2rem solid $color-footer-background;
+        outline: $focus-outline;
+    }
+    
+    .fluid-web-announcement-text-field-label {
+        margin-bottom: 0.5rem;
+        display:block;  
     }
 }

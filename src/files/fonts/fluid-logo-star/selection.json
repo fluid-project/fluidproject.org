@@ -1,0 +1,71 @@
+{
+	"IcoMoonType": "selection",
+	"icons": [
+		{
+			"icon": {
+				"paths": [
+					"M969.933 752.818c29.227-49.363 11.257-113.472-39.744-143.598l-211.724-124.994 184.241-162.624c44.501-39.322 49.733-105.862 11.997-148.724-37.789-43.021-104.646-45.875-149.042-6.554l-184.294 162.624-97.67-225.465c-23.625-54.331-85.25-79.859-137.89-57.080-52.429 22.726-75.789 85.25-52.006 139.581l97.67 225.465-244.597 23.413c-59.141 5.602-102.585 56.234-97.036 113.102 5.497 57.080 57.503 98.78 116.591 93.177l243.17-23.413-53.010 238.361c-12.843 57.925 21.722 114.899 77.639 127.161 55.811 12.42 111.728-24.47 124.413-82.079l54.596-238.678 211.829 124.994c50.896 30.073 115.956 14.428 144.866-34.671z"
+				],
+				"attrs": [
+					{}
+				],
+				"grid": 0,
+				"tags": [
+					"fluid star-01"
+				]
+			},
+			"attrs": [
+				{}
+			],
+			"properties": {
+				"order": 1,
+				"id": 0,
+				"prevSize": 32,
+				"code": 58880,
+				"name": "fluidstar-01",
+				"ligatures": ""
+			},
+			"setIdx": 0,
+			"iconIdx": 0
+		}
+	],
+	"height": 1024,
+	"metadata": {
+		"name": "icomoon"
+	},
+	"preferences": {
+		"fontPref": {
+			"prefix": "icon-",
+			"metadata": {
+				"fontFamily": "icomoon"
+			},
+			"showGlyphs": true,
+			"metrics": {
+				"emSize": 512,
+				"baseline": 6.25,
+				"whitespace": 50
+			},
+			"resetPoint": 58880,
+			"showQuickUse": true,
+			"quickUsageToken": false,
+			"showMetrics": true,
+			"showMetadata": false
+		},
+		"imagePref": {
+			"color": 0,
+			"height": 32,
+			"columns": 16,
+			"margin": 16,
+			"png": false,
+			"sprites": true
+		},
+		"historySize": 100,
+		"showCodes": true,
+		"gridSize": 16,
+		"showLiga": false,
+		"showGrid": true,
+		"showGlyphs": true,
+		"showQuickUse": true,
+		"search": ""
+	}
+}

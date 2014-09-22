@@ -8,7 +8,7 @@
     </head>
 
     <body>
-        <div class="fluid-web fluid-web-index">
+        <div class="fluid-web fluid-web-news">
             <div class="flc-toc-tocContainer"> </div>
             
             <div class="row fluid-web-header">
@@ -29,7 +29,29 @@
                 </div>
             </div>
 
-            {{{content}}}
+            <section class="row">
+                <div class="medium-6 columns">
+                    <h2 class="fluid-web-emphasized-text"><%=@document.title%></h2>
+                    <p class="fluid-web-news-post-meta">
+                       Posted by <%=@document.author%> on <%= @moment(@document.date).format('MMMM Do, YYYY') %>
+                    </p>
+                </div>
+                <div class="medium-6 columns">
+                    {{{content}}}
+                </div>
+           </section>
+           
+           <section class="row">
+               <div class="fluid-web-news-other">
+                    <% for page in @getCollection("html").findAll({relativeOutDirPath:"news"},[{postdate: -1}]).toJSON(): %>
+                        <li>
+                            <a href="<%= page.url %>">
+                                <%= page.title %>
+                            </a> - <%= @moment(page.postdate).format('MMMM Do, YYYY') %>
+                        </li>
+                    <% end %>
+               </div>
+           </section>
             
             <footer class="row fluid-web-footer">
                 <div class="medium-6 columns">

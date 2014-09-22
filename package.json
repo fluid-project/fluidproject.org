@@ -11,6 +11,8 @@
     "docpad-plugin-eco": "~2.0.3",
     "docpad-plugin-handlebars": "~2.3.0",
     "docpad-plugin-livereload": "~2.6.0",
+    "docpad-plugin-marked": "~2.2.1",
+    "docpad-plugin-moment": "~2.0.2",
     "docpad-plugin-sass": "~2.7.3"
   },
   "main": "node_modules/docpad/bin/docpad-server",
