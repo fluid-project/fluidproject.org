@@ -22,7 +22,7 @@ $color-link-community-hover: $color-link;
 $color-header2: #808080;
 
 /* Other Variables */
-$row-width: 85.5rem; // override Foundation's width
+$row-width: 56rem; // override Foundation's width
 $focus-outline: 0.2rem solid $color-focus;
 $font-primary: 'Open Sans', sans-serif;
 $font-secondary: 'Roboto Slab', serif;
@@ -81,8 +81,9 @@ body {
     
     // text that appears emphasized and bigger within content.
     .fluid-web-emphasized-text {
-        font-family: $font-secondary;
-        font-size: 1.6rem;
+        font-family: $font-secondary !important;
+        font-size: 1.6rem !important;
+        color: $color-primary !important;
     }
     
     /* Links that appear within text content. */
@@ -102,7 +103,6 @@ body {
     .fluid-web-link-readmore {
         font-weight: bold;
         border-bottom: $link-underline;
-        text-transform: lowercase;
         color: $color-primary;
     }
 
@@ -165,7 +165,8 @@ body {
     }
 }
 
-.fluid-web.fluid-web-index {
+.fluid-web .fluid-web-index,
+.fluid-web .fluid-web-projects {
     h2 {
         font-size: 1em;
         text-transform: uppercase;
@@ -183,7 +184,7 @@ body {
 
 /* Text content that appears before showcase. */
 
-.fluid-web.fluid-web-index .fluid-web-intro-news {
+.fluid-web .fluid-web-index .fluid-web-intro-news {
     margin-bottom:2rem;
     
     a:focus {
@@ -212,34 +213,21 @@ body {
 }
 
 
-.fluid-web.fluid-web-index .fluid-web-showcase {
+.fluid-web .fluid-web-showcase {
     margin-bottom: 5rem;
-  
-    .fluid-web-showcase-column-left {
-        padding: 0 0.5rem 0 0;
+    
+    .columns {
+        padding-left: 0;
+        padding-right: 0;
     }
     
-    .fluid-web-showcase-column-right {
-        padding: 0 0 0 0.5rem;
-    }
-    
-    h2 {
-        padding-left: $column-padding;
-    }
-    
-    .fluid-web-link-readmore h3 {
-        font-size: 1rem;
-        margin-bottom: 0;
+    .fluid-web-link-readmore {
+        margin-top: 0.5rem;
     }
     
     .fluid-web-showcase-item {
-        margin-bottom: 1rem;
-        
         a {
-            display: inline-block;
-            height: 12rem;
             width: 100%;
-            padding: 0.3rem;
             color: $color-link-block;
             background: $color-link-block-background;
         }
@@ -260,8 +248,12 @@ body {
         }
         
         .fluid-web-showcase-item-text {
+            margin-top: 9rem;
+            margin-left: 1rem;
+            box-sizing: border-box;
             border: 0.2rem solid $color-link-block-background;
             outline: 0.2rem solid $color-link-block-background;
+            display: inline-block;
         }
         
         a span {
@@ -269,6 +261,21 @@ body {
              has a different background and padding */
             background: $color-link-block-background;
             padding: 0.5rem;
+        }
+        
+        .fluid-web-project-description {
+            h2, p {
+                background-color: $color-background-text;
+            }
+            
+            h2 {
+                display: inline-block;
+                font-family: $font-secondary;
+                color: $color-primary;
+                margin: 0;
+                text-transform: none;
+                font-size: 1rem;
+            }
         }
     }
     .fluid-web-learner-options a {
@@ -288,18 +295,40 @@ body {
     }
 }
 
-@media only screen and (min-width: 40.063em) /* min-width 641px, medium screens */
-{
-    .fluid-web.fluid-web-index .fluid-web-showcase .fluid-web-showcase-item a {
-        height: 16rem;
-        padding: 12.5rem 0 0 1rem;
+/* FLUID-5514: Remove this hard-coded min-width value and replace with Foundation mixin */
+@media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
+    .fluid-web .fluid-web-index .fluid-web-showcase {
+        .fluid-web-showcase-column-left {
+            padding: 0 0.5rem 0 0;
+        }
+        
+        .fluid-web-showcase-column-right {
+            padding: 0 0 0 0.5rem;
+        }
+        
+        .fluid-web-showcase-item a {
+            height: 16rem;
+            padding: 12.5rem 0 0 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .fluid-web-showcase-item-text {
+            margin-top: 0rem;
+            margin-left: 0rem;
+        }
     }
 }
 
+.fluid-web .fluid-web-index .fluid-web-showcase-item {
+  a {
+      display: inline-block;
+      height: 12rem;
+  }
+}
 
 /* Community links section */
 
-.fluid-web.fluid-web-index .fluid-web-community {
+.fluid-web .fluid-web-index .fluid-web-community {
     padding-top: 1rem;
     
     .fluid-web-community-list {
@@ -375,32 +404,6 @@ body {
         border-bottom: $link-underline;
     }
     
-    .fluid-web-major-demo {
-        margin-bottom: 1rem;
-    }
-    
-    .fluid-web-project-description{
-      padding: 0.5rem;
-      
-        h2, p {
-            background-color: $color-background-text;
-            padding: 0.5rem;
-        }
-        
-        h2 {
-            display: inline-block;
-            font-family: $font-secondary;
-            color: $color-primary;
-            margin: 0;
-            text-transform: none;
-            font-size: 1rem;
-        }
-        
-        a {
-            font-weight: bold;
-        }
-    }
-
     .fluid-web-prefs-framework {
         background: url("../images/floe-uio.jpg") no-repeat, #f0de00;
         background-size: 100% auto;
@@ -416,7 +419,7 @@ body {
         background-size: 100% auto;
     }
     
-    .fluid-web-projects-about-infusion .fluid-web-link-block {
+    .fluid-web-projects-about-infusion .fluid-web-link-buttons {
         color: $color-link-infusion-download;
         background: $color-link-infusion-download-background;
         display: inline-block;
@@ -440,6 +443,11 @@ body {
         dl dd {
             margin-bottom: 1rem;
         }
+    }
+    
+    .fluid-web-projects-partners {
+        font-style: italic;
+        margin-bottom: 3.5rem;
     }
 }
 

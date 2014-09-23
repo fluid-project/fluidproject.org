@@ -1,80 +1,62 @@
 ---
 title: "The Open Source Software Community | fluid"
+navigationSlug: "Home"
+navigationIndex: 1
 layout: "default"
+isPage: true
 ---
 
-<div class="row fluid-web-intro-news">
-    <section>
-        <div class="medium-6 columns">
-            <p class="fluid-web-intro-paragraph1 fluid-web-emphasized-text">
-                An <strong>open-source software community</strong> that designs user interfaces, builds web tools, teaches inclusive design, and integrates interface components into open source applications.
-                <span class="show-for-small-only">
-                    <a href="#" class="fluid-web-link-readmore">Learn more ➔</a>
-                </span>
-            </p>
-            
-            <p class="hide-for-small-only">
-                The Fluid community consists of an international team of partners, individuals, and institutions focused on designing ﬂexible, customizable, user-centered interfaces.
+<div class="fluid-web-index">
+    <section class="row fluid-web-intro-news">
+        <p class="fluid-web-intro-paragraph1 fluid-web-emphasized-text">
+            An <strong>open-source software community</strong> that designs user interfaces, builds web tools, teaches inclusive design, and integrates interface components into open source applications.
+            <span class="show-for-small-only">
                 <a href="#" class="fluid-web-link-readmore">Learn more ➔</a>
-            </p>
-        </div>
+            </span>
+        </p>
+        
+        <p class="hide-for-small-only">
+            The Fluid community consists of an international team of partners, individuals, and institutions focused on designing ﬂexible, customizable, user-centered interfaces.
+            <a href="about.html" class="fluid-web-link-readmore">Learn more ➔</a>
+        </p>
     </section>
-
-
-    <section class="fluid-web-news fluid-web-group">
-        <div class="medium-6 columns">
-            <h2>News</h2>
-            
-            <% recentNews = @getCollection("html").findAll({relativeOutDirPath:"news"},[{date: -1}]).toJSON()[0] %>
-                <a href="<%= recentNews.url %>"><%= recentNews.title %></a>
-            
-            <h3><a href="">Fluid releases new video player</a></h3>
-            <p class="fluid-web-date"><em>November 05, 2013</em></p>
-            <p class="hide-for-small-only">
-                Video Player is designed to be a fully accessible HTML5 video player. The designs for Video Player can be seen on our wiki, at <a href="#" class="fluid-web-link-content">Video player mockups (ﬁnal)</a>. v0.1 is the ﬁrst public release of Video Player and includes initial support... <a href="#" class="fluid-web-link-readmore">read more ➔</a>
-            </p>
-            <p class="show-for-small-only">
-                <a href="#" class="fluid-web-link-readmore">read more ➔</a>
-            </p>
-        </div>
-    </section>                
-</div>
-
-<section class="row fluid-web-community hide-for-small-only">
-    <div class="small-12 columns">
+    
+    <section class="row fluid-web-community hide-for-small-only">
         <h2>Find the Fluid Community At:</h2>
         <div class="text-center">
-        <ul class="inline-list fluid-web-community-list">
-            <li><a href="http://wiki.fluidproject.org/"><span class="fluid-web-community-icon"></span>wiki</a></li>
-            <li><a href="http://wiki.fluidproject.org/display/fluid/IRC+Channel"><span class="fluid-web-community-icon"></span>irc chat</a></li>
-            <li><a href="http://issues.fluidproject.org"><span class="fluid-web-community-icon"></span>bug tracking</a></li>
-            <li><a href="http://github.com/fluid-project"><span class="fluid-web-community-icon"></span>source code</a></li>
-            <li><a href="http://wiki.fluidproject.org/display/fluid/Mailing+Lists"><span class="fluid-web-community-icon"></span>mailing list</a></li>
-            <li><a href="http://wiki.fluidproject.org/display/fluid/Meetings"><span class="fluid-web-community-icon"></span>online meetings</a></li>
-            <li><a href="http://wiki.fluidproject.org/display/fluid/Presentations"><span class="fluid-web-community-icon"></span>presentations</a></li>
-            <li><a href=""><span class="fluid-web-community-icon"></span>blog</a></li>
-        </ul>
+            <ul class="inline-list fluid-web-community-list">
+                <li><a href="http://wiki.fluidproject.org/"><span class="fluid-web-community-icon"></span>wiki</a></li>
+                <li><a href="http://wiki.fluidproject.org/display/fluid/IRC+Channel"><span class="fluid-web-community-icon"></span>irc chat</a></li>
+                <li><a href="http://issues.fluidproject.org"><span class="fluid-web-community-icon"></span>bug tracking</a></li>
+                <li><a href="http://github.com/fluid-project"><span class="fluid-web-community-icon"></span>source code</a></li>
+                <li><a href="http://wiki.fluidproject.org/display/fluid/Mailing+Lists"><span class="fluid-web-community-icon"></span>mailing list</a></li>
+                <li><a href="http://wiki.fluidproject.org/display/fluid/Meetings"><span class="fluid-web-community-icon"></span>online meetings</a></li>
+                <li><a href="http://wiki.fluidproject.org/display/fluid/Presentations"><span class="fluid-web-community-icon"></span>presentations</a></li>
+                <li><a href=""><span class="fluid-web-community-icon"></span>blog</a></li>
+            </ul>
         </div>
-    </div>
-</section>
+    </section>
+    
+    <section class="row fluid-web-showcase">
+        <h2>Featured Work</h2>
+        
+        <div class="medium-6 columns fluid-web-showcase-column-left fluid-web-showcase-item fluid-web-learner-options">
+            <a href=""><span class="fluid-web-showcase-item-text">Learner Options ➔</span></a>
+        </div>
+        <div class="medium-6 columns fluid-web-showcase-column-right fluid-web-showcase-item fluid-web-infusion">
+            <a href=""><span class="fluid-web-showcase-item-text">Fluid Infusion ➔</span></a>
+        </div>
 
-<section class="row fluid-web-showcase">
-    <h2>Featured Work</h2>
-    <div class="medium-6 columns fluid-web-showcase-column-left">
-        <div class="fluid-web-showcase-item fluid-web-learner-options">
-            <a href=""><span class="fluid-web-link-block-text">Learner Options ➔</span></a>
+        <div class="medium-6 columns fluid-web-showcase-column-left fluid-web-showcase-item fluid-web-videoplayer">
+            <a href=""><span class="fluid-web-showcase-item-text">Video Player ➔</span></a>
         </div>
-        <div class="fluid-web-showcase-item fluid-web-videoplayer">
-            <a href=""><span class="fluid-web-link-block-text">Video Player ➔</span></a>
-        </div>
-    </div>
-    <div class="medium-6 columns fluid-web-showcase-column-right">
-        <div class="fluid-web-showcase-item fluid-web-infusion">
-            <a href=""><span class="fluid-web-link-block-text">Fluid Infusion ➔</span></a>
-        </div>
-        <div class="fluid-web-showcase-item fluid-web-metadata">
-            <a href=""><span class="fluid-web-link-block-text">Metadata Authoring ➔</span></a>
+
+        <div class="medium-6 columns fluid-web-showcase-column-right fluid-web-showcase-item fluid-web-metadata">
+            <a href=""><span class="fluid-web-showcase-item-text">Metadata Authoring ➔</span></a>
         </div>    
-        <a href="#" class="right fluid-web-link-readmore">View all projects ➔</span></a>                
-    </div>
-</section>
+        <a href="projects.html" class="right fluid-web-link-readmore">View all projects ➔</span></a>                
+
+        
+        
+    </section>
+</div>
