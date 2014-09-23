@@ -9,9 +9,9 @@ isPage: true
 <div class="fluid-web-index">
     <section class="row fluid-web-intro-news">
         <p class="fluid-web-intro-paragraph1 fluid-web-emphasized-text">
-            An <strong>open-source software community</strong> that designs user interfaces, builds web tools, teaches inclusive design, and integrates interface components into open source applications.
+            An <strong>open, collaborative project</strong> to improve the user experience of community source software.
             <span class="show-for-small-only">
-                <a href="#" class="fluid-web-link-readmore">Learn more ➔</a>
+                <a href="about.html" class="fluid-web-link-readmore">Learn more ➔</a>
             </span>
         </p>
         
@@ -32,7 +32,9 @@ isPage: true
                 <li><a href="http://wiki.fluidproject.org/display/fluid/Mailing+Lists"><span class="fluid-web-community-icon"></span>mailing list</a></li>
                 <li><a href="http://wiki.fluidproject.org/display/fluid/Meetings"><span class="fluid-web-community-icon"></span>online meetings</a></li>
                 <li><a href="http://wiki.fluidproject.org/display/fluid/Presentations"><span class="fluid-web-community-icon"></span>presentations</a></li>
+<!--
                 <li><a href=""><span class="fluid-web-community-icon"></span>blog</a></li>
+-->
             </ul>
         </div>
     </section>
