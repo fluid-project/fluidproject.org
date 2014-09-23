@@ -47,22 +47,6 @@ University</a>, funded by a grant from <a href="http://www.mellon.org/">The Andr
                 </div>
                 
                 <div class="medium-6 columns">
-                    <span id="fluid-web-announcement-text-field-label" class="fluid-web-announcement-text-field-label">Subscribe to announcements</span>
-                    
-                    
-                    <div class="row">
-                        <div class="large-12 columns">
-                            <div class="row collapse">
-                                <div class="small-10 columns">
-                                    <input class="fluid-web-announcement-text-field" type="text" placeholder="enter email address" aria-labelledby="fluid-web-announcement-text-field-label"/>
-                                </div>
-                                <div class="small-2 columns">
-                                    <a href="#" class="button postfix fluid-web-announcement-text-field-submit">Go</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
                     <dl class="fluid-web-projectCoordinator-list">
                         <dt><a href="mailto:jtreviranus@faculty.ocadu.ca">Jutta Treviranus</a></dt>
                         <dd>Principal Investigator, Director and Professor</dd>
