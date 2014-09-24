@@ -226,8 +226,15 @@ body {
     }
     
     .fluid-web-showcase-item {
+        margin-bottom: 1rem;
+    }
+    
+    .fluid-web-showcase-item .fluid-web-project-description {
+
+        margin: 1rem;
+        min-height: 10rem;
+                
         a {
-            width: 100%;
             color: $color-link-block;
             background: $color-link-block-background;
         }
@@ -247,50 +254,44 @@ body {
             outline: 0.2rem solid $color-link-block-background;
         }
         
-        .fluid-web-showcase-item-text {
-            margin-top: 9rem;
-            margin-left: 1rem;
+        a .fluid-web-showcase-item-text {
             box-sizing: border-box;
             border: 0.2rem solid $color-link-block-background;
             outline: 0.2rem solid $color-link-block-background;
             display: inline-block;
-        }
         
-        a span {
             /* specify the background and padding of link block for a span because the parent <a>
              has a different background and padding */
             background: $color-link-block-background;
             padding: 0.5rem;
         }
         
-        .fluid-web-project-description {
-            h2, p {
-                background-color: $color-background-text;
-            }
-            
-            h2 {
-                display: inline-block;
-                font-family: $font-secondary;
-                color: $color-primary;
-                margin: 0;
-                text-transform: none;
-                font-size: 1rem;
-            }
+        h2, p {
+            background-color: $color-background-text;
+        }
+        
+        h2 {
+            display: inline-block;
+            font-family: $font-secondary;
+            color: $color-primary;
+            margin: 0;
+            text-transform: none;
+            font-size: 1rem;
         }
     }
-    .fluid-web-learner-options a {
+    .fluid-web-showcase-learner-options {
         background: url('../images/floe-uio.jpg') no-repeat;
     }
     
-    .fluid-web-metadata a {
+    .fluid-web-showcase-metadata {
         background: url('../images/floe-metadata.jpg') no-repeat;
     }
     
-    .fluid-web-videoplayer a {
+    .fluid-web-showcase-videoplayer {
         background: url('../images/floe-videoplayer.jpg') no-repeat;
     }
     
-    .fluid-web-infusion a {
+    .fluid-web-showcase-infusion {
         background-color: #fff;
     }
 }
@@ -305,25 +306,14 @@ body {
         .fluid-web-showcase-column-right {
             padding: 0 0 0 0.5rem;
         }
-        
-        .fluid-web-showcase-item a {
-            height: 16rem;
-            padding: 12.5rem 0 0 1rem;
-            margin-bottom: 1rem;
-        }
-        
-        .fluid-web-showcase-item-text {
-            margin-top: 0rem;
-            margin-left: 0rem;
-        }
     }
 }
 
-.fluid-web .fluid-web-index .fluid-web-showcase-item {
-  a {
-      display: inline-block;
-      height: 12rem;
-  }
+.fluid-web .fluid-web-index {
+    .fluid-web-showcase-item-text {
+        margin-top: 10rem;
+        margin-left: 0rem;
+    }
 }
 
 /* Community links section */
@@ -498,32 +488,5 @@ body {
     .fluid-web-projectCoordinator-list dt, {
         margin-bottom: 0rem;
         display:inline;
-    }
-    
-    .fluid-web-announcement-text-field {
-        background-color: $color-footer-text-field-background;
-        color: $color-footer-foreground;
-        border: 0.2rem solid $color-footer-text-field-background;
-        box-shadow: none;
-    }
-    
-    .fluid-web-announcement-text-field:focus {
-        border: 0.2rem solid $color-footer-link;
-    }
-    
-    .fluid-web-announcement-text-field-submit {
-        border: 0.2rem solid $color-footer-link;
-        background-color: $color-footer-link;
-        color: $color-footer-background;
-    }
-    
-    .fluid-web-announcement-text-field-submit:focus {
-        border: 0.2rem solid $color-footer-background;
-        outline: $focus-outline;
-    }
-    
-    .fluid-web-announcement-text-field-label {
-        margin-bottom: 0.5rem;
-        display:block;  
     }
 }
