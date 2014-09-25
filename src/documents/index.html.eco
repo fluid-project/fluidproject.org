@@ -1,5 +1,5 @@
 ---
-title: "The Open Source Software Community | fluid"
+title: "The Open Source Software Community"
 navigationSlug: "Home"
 navigationIndex: 1
 layout: "default"
@@ -7,45 +7,42 @@ isPage: true
 ---
 
 <div class="fluid-web-index">
-    <section class="row fluid-web-intro-news">
-        <p class="fluid-web-intro-paragraph1 fluid-web-emphasized-text">
-            An <strong>open, collaborative project</strong> to improve the user experience of community source software.
-            <span class="show-for-small-only">
-                <a href="about.html" class="fluid-web-link-readmore">Learn more ➔</a>
-            </span>
-        </p>
-        
-        <p class="hide-for-small-only">
-            The Fluid community consists of an international team of partners, individuals, and institutions focused on designing ﬂexible, customizable, user-centered interfaces.
-            <a href="about.html" class="fluid-web-link-readmore">Learn more ➔</a>
-        </p>
-    </section>
-    
-    <section class="row fluid-web-community hide-for-small-only">
-        <h2>Find the Fluid Community At:</h2>
-        <div class="text-center">
-            <ul class="inline-list fluid-web-community-list">
-                <li><a href="http://wiki.fluidproject.org/"><span class="fluid-web-community-icon"></span>wiki</a></li>
+    <div class="row fluid-web-intro-news">
+        <div class="medium-8 columns">
+            <p class="fluid-web-intro-paragraph1 fluid-web-emphasized-text">
+                An <strong>open, collaborative project</strong> to improve the user experience of community source software.
+                <span class="show-for-small-only">
+                    <a href="about.html" class="fluid-web-link-readmore">Learn more &rarr;</a>
+                </span>
+            </p>
+            
+            <p class="hide-for-small-only">
+                The Fluid community consists of an international team of partners, individuals, and institutions focused on designing ﬂexible, customizable, user-centered interfaces.
+                <a href="about.html" class="fluid-web-link-readmore">Learn more &rarr;</a>
+            </p>
+            
+        </div>
+        <div class="medium-4 columns fluid-web-link-list">
+            <h2 class="fluid-web-deemphasized-text">Find the Fluid Community At:</h2>
+            <ul>
+                <li><a href="http://wiki.fluidproject.org/"><span class="fluid-web-community-icon">wiki</span></a></li>
                 <li><a href="http://wiki.fluidproject.org/display/fluid/IRC+Channel"><span class="fluid-web-community-icon"></span>irc chat</a></li>
                 <li><a href="http://issues.fluidproject.org"><span class="fluid-web-community-icon"></span>bug tracking</a></li>
                 <li><a href="http://github.com/fluid-project"><span class="fluid-web-community-icon"></span>source code</a></li>
                 <li><a href="http://wiki.fluidproject.org/display/fluid/Mailing+Lists"><span class="fluid-web-community-icon"></span>mailing list</a></li>
                 <li><a href="http://wiki.fluidproject.org/display/fluid/Meetings"><span class="fluid-web-community-icon"></span>online meetings</a></li>
                 <li><a href="http://wiki.fluidproject.org/display/fluid/Presentations"><span class="fluid-web-community-icon"></span>presentations</a></li>
-<!--
-                <li><a href=""><span class="fluid-web-community-icon"></span>blog</a></li>
--->
-            </ul>
+            </ul>                
         </div>
-    </section>
+    </div>
     
     <section class="row fluid-web-showcase">
-        <h2>Featured Work</h2>
+        <h2 class="fluid-web-deemphasized-text">Featured Work</h2>
         
         <div class="medium-6 columns fluid-web-showcase-column-left">
             <div class="fluid-web-showcase-item fluid-web-showcase-learner-options fluid-web-group">
                 <span class="small-10 medium-7 columns fluid-web-project-description">
-                    <a href="" class="row"><span class="fluid-web-showcase-item-text">Learner Options ➔</span></a>
+                    <a href="" class="row"><span class="fluid-web-showcase-item-text">Learner Options &rarr;</span></a>
                 </span>
             </div>
         </div>
@@ -53,7 +50,7 @@ isPage: true
         <div class="medium-6 columns fluid-web-showcase-column-left">
             <div class="fluid-web-showcase-item fluid-web-showcase-infusion fluid-web-group">
                 <span class="small-10 medium-7 columns fluid-web-project-description">
-                    <a href="" class="row"><span class="fluid-web-showcase-item-text">Fluid Infusion ➔</span></a>
+                    <a href="" class="row"><span class="fluid-web-showcase-item-text">Fluid Infusion &rarr;</span></a>
                 </span>
             </div>
         </div>
@@ -61,7 +58,7 @@ isPage: true
         <div class="medium-6 columns fluid-web-showcase-column-left">
             <div class="fluid-web-showcase-item fluid-web-showcase-videoplayer fluid-web-group">
                 <span class="small-10 medium-7 columns fluid-web-project-description">
-                    <a href="" class="row"><span class="fluid-web-showcase-item-text">Video Player ➔</span></a>
+                    <a href="" class="row"><span class="fluid-web-showcase-item-text">Video Player &rarr;</span></a>
                 </span>
             </div>
         </div>
@@ -69,14 +66,11 @@ isPage: true
         <div class="medium-6 columns fluid-web-showcase-column-left">
             <div class="fluid-web-showcase-item fluid-web-showcase-metadata fluid-web-group">
                 <span class="small-10 medium-7 columns fluid-web-project-description">
-                    <a href="" class="row"><span class="fluid-web-showcase-item-text">Metadata Authoring ➔</span></a>
+                    <a href="" class="row"><span class="fluid-web-showcase-item-text">Metadata Authoring &rarr;</span></a>
                 </span>
             </div>
         </div>
 
-        <a href="projects.html" class="right fluid-web-link-readmore">View all projects ➔</span></a>                
-
-        
-        
+        <a href="projects.html" class="right fluid-web-link-readmore">View all projects &rarr;</a>                
     </section>
 </div>

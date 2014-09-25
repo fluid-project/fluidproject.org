@@ -22,7 +22,7 @@ $color-link-community-hover: $color-link;
 $color-header2: #808080;
 
 /* Other Variables */
-$row-width: 56rem; // override Foundation's width
+$row-width: 52rem; // override Foundation's width
 $focus-outline: 0.2rem solid $color-focus;
 $font-primary: 'Open Sans', sans-serif;
 $font-secondary: 'Roboto Slab', serif;
@@ -86,6 +86,13 @@ body {
         color: $color-primary !important;
     }
     
+    // text that appears lighter and smaller within content. Used for headers.
+    .fluid-web-deemphasized-text {
+        font-size: 1em;
+        text-transform: uppercase;
+        color: $color-header2;
+    }
+    
     /* Links that appear within text content. */
     .fluid-web-link-content {
         color: $color-link;
@@ -112,6 +119,30 @@ body {
     
     .fluid-web-link-readmore:focus {
         outline: $focus-outline;
+    }
+    
+    .fluid-web-link-list {
+        background: $color-background-text;
+        padding: 1rem;
+        margin-top: 0.2rem;
+        
+        h3 {
+            font-family: $font-secondary;
+            font-weight: normal;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        li,
+        dl dt {
+            margin-top: 0.8rem;
+        }
+        
+        dl dd {
+            margin-bottom: 1rem;
+        }
     }
 }
 
@@ -167,11 +198,6 @@ body {
 
 .fluid-web .fluid-web-index,
 .fluid-web .fluid-web-projects {
-    h2 {
-        font-size: 1em;
-        text-transform: uppercase;
-        color: $color-header2;
-    }
     h3 {
         font-size: 1.4rem;
         font-weight: bold;
@@ -318,6 +344,11 @@ body {
 
 /* Community links section */
 
+.fluid-web-community-list-new {
+    list-style: none;
+    
+}
+
 .fluid-web .fluid-web-index .fluid-web-community {
     padding-top: 1rem;
     
@@ -342,7 +373,7 @@ body {
             color: $color-primary;
             font-weight: bold;
         }
-        
+        /*
         li .fluid-web-community-icon:before {
             border-radius: 50rem;
             background-color: #fff;
@@ -352,7 +383,7 @@ body {
             position:absolute;
             top: -5rem;
             left: 1rem;
-        }
+        }*/
         
         li a:focus {
             outline: $focus-outline;
@@ -372,20 +403,12 @@ body {
 .fluid-web .fluid-web-about {
     p {
         position: relative;
-        margin: 0 0 2rem 5rem;
+        margin: 0 0 2rem 0rem;
     }
     
     .fluid-web-license {
         margin-bottom: 2rem;
-    }
-
-    p:before {
-      width: 4rem;
-      height: 4rem;
-      background-color: #fff;
-      position:absolute;
-      content:'';
-      left: -5rem;
+        line-height: 1.2rem;
     }
 }
 
@@ -420,25 +443,6 @@ body {
         margin-bottom: 0.5rem;
     }
     
-    .fluid-web-component-list {
-        background: $color-background-text;
-        padding: 1rem 1rem 2rem 1rem;
-        margin-top: 0.2rem;
-        
-        h3 {
-            font-family: $font-secondary;
-            font-weight: normal;
-        }
-        
-        dl dt {
-            margin-top: 1.5rem;
-        }
-        
-        dl dd {
-            margin-bottom: 1rem;
-        }
-    }
-    
     .fluid-web-projects-partners {
         font-style: italic;
         margin-bottom: 3.5rem;
@@ -454,7 +458,8 @@ body {
 /* Footer */
 
 .fluid-web .fluid-web-footer {
-    padding: 3em;
+    margin-top: 1rem;
+    padding: 3rem;
     background-color: $color-footer-background;
     color: $color-footer-foreground;
 
