@@ -2,6 +2,8 @@
 
 This repository contains the files needed to build a copy of the Fluid Project website.
 
+This is not an immediately deployable version of the website - [docpad](http://docpad.org/) is used to build the site from source files.
+
 ## Requirements
 
 Download and install the following packages before building the Fluid website:
