@@ -14,32 +14,26 @@
 
     <body>
         <div class="fluid-web">
-            <div class="flc-toc-tocContainer"> </div>
-            
             <div class="row fluid-web-header">
-                <div class="medium-6 columns">
-                    <header>
-                        <h1><span class="fluid-web-logo-star"></span>fluid</h1>
-                    </header>
-                </div>
-                <div class="medium-6 columns">            
-                    <nav class="fluid-web-nav">
-                        <ul class="right button-group">
-                            <% for page in @getCollection("html").findAll({isPage:true},[{navigationIndex: 1}]).toJSON(): %>
-                                <li class="">
-                                    <a href="<%= page.url %>" class="button <%= if page.id is @document.id then 'current' else 'inactive' %>">
-                                        <%= page.navigationSlug %>
-                                    </a>
-                                </li>
-                            <% end %>
-                        </ul>
-                    </nav>
-                </div>
+                <header class="small-12 medium-6 columns">
+                    <h1><span class="fluid-web-logo-star" role="presentation"></span>fluid</h1>
+                </header>
+                <nav class="small-12 medium-6 columns fluid-web-nav">
+                    <ul class="right button-group">
+                        <% for page in @getCollection("html").findAll({isPage:true},[{navigationIndex: 1}]).toJSON(): %>
+                            <li class="">
+                                <a href="<%= page.url %>" class="button <%= if page.id is @document.id then 'current' else 'inactive' %>">
+                                    <%= page.navigationSlug %>
+                                </a>
+                            </li>
+                        <% end %>
+                    </ul>
+                </nav>
             </div>
 
             {{{content}}}
             
-            <footer class="row fluid-web-footer">
+            <footer class="row fluid-web-footer fluid-web-section-gap">
                 <div class="medium-6 columns">
                     <p>Fluid is a project of the <a href="http://idrc.ocadu.ca/">Inclusive Design Research Centre</a> at <a href="http://www.ocadu.ca">OCAD 
 University</a>, funded by a grant from <a href="http://www.mellon.org/">The Andrew W. Mellon Foundation</a>.</p>

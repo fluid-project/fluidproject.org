@@ -1,39 +1,50 @@
-/* Colors */
-$color-background:  #F2F2F2;
-$color-background-text: #FFF;  // colour that appears behind some text content.
+// Default
+$color-background: #F2F2F2;
+$color-focus:      #FFCC00;
+$color-primary:    #333;
+$color-link:       #009FCB;
 
-$color-focus: #ffcc00;
-$color-primary: #333;
-$color-footer-background: #363636;
-$color-footer-foreground: #fff;
-$color-footer-text-field-background: #666;
+$row-width: 66rem; // override Foundation's width
+$column-padding: 0.5rem; // override the gap between Foundation columns.
 
-$color-link: #009fcb;
-$color-footer-link: $color-focus;
-$color-link-block: #fff;
-$color-link-block-background: $color-primary;
-$color-link-block-hover: $color-link;
-$color-link-block-active: $color-primary;
-$color-link-block-background-active: $color-link-block-hover;
-$color-link-infusion-download: $color-link-block;
-$color-link-infusion-download-background: $color-link;
-$color-link-community-hover: $color-link;
-
-$color-header2: #808080;
-
-/* Other Variables */
-$row-width: 52rem; // override Foundation's width
 $focus-outline: 0.2rem solid $color-focus;
+$link-underline: 0.2rem solid $color-link;
+
 $font-primary: 'Open Sans', sans-serif;
 $font-secondary: 'Roboto Slab', serif;
-$link-underline: 0.2em solid $color-link-block-hover;
-$column-padding: 1rem;
+$font-size-root: 14px;
+$font-size-smaller: 0.8rem;
 
-/* General Styles */
+// Showcase
+$showcase-color-text-background: #FFF;
+$showcase-link: #FFF;
+$showcase-link-background: $color-primary;
+$showcase-link-active: $color-primary;
+
+// Projects
+$projects-components-background: #FFF;
+
+// Community Links
+$community-icon-background: #FFF;
+$community-icon-background-shadow: -0.03rem -0.07rem #dfdfdf;
+$community-icon-shadow: 0.01rem 0.01rem 0.1rem #afafaf;
+
+// Footer
+$footer-color-link: $color-focus;
+$footer-color-background: #363636;
+$footer-color-foreground: #FFF;
+$footer-color-text-field-background: #666;
+
+// Button - currently used on Projects page.
+$button-color: #FFF;
+$button-background: $color-link;
+
+// Deemphasized text color - currently used for headers with less emphasis. 
+$deemphasized-text-color: #808080;
 
 body {
     background-color: $color-background;
-    font-size: 14px;
+    font-size: $font-size-root;
 }
 
 @font-face {
@@ -41,6 +52,13 @@ body {
     src:url('../fonts/fluid-star.eot?#iefix') format('embedded-opentype'),
         url('../fonts/fluid-star.eot'),
         url('../fonts/fluid-star.ttf');
+}
+
+@font-face {
+    font-family: 'fluid-community';
+    src:url('../fonts/fluid-community.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/fluid-community.eot'),
+        url('../fonts/fluid-community.ttf');
 }
 
 .fluid-web {
@@ -62,14 +80,26 @@ body {
         font-weight: bolder;
     }
     
+    h3 {
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    
     p {
         margin-bottom: 0.8rem;
+    }
+
+    a:hover {
+        color: $color-link;
+    }
+    
+    a:focus {
+        outline: $focus-outline;
     }
     
     // override Foundation column padding.
     .columns {
-        padding-left: $column-padding;
-        padding-right: $column-padding;
+        padding: $column-padding;
     }
     
     // Clearfix
@@ -77,6 +107,11 @@ body {
         content: "";
         display: table;
         clear: both;
+    }
+    
+    
+    .fluid-web-section-gap {
+        margin-top: 5rem;
     }
     
     // text that appears emphasized and bigger within content.
@@ -90,7 +125,7 @@ body {
     .fluid-web-deemphasized-text {
         font-size: 1em;
         text-transform: uppercase;
-        color: $color-header2;
+        color: $deemphasized-text-color;
     }
     
     /* Links that appear within text content. */
@@ -112,17 +147,10 @@ body {
         border-bottom: $link-underline;
         color: $color-primary;
     }
-
-    .fluid-web-link-readmore:hover {
-        color: $color-link;
-    }
     
-    .fluid-web-link-readmore:focus {
-        outline: $focus-outline;
-    }
-    
+    // For link lists - currently used in Projects page and Community links 
     .fluid-web-link-list {
-        background: $color-background-text;
+        background: $projects-components-background;
         padding: 1rem;
         margin-top: 0.2rem;
         
@@ -148,20 +176,23 @@ body {
 
 /* Header and Navigation */
 .fluid-web .fluid-web-header {
-    height: 10rem;
   
+    margin-bottom: 2rem;
+    
     .fluid-web-logo-star:before {
         content: '\e600';
         font-family: 'fluid-star';
         font-size: 3.5rem;
     }
-  
+
     .fluid-web-nav {
         text-transform: uppercase;
-        margin-top: 4rem;
         
+        @media only screen and (min-width: 40.063em) { 
+            margin-top: 4rem;
+        }    
         li {
-            margin-right: 1rem;
+            margin-right: 0.5rem;
             
             a.button {
                 background: none;
@@ -169,6 +200,8 @@ body {
                 font-weight: bolder !important; // Overrides Bootstrap's normal font-weight on .button class
                 border: none;
                 padding: 0.5rem;
+                margin: 0;
+                line-height: 0.4rem;
             }
 
             a.button:hover,
@@ -196,206 +229,176 @@ body {
     }
 }
 
-.fluid-web .fluid-web-index,
-.fluid-web .fluid-web-projects {
-    h3 {
-        font-size: 1.4rem;
-        font-weight: bold;
-    }
-    .fluid-web-date {
-        font-size: 0.7rem;
-    }
-    
-}
-
-/* Text content that appears before showcase. */
-
-.fluid-web .fluid-web-index .fluid-web-intro-news {
-    margin-bottom:2rem;
+/* Index page - Introduction */
+.fluid-web .fluid-web-index .fluid-web-intro {
+    margin-bottom: 2rem;
     
     a:focus {
         border: none;
         outline: $focus-outline;
     }  
-
-    .fluid-web-intro-paragraph1 .show-for-small-only span {
-        display:block;
-    }
-    
-    .fluid-web-news {
-        h3 {
-            margin-bottom: 0;
-        }
-        
-        h3 a {
-            color: $color-primary;
-        }
-        
-        h3 a:hover {
-            color: $color-link;
-            text-decoration: underline;
-        }
-    }
 }
 
-
+/* Showcase - colourful tiles featuring content. */
 .fluid-web .fluid-web-showcase {
-    margin-bottom: 5rem;
-    
-    .columns {
-        padding-left: 0;
-        padding-right: 0;
+    .fluid-web-project-description {
+        // remove Foundation padding to make everything look proportional.
+        padding: 0;
     }
-    
-    .fluid-web-link-readmore {
-        margin-top: 0.5rem;
-    }
-    
+
     .fluid-web-showcase-item {
         margin-bottom: 1rem;
+        min-height: 10rem;
+        padding: 1rem;
     }
     
+    
+    /* Showcase item variant for the Projects page. Has extra text, buttons, and spans the full width of the page. */
     .fluid-web-showcase-item .fluid-web-project-description {
-
-        margin: 1rem;
-        min-height: 10rem;
-                
         a {
-            color: $color-link-block;
-            background: $color-link-block-background;
+            color: $showcase-link;
+            background: $showcase-link-background;
         }
-            
+        
+        a:focus {
+            outline:none; // prevent focus outline from appearing. Focus styling handled on the enclosed span.
+        }
+          
         a:hover {
-            color: $color-link-block-hover;
+            color: $color-link;
         }
             
         a:active .fluid-web-showcase-item-text {
-            border: 0.2rem solid $color-link-block-background;
-            color: $color-link-block-active;
-            background: $color-link-block-background-active;
+            border: 0.2rem solid $showcase-link-background;
+            color: $showcase-link-active;
+            background: $color-link;
         }
         
         a:focus .fluid-web-showcase-item-text {
             border: 0.2rem solid $color-focus;
-            outline: 0.2rem solid $color-link-block-background;
+            outline: 0.2rem solid $showcase-link-background;
         }
         
         a .fluid-web-showcase-item-text {
             box-sizing: border-box;
-            border: 0.2rem solid $color-link-block-background;
-            outline: 0.2rem solid $color-link-block-background;
+            border: 0.2rem solid $showcase-link-background;
+            outline: 0.2rem solid $showcase-link-background;
             display: inline-block;
         
             /* specify the background and padding of link block for a span because the parent <a>
              has a different background and padding */
-            background: $color-link-block-background;
+            background: $showcase-link-background;
             padding: 0.5rem;
         }
         
         h2, p {
-            background-color: $color-background-text;
+            background-color: $showcase-color-text-background;
+            padding: 0.2rem;
+            display: inline-block;
+            outline: 0.2rem solid $showcase-color-text-background;
+            // add an outline so that it matches the showcase item's links too
         }
         
         h2 {
-            display: inline-block;
             font-family: $font-secondary;
             color: $color-primary;
             margin: 0;
             text-transform: none;
-            font-size: 1rem;
+            font-size: 1.4rem;
         }
     }
-    .fluid-web-showcase-learner-options {
-        background: url('../images/floe-uio.jpg') no-repeat;
-    }
     
-    .fluid-web-showcase-metadata {
-        background: url('../images/floe-metadata.jpg') no-repeat;
-    }
-    
-    .fluid-web-showcase-videoplayer {
-        background: url('../images/floe-videoplayer.jpg') no-repeat;
-    }
-    
+    .fluid-web-showcase-learner-options { background: url('../images/floe-uio.jpg') no-repeat; }
+    .fluid-web-showcase-metadata        { background: url('../images/floe-metadata.jpg') no-repeat; }
+    .fluid-web-showcase-videoplayer     { background: url('../images/floe-videoplayer.jpg') no-repeat; }
     .fluid-web-showcase-feedback-tool {
         background: url('../images/feedback-tool.jpg') no-repeat;
         background-position: -176px 0px;
     }
 }
 
-/* FLUID-5514: Remove this hard-coded min-width value and replace with Foundation mixin */
-@media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
+.fluid-web .fluid-web-index .fluid-web-showcase-item {
+      /* For the index page only, shift the contents of the showcase item down */
+      padding-top: 6.5rem;
+}
+
+@media only screen and (min-width: 40.063em) { 
+    /* For medium screens */
+    /* FLUID-5514: Remove this hard-coded min-width value and replace with Foundation mixin. Foundation defines medium screens as min-width 641px */
+   
     .fluid-web .fluid-web-index .fluid-web-showcase {
         .fluid-web-showcase-column-left {
+            /* The showcase on the index page is 2 columns. Foundation has a default padding which we override to make it the way we want. */ 
             padding: 0 0.5rem 0 0;
         }
         
         .fluid-web-showcase-column-right {
+            /* The showcase on the index page is 2 columns. Foundation has a default padding which we override to make it the way we want. */ 
             padding: 0 0 0 0.5rem;
         }
-    }
-}
-
-.fluid-web .fluid-web-index {
-    .fluid-web-showcase-item-text {
-        margin-top: 10rem;
-        margin-left: 0rem;
+        
+        .fluid-web-showcase-item {
+            /* Increase the top margin of the showcase title so it looks propotionally better. */
+            padding-top: 12.5rem;
+            min-height: 16rem;
+        }
     }
 }
 
 /* Community links section */
-
-.fluid-web-community-list-new {
-    list-style: none;
-    
-}
-
-.fluid-web .fluid-web-index .fluid-web-community {
-    padding-top: 1rem;
-    
+.fluid-web .fluid-web-community {
     .fluid-web-community-list {
-        display:flex;
+        display: flex;
+        margin-top: 1rem;
         justify-content: center;
         flex-wrap: wrap;
+        overflow: initial; // override Foundation overflow:hidden which was clipping the focus outline of list items.
                
-        li {
-            margin-top: 0.5rem;
-            margin-bottom: 2rem;
-            min-width: 8rem;
-             
-        }    
-
         li a {
+            margin: 5rem 0 1rem 0;
             width: 7rem;
-            display:block;
-            text-align:center;
-            margin-top: 5rem;
-            position:relative;
+            display: block;
+            position: relative;
             color: $color-primary;
+            text-align: center;
             font-weight: bold;
+            border: none; // remove default link underline;
         }
-        /*
+
         li .fluid-web-community-icon:before {
-            border-radius: 50rem;
-            background-color: #fff;
             width: 5rem;
             height: 5rem;
-            content: '';
-            position:absolute;
+            border-radius: 50rem;
+            position: absolute;
             top: -5rem;
             left: 1rem;
-        }*/
+            font-family: 'fluid-community';
+            font-size: 2.5rem;
+            line-height: 5rem;
+            background-color: $community-icon-background;
+            box-shadow: $community-icon-background-shadow;
+        }
+        
+        li a:focus .fluid-web-community-icon:before,
+        li a:hover .fluid-web-community-icon:before  {
+            text-shadow: $community-icon-shadow;
+        }
+        
+        .fluid-web-community-wiki:before          { content: '\e602'; }
+        .fluid-web-community-irc:before           { content: '\e604'; }
+        .fluid-web-community-presentations:before { content: '\e600'; }
+        .fluid-web-community-meetings:before      { content: '\e606'; }
+        .fluid-web-community-source:before        { content: '\e601'; }
+        .fluid-web-community-bugs:before          { content: '\e605'; }
+        .fluid-web-community-mailinglist:before   { content: '\e603'; }
         
         li a:focus {
             outline: $focus-outline;
         }
         
+        li a:focus,
         li a:hover {
-            color: $color-link-community-hover;
-        }
-        
-        .fluid-web-community-icon {
-          
+            color: $color-link;
         }
     }
 }
@@ -415,7 +418,6 @@ body {
 
 /* Projects */
 .fluid-web .fluid-web-projects {
-  
     .fluid-web-link-nightly {
         font-style: italic;
         color: $color-primary;
@@ -438,9 +440,8 @@ body {
     }
     
     .fluid-web-projects-about-infusion .fluid-web-link-buttons {
-        color: $color-link-infusion-download;
-        background: $color-link-infusion-download-background;
-        display: inline-block;
+        color: $button-color;
+        background: $button-background;
         margin-bottom: 0.5rem;
     }
     
@@ -450,22 +451,16 @@ body {
     }
 }
 
-.fluid-web.fluid-web-news {
-  .fluid-web-news-post-meta {
-      font-style: italic;
-  }
-}
 
 /* Footer */
-
 .fluid-web .fluid-web-footer {
-    margin-top: 1rem;
     padding: 3rem;
-    background-color: $color-footer-background;
-    color: $color-footer-foreground;
+    background-color: $footer-color-background;
+    color: $footer-color-foreground;
 
     a {
-        color: $color-footer-link;
+        color: $footer-color-link;
+        border: none; // remove default link underline;
     }
     
     a:hover {
@@ -473,25 +468,24 @@ body {
     }
     
     a:active {
-        background-color: $color-footer-link;
-        color:  $color-footer-background;
+        background-color: $footer-color-link;
+        color:  $footer-color-background;
     }
     
     a:focus {
-        outline: 0.2rem solid $color-footer-link;
+        outline: 0.2rem solid $footer-color-link;
     }
     
     p {
-        font-size: 0.8rem;
+        font-size: $font-size-smaller;
         margin-bottom: 1.5rem;
     }
     
     .fluid-web-projectCoordinator-list {
-        margin-top: 1.5rem;
-        font-size: 0.8rem;
+        font-size: $font-size-smaller;
     }
     
-    .fluid-web-projectCoordinator-list dt, {
+    .fluid-web-projectCoordinator-list dt {
         margin-bottom: 0rem;
         display:inline;
     }
