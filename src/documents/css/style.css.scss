@@ -12,7 +12,7 @@ $link-underline: 0.2rem solid $color-link;
 
 $font-primary: 'Open Sans', sans-serif;
 $font-secondary: 'Roboto Slab', serif;
-$font-size-root: 14px;
+$font-size-root: 0.875rem; // 14px÷16px 
 $font-size-smaller: 0.8rem;
 
 // Showcase
@@ -45,6 +45,7 @@ $deemphasized-text-color: #808080;
 body {
     background-color: $color-background;
     font-size: $font-size-root;
+    line-height: inherit;
 }
 
 @font-face {
@@ -66,8 +67,11 @@ body {
     color: $color-primary;
     padding: 0 1rem;
 
-    .row {
+    .row, .toc {
         max-width: $row-width;
+    }
+    .toc {
+      margin: 0 auto;
     }
 
     h1, h2, h3 {
@@ -76,7 +80,6 @@ body {
     }
     
     h1 {
-        font-size: 4.75rem;
         font-weight: bolder;
     }
     
@@ -87,6 +90,7 @@ body {
     
     p {
         margin-bottom: 0.8rem;
+        line-height: inherit;
     }
 
     a:hover {
@@ -97,6 +101,10 @@ body {
         outline: $focus-outline;
     }
     
+    ul {
+      line-height: inherit;
+    }
+
     // override Foundation column padding.
     .columns {
         padding: $column-padding;
@@ -177,6 +185,10 @@ body {
 /* Header and Navigation */
 .fluid-web .fluid-web-header {
   
+    header h1 {
+      font-size: 4.75rem;
+    }
+
     margin-bottom: 2rem;
     
     .fluid-web-logo-star:before {
@@ -313,7 +325,9 @@ body {
     .fluid-web-showcase-videoplayer     { background: url('../images/floe-videoplayer.jpg') no-repeat; }
     .fluid-web-showcase-feedback-tool {
         background: url('../images/feedback-tool.jpg') no-repeat;
+/*
         background-position: -176px 0px;
+*/
     }
 }
 
