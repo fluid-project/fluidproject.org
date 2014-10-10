@@ -22,6 +22,8 @@ docpadConfig = {
       
       scripts: [
         # Infusion will go here.
+        "lib/infusion/infusion-custom.js"
+        "js/uio.js"
       ]
       
       postDatetime: (date, format="YYYY-MM-DD") -> return moment(date).format(format)
