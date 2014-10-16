@@ -117,7 +117,6 @@ body {
         clear: both;
     }
     
-    
     .fluid-web-section-gap {
         margin-top: 5rem;
     }
@@ -156,8 +155,16 @@ body {
         color: $color-primary;
     }
     
-    // For link lists - currently used in Projects page and Community links 
-    .fluid-web-link-list {
+    .fluid-web-external-link:before {
+        font-family: 'fluid-community';
+        content: '\e607';
+        font-size: 0.8rem;
+        font-weight: normal;
+        margin-left: 0.3rem;
+    }
+    
+    // For lists - currently used in Projects page and Community links 
+    .fluid-web-list {
         background: $projects-components-background;
         padding: 1rem;
         margin-top: 0.2rem;
@@ -190,6 +197,18 @@ body {
     }
 
     margin-bottom: 2rem;
+    
+    h1 a {
+        color: $color-primary;
+    }
+    
+    h1 a:hover {
+        color: $color-link;
+    }
+    
+    h1 a:focus {
+        outline: $focus-outline;
+    }
     
     .fluid-web-logo-star:before {
         content: '\e600';
@@ -303,7 +322,7 @@ body {
             padding: 0.5rem;
         }
         
-        h2, p {
+        h3, p {
             background-color: $showcase-color-text-background;
             padding: 0.2rem;
             display: inline-block;
@@ -311,12 +330,13 @@ body {
             // add an outline so that it matches the showcase item's links too
         }
         
-        h2 {
+        h3 {
             font-family: $font-secondary;
             color: $color-primary;
             margin: 0;
             text-transform: none;
             font-size: 1.4rem;
+            font-weight: normal;
         }
     }
     
@@ -463,6 +483,10 @@ body {
         font-style: italic;
         margin-bottom: 3.5rem;
     }
+    
+    .fluid-web-list h3 {
+      font-size: 1rem;
+    }
 }
 
 
@@ -471,6 +495,11 @@ body {
     padding: 3rem;
     background-color: $footer-color-background;
     color: $footer-color-foreground;
+    margin-top: 0.5rem;
+
+    abbr {
+        color: $footer-color-foreground;
+    }
 
     a {
         color: $footer-color-link;

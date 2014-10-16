@@ -9,6 +9,8 @@
         <!-- Scripts -->
         <%- @getBlock('scripts').add(@site.scripts).toHTML() %>
         
+        <link rel="icon" type="image/png" href="/images/favicon.png">
+        
         <title><%= @document.title %> | fluid</title>
     </head>
 
@@ -30,7 +32,7 @@
             <!-- END markup for Preference Editor -->
             <div class="row fluid-web-header">
                 <header class="small-12 medium-6 columns">
-                    <h1><span class="fluid-web-logo-star" role="presentation"></span>fluid</h1>
+                    <h1><a href="/"><span class="fluid-web-logo-star" role="presentation"></span>fluid</a></h1>
                 </header>
                 <nav class="small-12 medium-6 columns fluid-web-nav">
                     <ul class="right button-group">
@@ -47,16 +49,19 @@
 
             <div class="flc-toc-tocContainer toc"> </div>
             {{{content}}}
+
             
-            <footer class="row fluid-web-footer fluid-web-section-gap">
+            
+            <h2 class="row fluid-web-deemphasized-text fluid-web-section-gap">Contact Us</h2>
+            <footer class="row fluid-web-footer">
                 <div class="medium-6 columns">
                     <p>Fluid is a project of the <a href="http://idrc.ocadu.ca/">Inclusive Design Research Centre</a> at <a href="http://www.ocadu.ca">OCAD 
 University</a>, funded by a grant from <a href="http://www.mellon.org/">The Andrew W. Mellon Foundation</a>.</p>
                     
                     <p><a href="https://www.google.com/maps/place/205+Richmond+St+W/@43.6493603,-79.3901121,17z/">205 Richmond St. W. 2nd Floor</a><br/>
                     Toronto, ON Canada M5V 1V3 <br/>
-                    T. 416-977-6000 #3968 <br/>
-                    F. 416-977-9844
+                    <abbr title="Phone number">T.</abbr> 416-977-6000 #3968 <br/>
+                    <abbr title="Fax">F.</abbr> 416-977-9844
                     </p>
                 </div>
                 
