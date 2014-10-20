@@ -24,6 +24,7 @@ docpadConfig = {
         "lib/infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css"
         "/lib/Foundation/css/foundation.css"
         "/css/style.css"
+        "/css/contrast.css"
         "http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100"
         "http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700"
       ]
