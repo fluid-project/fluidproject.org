@@ -32,6 +32,10 @@
             <!-- END markup for Preference Editor -->
             <div class="row fluid-web-header">
                 <header class="small-12 medium-6 columns">
+                    <div class="fluid-web-skip-links">
+                        <a href="">Skip to Content</a>
+                        <a href="">Skip to Navigation</a>
+                    </div>
                     <h1><a href="/"><span class="fluid-web-logo-star" role="presentation"></span>fluid</a></h1>
                 </header>
                 <nav class="small-12 medium-6 columns fluid-web-nav">
