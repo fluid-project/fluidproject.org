@@ -1,78 +1,81 @@
 // Default
-$color-background: #F2F2F2;
-$color-focus:      #FFCC00;
-$color-primary:    #333;
-$color-link:       #009FCB;
+color-background = #F2F2F2;
+color-focus =      #FFCC00;
+color-primary =    #333;
+color-link =       #009FCB;
 
-$row-width: 66rem; // override Foundation's width
-$column-padding: 0.5rem; // override the gap between Foundation columns.
+row-width = 66rem; // override Foundation's width
+column-padding = 0.5rem; // override the gap between Foundation columns.
 
-$focus-outline: 0.2rem solid $color-focus;
-$link-underline: 0.2rem solid $color-link;
+focus-outline = 0.2rem solid color-focus;
+link-underline = 0.2rem solid color-link;
 
-$font-primary: 'Open Sans', sans-serif;
-$font-secondary: 'Roboto Slab', serif;
-$font-size-root: 14px;
-$font-size-smaller: 0.8rem;
+font-primary = 'Open Sans', sans-serif;
+font-secondary = 'Roboto Slab', serif;
+font-size-root = 14px;
+font-size-smaller = 0.8rem;
+
+// header
+skip-link-color = #FFF;
 
 // Showcase
-$showcase-color-text-background: #FFF;
-$showcase-link: #FFF;
-$showcase-link-background: $color-primary;
-$showcase-link-active: $color-primary;
+showcase-color-text-background = #FFF;
+showcase-link = #FFF;
+showcase-link-background = color-primary;
+showcase-link-active = color-primary;
 
 // Projects
-$projects-components-background: #FFF;
+projects-components-background = #FFF;
 
 // Community Links
-$community-icon-background: #FFF;
-$community-icon-background-shadow: -0.03rem -0.07rem #dfdfdf;
-$community-icon-shadow: 0.01rem 0.01rem 0.1rem #afafaf;
+community-icon-background = #FFF;
+community-icon-background-shadow = -0.03rem -0.07rem #dfdfdf;
+community-icon-shadow = 0.01rem 0.01rem 0.1rem #afafaf;
 
 // Footer
-$footer-color-link: $color-focus;
-$footer-color-background: #363636;
-$footer-color-foreground: #FFF;
-$footer-color-text-field-background: #666;
+footer-color-link = color-focus;
+footer-color-background = #363636;
+footer-color-foreground = #FFF;
+footer-color-text-field-background = #666;
 
 // Button - currently used on Projects page.
-$button-color: #FFF;
-$button-background: $color-link;
+button-color = #FFF;
+button-background = color-link;
 
 // Deemphasized text color - currently used for headers with less emphasis. 
-$deemphasized-text-color: #808080;
+deemphasized-text-color= #808080;
 
 body {
-    background-color: $color-background;
-    font-size: $font-size-root;
+    background-color: color-background;
+    font-size: font-size-root;
 }
 
 @font-face {
     font-family: 'fluid-star';
-    src:url('../fonts/fluid-star.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/fluid-star.eot'),
-        url('../fonts/fluid-star.ttf');
+    src: url('../fonts/fluid-star.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fluid-star.eot'),
+         url('../fonts/fluid-star.ttf');
 }
 
 @font-face {
     font-family: 'fluid-community';
-    src:url('../fonts/fluid-community.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/fluid-community.eot'),
-        url('../fonts/fluid-community.ttf');
+    src: url('../fonts/fluid-community.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fluid-community.eot'),
+         url('../fonts/fluid-community.ttf');
 }
 
 .fluid-web {
-    font-family: $font-primary;
-    color: $color-primary;
+    font-family: font-primary;
+    color: color-primary;
     padding: 0 1rem;
 
     .row {
-        max-width: $row-width;
+        max-width: row-width;
     }
 
     h1, h2, h3 {
-        font-family: $font-primary;
-        color: $color-primary;
+        font-family: font-primary;
+        color: color-primary;
     }
     
     h1 {
@@ -90,16 +93,16 @@ body {
     }
 
     a:hover {
-        color: $color-link;
+        color: color-link;
     }
     
     a:focus {
-        outline: $focus-outline;
+        outline: focus-outline;
     }
     
     // override Foundation column padding.
     .columns {
-        padding: $column-padding;
+        padding: column-padding;
     }
     
     // Clearfix
@@ -115,25 +118,25 @@ body {
     
     // text that appears emphasized and bigger within content.
     .fluid-web-emphasized-text {
-        font-family: $font-secondary !important;
+        font-family: font-secondary !important;
         font-size: 1.6rem !important;
-        color: $color-primary !important;
+        color: color-primary !important;
     }
     
     // text that appears lighter and smaller within content. Used for headers.
     .fluid-web-deemphasized-text {
         font-size: 1em;
         text-transform: uppercase;
-        color: $deemphasized-text-color;
+        color: deemphasized-text-color;
     }
     
     /* Links that appear within text content. */
     .fluid-web-link-content {
-        color: $color-link;
+        color: color-link;
     }
     
     .fluid-web-link-header:hover {
-        border-bottom: 0.2rem solid $color-focus;
+        border-bottom: 0.2rem solid color-focus;
     }
     
     .fluid-web-link-content:hover {
@@ -143,8 +146,8 @@ body {
     /* Read more Link */
     .fluid-web-link-readmore {
         font-weight: bold;
-        border-bottom: $link-underline;
-        color: $color-primary;
+        border-bottom: link-underline;
+        color: color-primary;
     }
     
     .fluid-web-external-link:before {
@@ -157,12 +160,12 @@ body {
     
     // For lists - currently used in Projects page and Community links 
     .fluid-web-list {
-        background: $projects-components-background;
+        background: projects-components-background;
         padding: 1rem;
         margin-top: 0.2rem;
         
         h3 {
-            font-family: $font-secondary;
+            font-family: font-secondary;
             font-weight: normal;
         }
         
@@ -184,18 +187,47 @@ body {
 /* Header and Navigation */
 .fluid-web .fluid-web-header {
   
+    header {
+        padding: 0; // remove default padding for the header. 
+    }
+    
+    .fluid-web-skip-links {
+        height: 3.5rem;
+        padding-top: 1rem;
+    }
+ 
+ 
+    .fluid-web-skip-links a {
+        position: relative;
+        left: -100rem;
+    }
+    
+    .fluid-web-skip-links a:focus {
+        left: 1rem;
+        background-color: color-primary;
+        padding: 0.5rem;
+        color: skip-link-color;
+        border: 0.2rem solid color-focus;
+        outline: 0.2rem solid color-primary;
+        position: absolute;
+    }
+    
+    .fluid-web-skip-links a:hover {
+        color: color-link;
+    }
+    
     margin-bottom: 2rem;
     
     h1 a {
-        color: $color-primary;
+        color: color-primary;
     }
     
     h1 a:hover {
-        color: $color-link;
+        color: color-link;
     }
     
     h1 a:focus {
-        outline: $focus-outline;
+        outline: focus-outline;
     }
     
     .fluid-web-logo-star:before {
@@ -208,14 +240,14 @@ body {
         text-transform: uppercase;
         
         @media only screen and (min-width: 40.063em) { 
-            margin-top: 4rem;
+            margin-top: 7rem;
         }    
         li {
             margin-right: 0.5rem;
             
             a.button {
                 background: none;
-                color: $color-primary;
+                color: color-primary;
                 font-weight: bolder !important; // Overrides Bootstrap's normal font-weight on .button class
                 border: none;
                 padding: 0.5rem;
@@ -225,16 +257,16 @@ body {
 
             a.button:hover,
             a.button:focus {
-                outline: $focus-outline;
+                outline: focus-outline;
             }
             
             a.button:active {
-                background-color: $color-primary;
-                color: $color-background;
+                background-color: color-primary;
+                color: color-background;
             }
             
             a.button.current{
-                border-bottom: 0.2rem solid $color-focus;
+                border-bottom: 0.2rem solid color-focus;
             }
             
             a.button.current:hover {
@@ -254,7 +286,7 @@ body {
     
     a:focus {
         border: none;
-        outline: $focus-outline;
+        outline: focus-outline;
     }  
 }
 
@@ -275,8 +307,8 @@ body {
     /* Showcase item variant for the Projects page. Has extra text, buttons, and spans the full width of the page. */
     .fluid-web-showcase-item .fluid-web-project-description {
         a {
-            color: $showcase-link;
-            background: $showcase-link-background;
+            color: showcase-link;
+            background: showcase-link-background;
         }
         
         a:focus {
@@ -284,43 +316,43 @@ body {
         }
           
         a:hover {
-            color: $color-link;
+            color: color-link;
         }
             
         a:active .fluid-web-showcase-item-text {
-            border: 0.2rem solid $showcase-link-background;
-            color: $showcase-link-active;
-            background: $color-link;
+            border: 0.2rem solid showcase-link-background;
+            color: showcase-link-active;
+            background: color-link;
         }
         
         a:focus .fluid-web-showcase-item-text {
-            border: 0.2rem solid $color-focus;
-            outline: 0.2rem solid $showcase-link-background;
+            border: 0.2rem solid color-focus;
+            outline: 0.2rem solid showcase-link-background;
         }
         
         a .fluid-web-showcase-item-text {
             box-sizing: border-box;
-            border: 0.2rem solid $showcase-link-background;
-            outline: 0.2rem solid $showcase-link-background;
+            border: 0.2rem solid showcase-link-background;
+            outline: 0.2rem solid showcase-link-background;
             display: inline-block;
         
             /* specify the background and padding of link block for a span because the parent <a>
              has a different background and padding */
-            background: $showcase-link-background;
+            background: showcase-link-background;
             padding: 0.5rem;
         }
         
         h3, p {
-            background-color: $showcase-color-text-background;
+            background-color: showcase-color-text-background;
             padding: 0.2rem;
             display: inline-block;
-            outline: 0.2rem solid $showcase-color-text-background;
+            outline: 0.2rem solid showcase-color-text-background;
             // add an outline so that it matches the showcase item's links too
         }
         
         h3 {
-            font-family: $font-secondary;
-            color: $color-primary;
+            font-family: font-secondary;
+            color: color-primary;
             margin: 0;
             text-transform: none;
             font-size: 1.4rem;
@@ -379,7 +411,7 @@ body {
             width: 7rem;
             display: block;
             position: relative;
-            color: $color-primary;
+            color: color-primary;
             text-align: center;
             font-weight: bold;
             border: none; // remove default link underline;
@@ -395,13 +427,13 @@ body {
             font-family: 'fluid-community';
             font-size: 2.5rem;
             line-height: 5rem;
-            background-color: $community-icon-background;
-            box-shadow: $community-icon-background-shadow;
+            background-color: community-icon-background;
+            box-shadow: community-icon-background-shadow;
         }
         
         li a:focus .fluid-web-community-icon:before,
         li a:hover .fluid-web-community-icon:before  {
-            text-shadow: $community-icon-shadow;
+            text-shadow: community-icon-shadow;
         }
         
         .fluid-web-community-wiki:before          { content: '\e602'; }
@@ -413,12 +445,12 @@ body {
         .fluid-web-community-mailinglist:before   { content: '\e603'; }
         
         li a:focus {
-            outline: $focus-outline;
+            outline: focus-outline;
         }
         
         li a:focus,
         li a:hover {
-            color: $color-link;
+            color: color-link;
         }
     }
 }
@@ -440,8 +472,8 @@ body {
 .fluid-web .fluid-web-projects {
     .fluid-web-link-nightly {
         font-style: italic;
-        color: $color-primary;
-        border-bottom: $link-underline;
+        color: color-primary;
+        border-bottom: link-underline;
     }
     
     .fluid-web-prefs-framework {
@@ -460,8 +492,8 @@ body {
     }
     
     .fluid-web-projects-about-infusion .fluid-web-link-buttons {
-        color: $button-color;
-        background: $button-background;
+        color: button-color;
+        background: button-background;
         margin-bottom: 0.5rem;
     }
     
@@ -479,16 +511,16 @@ body {
 /* Footer */
 .fluid-web .fluid-web-footer {
     padding: 3rem;
-    background-color: $footer-color-background;
-    color: $footer-color-foreground;
-    margin-top: 0.5rem;
+    background-color: footer-color-background;
+    color: footer-color-foreground;
+    margin-top: rem;
 
     abbr {
-        color: $footer-color-foreground;
+        color: footer-color-foreground;
     }
 
     a {
-        color: $footer-color-link;
+        color: footer-color-link;
         border: none; // remove default link underline;
     }
     
@@ -497,25 +529,25 @@ body {
     }
     
     a:active {
-        background-color: $footer-color-link;
-        color:  $footer-color-background;
+        background-color: footer-color-link;
+        color: footer-color-background;
     }
     
     a:focus {
-        outline: 0.2rem solid $footer-color-link;
+        outline: 0.2rem solid footer-color-link;
     }
     
     p {
-        font-size: $font-size-smaller;
+        font-size: font-size-smaller;
         margin-bottom: 1.5rem;
     }
     
     .fluid-web-projectCoordinator-list {
-        font-size: $font-size-smaller;
+        font-size: font-size-smaller;
     }
     
     .fluid-web-projectCoordinator-list dt {
         margin-bottom: 0rem;
-        display:inline;
+        display: inline;
     }
 }

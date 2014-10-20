@@ -4,6 +4,48 @@
 		{
 			"icon": {
 				"paths": [
+					"M923.348 344.201l-94.795-94.795-324.485 324.471-67.584-67.57 324.485-324.485-94.795-94.809c-10.622-10.622-7.236-21.327 7.632-23.852l299.964-49.138c14.773-2.417 24.904 7.714 22.583 22.596l-49.22 300.059c-2.458 14.773-13.162 18.145-23.784 7.523z",
+					"M740.611 532.016c-10.609 10.609-19.306 31.594-19.306 46.612v365.773c0 15.019-12.288 27.307-27.307 27.307h-614.4c-15.019 0-27.307-12.288-27.307-27.307v-614.4c0-15.019 12.288-27.307 27.307-27.307h411.921c15.019 0 36.004-8.697 46.612-19.306l13.681-13.681c10.609-10.609 7.018-19.306-8.001-19.306h-516.506c-15.019 0-27.307 12.288-27.307 27.307v718.985c0 15.019 12.288 27.307 27.307 27.307h718.985c15.019 0 27.307-12.288 27.307-27.307v-470.357c0-15.019-8.697-18.609-19.306-8.001l-13.681 13.681z"
+				],
+				"attrs": [
+					{
+						"opacity": 1,
+						"visibility": false
+					},
+					{
+						"opacity": 1,
+						"visibility": false
+					}
+				],
+				"grid": 16,
+				"tags": [
+					"external-link-02"
+				]
+			},
+			"attrs": [
+				{
+					"opacity": 1,
+					"visibility": false
+				},
+				{
+					"opacity": 1,
+					"visibility": false
+				}
+			],
+			"properties": {
+				"order": 24,
+				"id": 395,
+				"prevSize": 32,
+				"code": 58887,
+				"name": "external-link-02",
+				"ligatures": ""
+			},
+			"setIdx": 0,
+			"iconIdx": 0
+		},
+		{
+			"icon": {
+				"paths": [
 					"M384 288c0-88.366 71.634-160 160-160s160 71.634 160 160c0 88.366-71.634 160-160 160-88.366 0-160-71.634-160-160zM0 288c0-88.366 71.634-160 160-160 88.366 0 160 71.634 160 160 0 88.366-71.634 160-160 160-88.366 0-160-71.634-160-160zM768 608v-96c0-35.2-28.8-64-64-64h-160-480c-35.2 0-64 28.8-64 64v320c0 35.2 28.8 64 64 64h640c35.2 0 64-28.8 64-64v-96l256 160v-448l-256 160zM640 768h-512v-192h512v192z"
 				],
 				"tags": [
@@ -17,14 +59,14 @@
 			},
 			"properties": {
 				"id": 20,
-				"order": 32,
+				"order": 16,
 				"prevSize": 32,
 				"code": 58880,
 				"name": "camera",
 				"ligatures": ""
 			},
-			"setIdx": 4,
-			"iconIdx": 20
+			"setIdx": 0,
+			"iconIdx": 2
 		},
 		{
 			"icon": {
@@ -39,14 +81,14 @@
 			},
 			"properties": {
 				"id": 31,
-				"order": 24,
+				"order": 17,
 				"prevSize": 32,
 				"code": 58882,
 				"name": "book",
 				"ligatures": ""
 			},
-			"setIdx": 4,
-			"iconIdx": 31
+			"setIdx": 0,
+			"iconIdx": 3
 		},
 		{
 			"icon": {
@@ -64,14 +106,14 @@
 			},
 			"properties": {
 				"id": 64,
-				"order": 28,
+				"order": 18,
 				"prevSize": 32,
 				"code": 58883,
 				"name": "envelope",
 				"ligatures": ""
 			},
-			"setIdx": 4,
-			"iconIdx": 64
+			"setIdx": 0,
+			"iconIdx": 4
 		},
 		{
 			"icon": {
@@ -89,14 +131,14 @@
 			},
 			"properties": {
 				"id": 107,
-				"order": 25,
+				"order": 19,
 				"prevSize": 32,
 				"code": 58884,
 				"name": "bubbles",
 				"ligatures": ""
 			},
-			"setIdx": 4,
-			"iconIdx": 107
+			"setIdx": 0,
+			"iconIdx": 5
 		},
 		{
 			"icon": {
@@ -115,14 +157,14 @@
 			},
 			"properties": {
 				"id": 115,
-				"order": 33,
+				"order": 20,
 				"prevSize": 32,
 				"code": 58886,
 				"name": "users",
 				"ligatures": ""
 			},
-			"setIdx": 4,
-			"iconIdx": 115
+			"setIdx": 0,
+			"iconIdx": 6
 		},
 		{
 			"icon": {
@@ -138,14 +180,14 @@
 			},
 			"properties": {
 				"id": 148,
-				"order": 26,
+				"order": 21,
 				"prevSize": 32,
 				"code": 58885,
 				"name": "bug",
 				"ligatures": ""
 			},
-			"setIdx": 4,
-			"iconIdx": 148
+			"setIdx": 0,
+			"iconIdx": 7
 		},
 		{
 			"icon": {
@@ -161,14 +203,14 @@
 			},
 			"properties": {
 				"id": 392,
-				"order": 27,
+				"order": 22,
 				"prevSize": 32,
 				"code": 58881,
 				"name": "github",
 				"ligatures": ""
 			},
-			"setIdx": 4,
-			"iconIdx": 392
+			"setIdx": 0,
+			"iconIdx": 8
 		}
 	],
 	"height": 1024,

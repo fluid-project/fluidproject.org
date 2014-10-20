@@ -11,6 +11,7 @@ This is a font containing icons used for the "community links" section of the Fl
 * github e601
 * People e606
 * Speech bubbles e604
+* External link e608
 
 ## To use
 
@@ -23,6 +24,7 @@ In your HTML:
         <span class="fluid-community-source"></span>
         <span class="fluid-community-meetings"></span>
         <span class="fluid-community-irc"></span>
+        <span class="fluid-community-ext-link">Link</span>
 
 In your CSS:
 
@@ -37,13 +39,14 @@ In your CSS:
             font-family: 'fluid-community';
         }
 
-        .fluid-web-community-wiki:before          { content: '\e602'; }
-        .fluid-web-community-bugs:before          { content: '\e605'; }
-        .fluid-web-community-presentations:before { content: '\e600'; }
-        .fluid-web-community-mailinglist:before   { content: '\e603'; }
-        .fluid-web-community-source:before        { content: '\e601'; }
-        .fluid-web-community-meetings:before      { content: '\e606'; }
-        .fluid-web-community-irc:before           { content: '\e604'; }
+        .fluid-community-wiki:before          { content: '\e602'; }
+        .fluid-community-bugs:before          { content: '\e605'; }
+        .fluid-community-presentations:before { content: '\e600'; }
+        .fluid-community-mailinglist:before   { content: '\e603'; }
+        .fluid-community-source:before        { content: '\e601'; }
+        .fluid-community-meetings:before      { content: '\e606'; }
+        .fluid-community-irc:before           { content: '\e604'; }
+        .fluid-community
 
 ## Modifying the font:
 
