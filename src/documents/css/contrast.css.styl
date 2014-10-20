@@ -1,7 +1,22 @@
-/* High contrast styles. These will ideally be implemented in the new Stylus way */
 
-/*
-themes = {
+build-themes-extensions(contrastThemes) {
+    for themeName in contrastThemes {
+        fColor = contrastThemes[themeName].foregroundColor;
+        bColor = contrastThemes[themeName].backgroundColor;
+
+        {themeName} {
+          .fluid-web .fluid-web-emphasized-text {
+            color: fColor !important;
+          }
+          .fluid-web .fluid-web-community .fluid-web-community-list li .fluid-web-community-icon:before {
+            background-color: bColor !important;
+            box-shadow: none;
+          }
+        }
+    }
+}
+
+myThemes = {
     ".fl-theme-bw": {
         foregroundColor: #000000,
         backgroundColor: #ffffff
@@ -23,61 +38,5 @@ themes = {
         backgroundColor: #555555
     }
 }
- */
+build-themes-extensions(myThemes);
 
-contrast-wb-fg = #FFFFFF;
-contrast-wb-bg = #000000;
-contrast-bw-fg = #000000;
-contrast-bw-bg = #FFFFFF;
-contrast-yb-fg = #FFFF00;
-contrast-yb-bg = #000000;
-contrast-by-fg = #000000;
-contrast-by-bg = #FFFF00;
-contrast-lgdg-fg = #bdbdbb;
-contrast-lgdg-bg = #555555;
-
-.fl-theme-prefsEditor-wb {
-  .fluid-web .fluid-web-emphasized-text {
-    color: contrast-wb-fg !important;
-  }
-  .fluid-web .fluid-web-community .fluid-web-community-list li .fluid-web-community-icon:before {
-    background-color: contrast-wb-bg !important;
-    box-shadow: none;
-  }
-}
-.fl-theme-prefsEditor-yb {
-  .fluid-web .fluid-web-emphasized-text {
-    color: contrast-yb-fg !important;
-  }
-  .fluid-web .fluid-web-community .fluid-web-community-list li .fluid-web-community-icon:before {
-    background-color: contrast-yb-bg !important;
-    box-shadow: none;
-  }
-}
-.fl-theme-prefsEditor-bw {
-  .fluid-web .fluid-web-emphasized-text {
-    color: contrast-bw-fg !important;
-  }
-  .fluid-web .fluid-web-community .fluid-web-community-list li .fluid-web-community-icon:before {
-    background-color: contrast-bw-bg !important;
-    box-shadow: none;
-  }
-}
-.fl-theme-prefsEditor-by {
-  .fluid-web .fluid-web-emphasized-text {
-    color: contrast-by-fg !important;
-  }
-  .fluid-web .fluid-web-community .fluid-web-community-list li .fluid-web-community-icon:before {
-    background-color: contrast-by-bg !important;
-    box-shadow: none;
-  }
-}
-.fl-theme-prefsEditor-lgdg {
-  .fluid-web .fluid-web-emphasized-text {
-    color: contrast-lgdg-fg !important;
-  }
-  .fluid-web .fluid-web-community .fluid-web-community-list li .fluid-web-community-icon:before {
-    background-color: contrast-lgdg-bg !important;
-    box-shadow: none;
-  }
-}
