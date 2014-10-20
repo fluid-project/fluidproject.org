@@ -12,7 +12,7 @@ Download and install the following packages before building the Fluid website:
 * docpad handlebars plugin - https://github.com/docpad/docpad-plugin-handlebars/
 * moment plugin - https://www.npmjs.org/package/docpad-plugin-moment
 * markdown plugin - https://github.com/docpad/docpad-plugin-marked
-* sass plugin - https://github.com/docpad/docpad-plugin-sass
+* stylus plugin - https://www.npmjs.org/package/docpad-plugin-stylus
 * eco plugin - https://github.com/docpad/docpad-plugin-eco
 
 

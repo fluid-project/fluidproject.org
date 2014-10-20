@@ -19,12 +19,13 @@
             <div class="row fluid-web-header">
                 <header class="small-12 medium-6 columns">
                     <div class="fluid-web-skip-links">
-                        <a href="">Skip to Content</a>
-                        <a href="">Skip to Navigation</a>
+                        <a href="#fluid-web-content">Skip to Content</a>
+                        <a href="#fluid-web-navigation">Skip to Navigation</a>
                     </div>
                     <h1><a href="/"><span class="fluid-web-logo-star" role="presentation"></span>fluid</a></h1>
                 </header>
                 <nav class="small-12 medium-6 columns fluid-web-nav">
+                    <a name="fluid-web-navigation"></a>
                     <ul class="right button-group">
                         <% for page in @getCollection("html").findAll({isPage:true},[{navigationIndex: 1}]).toJSON(): %>
                             <li class="">
@@ -37,6 +38,7 @@
                 </nav>
             </div>
 
+            <a name="fluid-web-content"></a>
             {{{content}}}
 
             
@@ -44,10 +46,10 @@
             <h2 class="row fluid-web-deemphasized-text fluid-web-section-gap">Contact Us</h2>
             <footer class="row fluid-web-footer">
                 <div class="medium-6 columns">
-                    <p>Fluid is a project of the <a href="http://idrc.ocadu.ca/">Inclusive Design Research Centre</a> at <a href="http://www.ocadu.ca">OCAD 
-University</a>, funded by a grant from <a href="http://www.mellon.org/">The Andrew W. Mellon Foundation</a>.</p>
+                    <p>Fluid is a project of the <a href="http://idrc.ocadu.ca/">Inclusive Design Research Centre<span class="fluid-web-external-link" role="presentation"></span></a> at <a href="http://www.ocadu.ca">OCAD 
+University<span class="fluid-web-external-link" role="presentation"></span></a>, funded by a grant from <a href="http://www.mellon.org/">The Andrew W. Mellon Foundation<span class="fluid-web-external-link" role="presentation"></span></a>.</p>
                     
-                    <p><a href="https://www.google.com/maps/place/205+Richmond+St+W/@43.6493603,-79.3901121,17z/">205 Richmond St. W. 2nd Floor</a><br/>
+                    <p><a href="https://www.google.com/maps/place/205+Richmond+St+W/@43.6493603,-79.3901121,17z/">205 Richmond St. W. 2nd Floor<span class="fluid-web-external-link" role="presentation"></span></a><br/>
                     Toronto, ON Canada M5V 1V3 <br/>
                     <abbr title="Phone number">T.</abbr> 416-977-6000 #3968 <br/>
                     <abbr title="Fax">F.</abbr> 416-977-9844
@@ -56,11 +58,11 @@ University</a>, funded by a grant from <a href="http://www.mellon.org/">The Andr
                 
                 <div class="medium-6 columns">
                     <dl class="fluid-web-projectCoordinator-list">
-                        <dt><a href="mailto:jtreviranus@faculty.ocadu.ca">Jutta Treviranus</a></dt>
+                        <dt><a href="mailto:jtreviranus@faculty.ocadu.ca">Jutta Treviranus<span class="fluid-web-external-link" role="presentation"></span></a></dt>
                         <dd>Principal Investigator, Director and Professor</dd>
-                        <dt><a href="mailto:jmitchell@ocadu.ca">Jess Mitchell</a></dt>
+                        <dt><a href="mailto:jmitchell@ocadu.ca">Jess Mitchell<span class="fluid-web-external-link" role="presentation"></span></a></dt>
                         <dd>Senior Manager, Research and Development</dd>
-                        <dt><a href="mailto:cclark@ocadu.ca">Colin Clark</a></dt>
+                        <dt><a href="mailto:cclark@ocadu.ca">Colin Clark<span class="fluid-web-external-link" role="presentation"></span></a></dt>
                         <dd>Lead Software Architect</dd>
                     </dl>
                 </div>
