@@ -1,4 +1,4 @@
-/*! infusion - v2.0.0-SNAPSHOT Friday, October 10th, 2014, 2:49:55 PM*/
+/*! infusion - v2.0.0-SNAPSHOT Monday, October 20th, 2014, 3:33:36 PM*/
 /*!
  * jQuery JavaScript Library v1.11.0
  * http://jquery.com/
@@ -34046,10 +34046,10 @@ var fluid_2_0 = fluid_2_0 || {};
         classnameMap: {
             "textFont": {
                 "default": "",
-                "times": "fl-font-prefsEditor-times",
-                "comic": "fl-font-prefsEditor-comic-sans",
-                "arial": "fl-font-prefsEditor-arial",
-                "verdana": "fl-font-prefsEditor-verdana"
+                "times": "fl-font-times",
+                "comic": "fl-font-comic-sans",
+                "arial": "fl-font-arial",
+                "verdana": "fl-font-verdana"
             },
             "theme": {
                 "default": "fl-theme-prefsEditor-default",
@@ -35503,10 +35503,10 @@ var fluid_2_0 = fluid_2_0 || {};
                 "type": "fluid.prefs.textFont",
                 "classes": {
                     "default": "",
-                    "times": "fl-font-prefsEditor-times",
-                    "comic": "fl-font-prefsEditor-comic-sans",
-                    "arial": "fl-font-prefsEditor-arial",
-                    "verdana": "fl-font-prefsEditor-verdana"
+                    "times": "fl-font-times",
+                    "comic": "fl-font-comic-sans",
+                    "arial": "fl-font-arial",
+                    "verdana": "fl-font-verdana"
                 },
                 "enactor": {
                     "type": "fluid.prefs.enactor.textFont",
