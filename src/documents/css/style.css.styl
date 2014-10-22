@@ -75,6 +75,9 @@ body {
     }
     .toc {
       margin: 0 auto;
+      h1 {
+        font-size: 1.2rem;
+      }
     }
 
     h1, h2, h3 {
@@ -181,6 +184,10 @@ body {
             list-style: none;
         }
         
+        dl {
+            line-height: inherit;
+        }
+
         li,
         dl dt {
             margin-top: 0.8rem;
@@ -189,6 +196,19 @@ body {
         dl dd {
             margin-bottom: 1rem;
         }
+    }
+    .fluid-web-community-icon:before {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50rem;
+        position: absolute;
+        top: -5rem;
+        left: 1rem;
+        font-family: 'fluid-community';
+        font-size: 2.5rem;
+        line-height: 5rem;
+        background-color: community-icon-background;
+        box-shadow: community-icon-background-shadow;
     }
 }
 
@@ -428,19 +448,6 @@ body {
             border: none; // remove default link underline;
         }
 
-        li .fluid-web-community-icon:before {
-            width: 5rem;
-            height: 5rem;
-            border-radius: 50rem;
-            position: absolute;
-            top: -5rem;
-            left: 1rem;
-            font-family: 'fluid-community';
-            font-size: 2.5rem;
-            line-height: 5rem;
-            background-color: community-icon-background;
-            box-shadow: community-icon-background-shadow;
-        }
         
         li a:focus .fluid-web-community-icon:before,
         li a:hover .fluid-web-community-icon:before  {
@@ -563,6 +570,11 @@ body {
     }
 }
 
+.fl-prefsEditor-separatedPanel .fl-prefsEditor-showHide,
+.fl-prefsEditor-separatedPanel .fl-prefsEditor-reset {
+    margin-bottom: 0;
+    height: inherit;
+}
 
 .fl-prefsEditor-separatedPanel-iframe {
     width: 100%;

@@ -5,27 +5,30 @@ build-themes-extensions(contrastThemes) {
         bColor = contrastThemes[themeName].backgroundColor;
 
         {themeName} {
-          .fluid-web .fluid-web-emphasized-text {
-            color: fColor !important;
-          }
-          .fluid-web .fluid-web-community .fluid-web-community-list li .fluid-web-community-icon:before {
-            background-color: bColor !important;
-            box-shadow: none;
-          }
-          .fluid-web-showcase-item {
-            background: none !important;
-            border: 1px solid fColor;
-          }
-          a:hover, a:focus {
-            outline: 0.2rem solid fColor !important;
-          }
-          .fluid-web-project-description h3, .fluid-web-project-description p {
-            outline: none !important;
+          .fluid-web {
+              .fluid-web-emphasized-text {
+                color: fColor !important;
+              }
+              .fluid-web-community-icon:before {
+                background-color: bColor !important;
+                box-shadow: none;
+              }
+              .fluid-web-showcase-item {
+                background: none !important;
+                border: 1px solid fColor;
+              }
+              a:hover,
+              a:focus {
+                outline: 0.2rem solid fColor !important;
+              }
+              .fluid-web-project-description h3,
+              .fluid-web-project-description p {
+                outline: none !important;
+              }
           }
         }
     }
 }
-
 myThemes = {
     ".fl-theme-bw": {
         foregroundColor: #000000,
@@ -50,3 +53,15 @@ myThemes = {
 }
 build-themes-extensions(myThemes);
 
+.fl-font-times .fluid-web .fluid-web-emphasized-text {
+    font-family: Georgia,Times,"Times New Roman",serif !important;
+}
+.fl-font-comic-sans .fluid-web .fluid-web-emphasized-text {
+    font-family: "Comic Sans MS",sans-serif !important;
+}
+.fl-font-arial .fluid-web .fluid-web-emphasized-text {
+    font-family: "Arial" !important;
+}
+.fl-font-verdana .fluid-web .fluid-web-emphasized-text {
+    font-family: "Verdana" !important;
+}
