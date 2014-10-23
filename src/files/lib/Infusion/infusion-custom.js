@@ -1,4 +1,4 @@
-/*! infusion - v2.0.0-SNAPSHOT Monday, October 20th, 2014, 3:33:36 PM*/
+/*! infusion - v2.0.0-SNAPSHOT Thursday, October 23rd, 2014, 2:50:40 PM*/
 /*!
  * jQuery JavaScript Library v1.11.0
  * http://jquery.com/
@@ -21452,7 +21452,7 @@ var fluid_2_0 = fluid_2_0 || {};
 
     fluid.defaults("fluid.ariaLabeller", {
         labelAttribute: "aria-label",
-        liveRegionMarkup: "<div class=\"liveRegion fl-offScreen-hidden\" aria-live=\"polite\"></div>",
+        liveRegionMarkup: "<div class=\"liveRegion fl-hidden-accessible\" aria-live=\"polite\"></div>",
         liveRegionId: "fluid-ariaLabeller-liveRegion",
         events: {
             generateLiveElement: "unicast"
@@ -31863,11 +31863,11 @@ var fluid_2_0 = fluid_2_0 || {};
         }
     });
 
-    /*******************************************************************************
-     * UI Enhancer                                                                 *
-     *                                                                             *
-     * Works in conjunction with FSS to transform the page based on user settings. *
-     *******************************************************************************/
+    /***********************************************
+     * UI Enhancer                                 *
+     *                                             *
+     * Transforms the page based on user settings. *
+     ***********************************************/
 
     fluid.defaults("fluid.uiEnhancer", {
         gradeNames: ["fluid.viewComponent", "autoInit"],
@@ -32198,7 +32198,7 @@ var fluid_2_0 = fluid_2_0 || {};
     };
 
     /**
-     * A component that works in conjunction with the UI Enhancer component and the Fluid Skinning System (FSS)
+     * A component that works in conjunction with the UI Enhancer component
      * to allow users to set personal user interface preferences. The Preferences Editor component provides a user
      * interface for setting and saving personal preferences, and the UI Enhancer component carries out the
      * work of applying those preferences to the user interface.
@@ -33218,6 +33218,9 @@ var fluid_2_0 = fluid_2_0 || {};
             themeInput: ".flc-prefsEditor-themeInput",
             label: ".flc-prefsEditor-contrast-label"
         },
+        styles: {
+            defaultThemeLabel: "fl-prefsEditor-contrast-defaultThemeLabel"
+        },
         stringArrayIndex: {
             theme: ["contrast-default", "contrast-bw", "contrast-wb", "contrast-by", "contrast-yb", "contrast-lgdg"]
         },
@@ -33247,22 +33250,31 @@ var fluid_2_0 = fluid_2_0 || {};
             style: {
                 funcName: "fluid.prefs.panel.contrast.style",
                 args: [
-                    "{that}.dom.themeLabel", "{that}.msgLookup.theme",
-                    "{that}.options.markup.label", "{that}.options.controlValues.theme",
-                    "{that}.options.classnameMap.theme"
+                    "{that}.dom.themeLabel",
+                    "{that}.msgLookup.theme",
+                    "{that}.options.markup.label",
+                    "{that}.options.controlValues.theme",
+                    "default",
+                    "{that}.options.classnameMap.theme",
+                    "{that}.options.styles.defaultThemeLabel"
                 ],
                 dynamic: true
             }
         }
     });
 
-    fluid.prefs.panel.contrast.style = function (labels, strings, markup, theme, style) {
+    fluid.prefs.panel.contrast.style = function (labels, strings, markup, theme, defaultThemeName, style, defaultLabelStyle) {
         fluid.each(labels, function (label, index) {
             label = $(label);
             label.html(fluid.stringTemplate(markup, {
                 theme: strings[index]
             }));
-            label.addClass(style[theme[index]]);
+
+            var labelTheme = theme[index];
+            if (labelTheme === defaultThemeName) {
+                label.addClass(defaultLabelStyle);
+            }
+            label.addClass(style[labelTheme]);
         });
     };
 
@@ -34597,7 +34609,6 @@ var fluid_2_0 = fluid_2_0 || {};
             afterRender: null
         },
         styles: {
-            containerFlex: "fl-container-flex",
             container: "fl-prefsEditor-separatedPanel-iframe"
         },
         templatePrefix: "./",
@@ -34625,7 +34636,6 @@ var fluid_2_0 = fluid_2_0 || {};
         });
         that.iframe.attr(that.options.markupProps);
 
-        that.iframe.addClass(styles.containerFlex);
         that.iframe.addClass(styles.container);
         that.iframe.hide();
 

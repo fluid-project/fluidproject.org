@@ -14,7 +14,6 @@ docpadConfig = {
   templateData:
     site:
       styles: [
-        "lib/infusion/src/framework/preferences/css/fss/fss-text-prefsEditor.css"
         "lib/infusion/src/framework/preferences/css/Enactors.css"
         "lib/infusion/src/framework/preferences/css/PrefsEditor.css"
         "lib/infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css"

@@ -6,10 +6,11 @@
 .fl-prefsEditor {
   font-family: "Myriad Pro", Helvetica, Arial, sans-serif;
 }
-.fl-prefsEditor ul {
-  margin-left: 0px;
+.fl-prefsEditor .fl-prefsEditor-panels {
+  margin-left: 0;
+  padding: 0;
 }
-.fl-prefsEditor ul li {
+.fl-prefsEditor .fl-prefsEditor-panels li {
   list-style: none;
 }
 .fl-prefsEditor label {
@@ -247,7 +248,7 @@
   content: "\e000";
 }
 .fl-prefsEditor .fl-icon-crossout:before,
-.fl-prefsEditor .fl-choice .fl-theme-prefsEditor-default .fl-crossout:before {
+.fl-prefsEditor .fl-choice .fl-prefsEditor-contrast-defaultThemeLabel .fl-crossout:before {
   content: "\e004";
 }
 .fl-prefsEditor .fl-icon-big-a:before {
@@ -272,14 +273,14 @@
   margin: -0.75em 0 0 0.75em;
   height: 1em;
 }
-.fl-prefsEditor .fl-choice .fl-theme-prefsEditor-default .fl-crossout {
+.fl-prefsEditor .fl-choice .fl-prefsEditor-contrast-defaultThemeLabel .fl-crossout {
   font-family: 'InfusionIcons' !important;
   margin-top: -1.75em;
   font-size: 1.85em;
 }
 .fl-prefsEditor .fl-choice label.fl-theme-prefsEditor-default,
 .fl-prefsEditor .fl-choice label.fl-theme-prefsEditor-default span,
-.fl-prefsEditor .fl-choice label.fl-theme-prefsEditor-default .fl-crossout {
+.fl-prefsEditor .fl-choice label.fl-prefsEditor-contrast-defaultThemeLabel .fl-crossout {
   background-color: #fff !important;
   border-color: #433f3d !important;
   color: #433f3d !important;
