@@ -12,7 +12,7 @@ link-underline = 0.2rem solid color-link;
 
 font-primary = 'Open Sans', sans-serif;
 font-secondary = 'Roboto Slab', serif;
-font-size-root = 14px;
+font-size-root = 0.875rem; // 14px÷16px
 font-size-smaller = 0.8rem;
 
 // header
@@ -48,6 +48,7 @@ deemphasized-text-color= #808080;
 body {
     background-color: color-background;
     font-size: font-size-root;
+    line-height: inherit;
 }
 
 @font-face {
@@ -69,8 +70,14 @@ body {
     color: color-primary;
     padding: 0 1rem;
 
-    .row {
+    .row, .toc {
         max-width: row-width;
+    }
+    .toc {
+      margin: 0 auto;
+      h1 {
+        font-size: 1.2rem;
+      }
     }
 
     h1, h2, h3 {
@@ -79,7 +86,6 @@ body {
     }
     
     h1 {
-        font-size: 4.75rem;
         font-weight: bolder;
     }
     
@@ -90,6 +96,7 @@ body {
     
     p {
         margin-bottom: 0.8rem;
+        line-height: inherit;
     }
 
     a:hover {
@@ -100,6 +107,10 @@ body {
         outline: focus-outline;
     }
     
+    ul {
+        line-height: inherit;
+    }
+
     // override Foundation column padding.
     .columns {
         padding: column-padding;
@@ -173,6 +184,10 @@ body {
             list-style: none;
         }
         
+        dl {
+            line-height: inherit;
+        }
+
         li,
         dl dt {
             margin-top: 0.8rem;
@@ -182,13 +197,27 @@ body {
             margin-bottom: 1rem;
         }
     }
+    .fluid-web-community-icon:before {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50rem;
+        position: absolute;
+        top: -5rem;
+        left: 1rem;
+        font-family: 'fluid-community';
+        font-size: 2.5rem;
+        line-height: 5rem;
+        background-color: community-icon-background;
+        box-shadow: community-icon-background-shadow;
+    }
 }
 
 /* Header and Navigation */
 .fluid-web .fluid-web-header {
   
-    header {
+    header h1 {
         padding: 0; // remove default padding for the header. 
+        font-size: 4.75rem;
     }
     
     .fluid-web-skip-links {
@@ -305,41 +334,34 @@ body {
     
     
     /* Showcase item variant for the Projects page. Has extra text, buttons, and spans the full width of the page. */
-    .fluid-web-showcase-item .fluid-web-project-description {
+    .fluid-web-project-description {
         a {
+            padding: 0.5rem;
             color: showcase-link;
+
+            border: 0.2rem solid showcase-link-background;
+            outline: 0.2rem solid showcase-link-background;
+            display: inline-block;
+            margin: 0.8rem 1rem 0 0;
+
+            /* specify the background and padding of link block for a span because the parent <a>
+             has a different background and padding */
             background: showcase-link-background;
         }
         
         a:focus {
-            outline:none; // prevent focus outline from appearing. Focus styling handled on the enclosed span.
+            border: 0.2rem solid color-focus;
+            outline: 0.2rem solid showcase-link-background;
         }
           
         a:hover {
             color: color-link;
         }
             
-        a:active .fluid-web-showcase-item-text {
+        a:active {
             border: 0.2rem solid showcase-link-background;
             color: showcase-link-active;
             background: color-link;
-        }
-        
-        a:focus .fluid-web-showcase-item-text {
-            border: 0.2rem solid color-focus;
-            outline: 0.2rem solid showcase-link-background;
-        }
-        
-        a .fluid-web-showcase-item-text {
-            box-sizing: border-box;
-            border: 0.2rem solid showcase-link-background;
-            outline: 0.2rem solid showcase-link-background;
-            display: inline-block;
-        
-            /* specify the background and padding of link block for a span because the parent <a>
-             has a different background and padding */
-            background: showcase-link-background;
-            padding: 0.5rem;
         }
         
         h3, p {
@@ -365,7 +387,9 @@ body {
     .fluid-web-showcase-videoplayer     { background: url('../images/floe-videoplayer.jpg') no-repeat; }
     .fluid-web-showcase-feedback-tool {
         background: url('../images/feedback-tool.jpg') no-repeat;
+/*
         background-position: -176px 0px;
+*/
     }
 }
 
@@ -417,19 +441,6 @@ body {
             border: none; // remove default link underline;
         }
 
-        li .fluid-web-community-icon:before {
-            width: 5rem;
-            height: 5rem;
-            border-radius: 50rem;
-            position: absolute;
-            top: -5rem;
-            left: 1rem;
-            font-family: 'fluid-community';
-            font-size: 2.5rem;
-            line-height: 5rem;
-            background-color: community-icon-background;
-            box-shadow: community-icon-background-shadow;
-        }
         
         li a:focus .fluid-web-community-icon:before,
         li a:hover .fluid-web-community-icon:before  {
@@ -499,7 +510,6 @@ body {
     
     .fluid-web-projects-partners {
         font-style: italic;
-        margin-bottom: 3.5rem;
     }
     
     .fluid-web-list h3 {
@@ -550,4 +560,10 @@ body {
         margin-bottom: 0rem;
         display: inline;
     }
+}
+
+.fl-prefsEditor-separatedPanel .fl-prefsEditor-showHide,
+.fl-prefsEditor-separatedPanel .fl-prefsEditor-reset {
+    margin-bottom: 0;
+    height: inherit;
 }

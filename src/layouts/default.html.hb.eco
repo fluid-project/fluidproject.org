@@ -15,6 +15,20 @@
     </head>
 
     <body>
+        <!-- BEGIN markup for Preference Editor -->
+        <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
+            <!-- This is the div that will contain the Preference Editor component -->
+            <div class="flc-slidingPanel-panel flc-prefsEditor-iframe"></div>
+
+            <!-- This div is for the sliding panel that shows and hides the Preference Editor controls -->
+            <div class="fl-panelBar">
+                <span class="fl-prefsEditor-buttons">
+                    <button id="reset" class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> Reset</button>
+                    <button id="show-hide" class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide"> Show/Hide</button>
+                </span>
+            </div>
+        </div>
+        <!-- END markup for Preference Editor -->
         <div class="fluid-web">
             <div class="row fluid-web-header">
                 <header class="small-12 medium-6 columns">
@@ -37,6 +51,8 @@
                     </ul>
                 </nav>
             </div>
+
+            <div class="flc-toc-tocContainer toc"> </div>
 
             <a name="fluid-web-content"></a>
             {{{content}}}
