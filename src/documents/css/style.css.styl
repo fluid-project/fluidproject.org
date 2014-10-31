@@ -52,13 +52,6 @@ body {
 }
 
 @font-face {
-    font-family: 'fluid-star';
-    src: url('../fonts/fluid-star.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/fluid-star.eot'),
-         url('../fonts/fluid-star.ttf');
-}
-
-@font-face {
     font-family: 'fluid-community';
     src: url('../fonts/fluid-community.eot?#iefix') format('embedded-opentype'),
          url('../fonts/fluid-community.eot'),
@@ -163,12 +156,28 @@ body {
     
     .fluid-web-external-link:before {
         font-family: 'fluid-community';
-        content: '\e607';
+        content: '\e608';
+        font-size: 0.8rem;
+        font-weight: normal;
+        margin-left: 0.3rem;
+    }
+
+    .fluid-web-mail-icon:before{
+        font-family: 'fluid-community';
+        content: '\e603';
         font-size: 0.8rem;
         font-weight: normal;
         margin-left: 0.3rem;
     }
     
+    .fluid-web-map-icon:before{
+        font-family: 'fluid-community';
+        content: '\e609';
+        font-size: 0.8rem;
+        font-weight: normal;
+        margin-left: 0.3rem;
+    }
+
     // For lists - currently used in Projects page and Community links 
     .fluid-web-list {
         background: projects-components-background;
@@ -260,8 +269,8 @@ body {
     }
     
     .fluid-web-logo-star:before {
-        content: '\e600';
-        font-family: 'fluid-star';
+        content: '\e607';
+        font-family: 'fluid-community';
         font-size: 3.5rem;
     }
 
