@@ -39,8 +39,7 @@
                     <h1><a href="/"><span class="fluid-web-logo-star" role="presentation"></span>fluid</a></h1>
                 </header>
                 
-                <nav class="small-12 medium-5 columns fluid-web-nav">
-                    <a id="fluid-web-navigation"></a>
+                <nav  id="fluid-web-navigation" class="small-12 medium-5 columns fluid-web-nav">
                     <ul class="right button-group">
                         <% for page in @getCollection("html").findAll({isPage:true},[{navigationIndex: 1}]).toJSON(): %>
                             <li class="">
@@ -55,10 +54,7 @@
 
             <div class="flc-toc-tocContainer toc"> </div>
 
-            <a id="fluid-web-content"></a>
             {{{content}}}
-
-            
             
             <h2 class="row fluid-web-deemphasized-text fluid-web-section-gap">Contact Us</h2>
             <footer class="row fluid-web-footer">
