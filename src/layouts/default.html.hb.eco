@@ -52,12 +52,13 @@
                 </nav>
             </div>
 
-            <div class="flc-toc-tocContainer toc"> </div>
+            <div class="row">
+                <div class="flc-toc-tocContainer toc small-12 columns"> </div>
+            </div>
 
             {{{content}}}
             
-            <h2 class="row fluid-web-deemphasized-text fluid-web-section-gap">Contact Us</h2>
-            <footer class="row fluid-web-footer">
+            <footer class="row fluid-web-section-gap fluid-web-footer">
                 <div class="medium-6 columns">
                     <p>Fluid is a project of the <a href="http://idrc.ocadu.ca/">Inclusive Design Research Centre</a> at <a href="http://www.ocadu.ca">OCAD 
 University</a>, funded by a grant from <a href="http://www.mellon.org/">The Andrew W. Mellon Foundation</a>.</p>

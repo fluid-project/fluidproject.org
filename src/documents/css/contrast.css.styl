@@ -5,27 +5,31 @@ build-themes-extensions(contrastThemes) {
         bColor = contrastThemes[themeName].backgroundColor;
 
         {themeName} {
-          .fluid-web {
-              .fluid-web-emphasized-text {
-                color: fColor !important;
-              }
-              .fluid-web-community-icon:before {
-                background-color: bColor !important;
-                box-shadow: none;
-              }
-              .fluid-web-showcase-item {
-                background: none !important;
-                border: 1px solid fColor;
-              }
-              a:hover,
-              a:focus {
-                outline: 0.2rem solid fColor !important;
-              }
-              .fluid-web-project-description h3,
-              .fluid-web-project-description p {
-                outline: none !important;
-              }
-          }
+            .fluid-web {
+                .fluid-web-emphasized-text {
+                    color: fColor !important;
+                }
+                .fluid-web-community-icon:before {
+                    background-color: bColor !important;
+                    box-shadow: none;
+                }
+                .fluid-web-showcase-item {
+                    background: none !important;
+                    border: 1px solid fColor;
+                }
+                a:hover,
+                a:focus {
+                    outline: 0.2rem solid fColor !important;
+                }
+                a:hover span:before,
+                a:focus span:before {
+                    text-shadow: none !important;
+                }
+                .fluid-web-project-description h3,
+                .fluid-web-project-description p {
+                    outline: none !important;
+                }
+            }
         }
     }
 }
