@@ -32,13 +32,19 @@ Download and install the following packages before building the Fluid website:
 
 **Note:** docpad runs its own webserver for development. To create a deployable version of the website, see "Building a Deployable Version" below.
 
-## Building a Deployable Version
+## Building a Deployable Version for Github Pages
 
-1. To build a deployable version of the website, run:
-        > docpad generate
-2. Copy the files located in ``/fluidproject.org/out/`` to your web server.
+1. To build a deployable version of the website for github pages, first install the gh-pages plugin:
+        > docpad install ghpages
+2. Then run the github pages deploy command:
+        > docpad deploy-ghpages --env static
 
-**Note:** The website needs to be deployed into the root directory of the target domain. Otherwise the navigation will not work.
+This will: 
+- create the website locally under the ./output/ directory
+- create a new branch in your remote github repository under http://github.com/username/project/gh-pages
+- and push the output files to that branch.
+
+For more information on the
 
 ## Other Notes for Developers
 
