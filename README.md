@@ -19,15 +19,23 @@ Download and install the following packages before building the Fluid website:
 ## How to Build for Local Development
 
 1. Clone the fluid website repository
-        > git clone <fluid-website-git-repo>
+```
+> git clone <fluid-website-git-repo>
+```
+
 2. Run docpad from the fluid-website directory
-        > cd fluidproject.org
-        > docpad run
+```
+> cd fluidproject.org
+> docpad run
+```
    There should be output similar to this:
-        info: Generated 377/379 files in 13.422 seconds
-        info: Watching setup starting...
-        info: Watching setup
-        info: The action completed successfully
+```
+info: Generated 377/379 files in 13.422 seconds
+info: Watching setup starting...
+info: Watching setup
+info: The action completed successfully
+```
+
 3. Open http://localhost:9778/ to see the website.
 
 **Note:** docpad runs its own webserver for development. To create a deployable version of the website, see "Building a Deployable Version" below.
@@ -35,16 +43,20 @@ Download and install the following packages before building the Fluid website:
 ## Building a Deployable Version for Github Pages
 
 1. To build a deployable version of the website for github pages, first install the gh-pages plugin:
-        > docpad install ghpages
+```
+> docpad install ghpages
+```
 2. Then run the github pages deploy command:
-        > docpad deploy-ghpages --env static
+```
+> docpad deploy-ghpages --env static
+```
 
-This will: 
+This will:
 - create the website locally under the ./output/ directory
 - create a new branch in your remote github repository under http://github.com/username/project/gh-pages
 - and push the output files to that branch.
 
-For more information on the
+For more information on the gh-pages plugin, see: https://github.com/docpad/docpad-plugin-ghpages.
 
 ## Other Notes for Developers
 
