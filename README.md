@@ -40,28 +40,33 @@ info: The action completed successfully
 
 **Note:** docpad runs its own webserver for development. To create a deployable version of the website, see "Building a Deployable Version" below.
 
-## Building a Deployable Version for Github Pages
+## Making Changes and Deploying to Github Pages
 
-1. To build a deployable version of the website for github pages, first install the gh-pages plugin:
+Modifications can be done to any source file or directory except for the contents of the ``out/`` directory. The ``out`` directory and its contents are not to be versioned since it contains the generated output made by docpad from the source files and are overwritten.
+
+Pull requests for the modified source files are submitted to the project master repository, and is reviewed by another contributor.
+
+Once the pull request is satisfactory, the reviewer merges the changes. The reviewer also generates the gh-pages content from the updated master.
+
+To generate the gh-pages content, the reviewer does the following:
+
+1. Clone the master repository https://github.com/fluid-project/fluidproject.org
+
+2. Install the gh-pages plugin:
 ```
 > docpad install ghpages
 ```
-2. Then run the github pages deploy command:
+3. Then run the github pages deploy command:
 ```
 > docpad deploy-ghpages --env static
 ```
 
-This will:
-- create the website locally under the ./output/ directory
-- create a new branch in your remote github repository under http://github.com/username/project/gh-pages
-- and push the output files to that branch.
+Completeing these 3 steps will:
+- create generate output files under the ``/out/`` directory
+- create a new ``gh-pages`` branch in the remote master github repository if it doesn't already exist
+- push the files in the ``out`` directory to the remote ``gh-pages`` branch.
 
 For more information on the gh-pages plugin, see: https://github.com/docpad/docpad-plugin-ghpages.
-
-## Other Notes for Developers
-
-* It is strongly recommended to work from source files located within the ``fluidproject.org/src/`` directory. Do not work from the ``fluidproject.org/out/`` directory as these files get overwritten by docpad.
-* There is no need to version the ``/fluidproject.org/out/`` directory. This removes ambiguity as to which files to work from.
 
 ## License
 
