@@ -14,9 +14,9 @@ docpadConfig = {
   templateData:
     site:
       styles: [
-        "lib/infusion/src/framework/preferences/css/Enactors.css"
-        "lib/infusion/src/framework/preferences/css/PrefsEditor.css"
-        "lib/infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css"
+        "lib/Infusion/src/framework/preferences/css/Enactors.css"
+        "lib/Infusion/src/framework/preferences/css/PrefsEditor.css"
+        "lib/Infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css"
         "/lib/Foundation/css/foundation.css"
         "/css/style.css"
         "/css/contrast.css"
@@ -26,7 +26,7 @@ docpadConfig = {
       
       scripts: [
         # Infusion will go here.
-        "lib/infusion/infusion-custom.js"
+        "lib/Infusion/infusion-custom.js"
         "js/uio.js"
       ]
       
