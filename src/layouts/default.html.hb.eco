@@ -43,7 +43,7 @@
                     <ul class="right button-group">
                         <% for page in @getCollection("html").findAll({isPage:true},[{navigationIndex: 1}]).toJSON(): %>
                             <li class="">
-                                <a href="<%= page.url %>" class="button <%= if page.id is @document.id then 'current' else 'inactive' %>">
+                                <a href=".<%= page.url %>" class="button <%= if page.id is @document.id then 'current' else 'inactive' %>">
                                     <%= page.navigationSlug %>
                                 </a>
                             </li>
