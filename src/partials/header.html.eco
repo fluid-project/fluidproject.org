@@ -1,0 +1,25 @@
+<div class="row">
+    <header class="small-12 medium-3 columns">
+        <div class="fluid-web-skip-links">
+            <a href="#fluid-web-content">Skip to Content</a>
+            <a href="#fluid-web-navigation">Skip to Navigation</a>
+        </div>
+        <h1><a href="/"><span class="fluid-web-logo-star" role="presentation"></span>fluid</a></h1>
+    </header>
+
+    <nav  id="fluid-web-navigation" class="small-12 medium-5 columns fluid-web-nav">
+        <ul class="right button-group">
+            <% for page in @getCollection("html").findAll({isPage:true},[{navigationIndex: 1}]).toJSON(): %>
+                <li class="">
+                    <a href="<%= @site.url %><%= page.url %>" class="button <%= if page.id is @document.id then 'current' else 'inactive' %>">
+                        <%= page.navigationSlug %>
+                    </a>
+                </li>
+            <% end %>
+        </ul>
+    </nav>
+</div>
+
+<div class="row">
+    <div class="flc-toc-tocContainer toc small-12 columns"> </div>
+</div>

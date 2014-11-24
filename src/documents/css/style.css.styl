@@ -42,8 +42,15 @@ footer-color-text-field-background = #666;
 button-color = #FFF;
 button-background = color-link;
 
-// Deemphasized text color - currently used for headers with less emphasis. 
+// Deemphasized text color - currently used for headers with less emphasis.
 deemphasized-text-color= #808080;
+
+// transparent mixin for column-count
+column-count() {
+    -webkit-column-count: arguments;
+    -moz-column-count: arguments;
+    column-count: arguments;
+}
 
 body {
     background-color: color-background;
@@ -77,16 +84,16 @@ body {
         font-family: font-primary;
         color: color-primary;
     }
-    
+
     h1 {
         font-weight: bolder;
     }
-    
+
     h3 {
         font-size: 1.4rem;
         font-weight: bold;
     }
-    
+
     p {
         margin-bottom: 0.8rem;
         line-height: inherit;
@@ -95,11 +102,11 @@ body {
     a:hover {
         color: color-link;
     }
-    
+
     a:focus {
         outline: focus-outline;
     }
-    
+
     ul {
         line-height: inherit;
     }
@@ -108,41 +115,41 @@ body {
     .columns {
         padding: column-padding;
     }
-    
+
     // Clearfix
     .fluid-web-group:after {
         content: "";
         display: table;
         clear: both;
     }
-    
+
     .fluid-web-section-gap {
         margin-top: 5rem;
     }
-    
+
     // text that appears emphasized and bigger within content.
     .fluid-web-emphasized-text {
         font-family: font-secondary !important;
         font-size: 1.6rem !important;
         color: color-primary !important;
     }
-    
+
     // text that appears lighter and smaller within content. Used for headers.
     .fluid-web-deemphasized-text {
         font-size: 1.2em;
         text-transform: uppercase;
         color: deemphasized-text-color;
     }
-    
+
     /* Links that appear within text content. */
     .fluid-web-link-content {
         color: color-link;
     }
-    
+
     .fluid-web-link-header:hover {
         border-bottom: 0.2rem solid color-focus;
     }
-    
+
     .fluid-web-link-content:hover {
         text-decoration: underline;
     }
@@ -153,7 +160,7 @@ body {
         border-bottom: link-underline;
         color: color-primary;
     }
-    
+
     .fluid-web-external-link:before {
         font-family: 'fluid-community';
         content: '\e608';
@@ -169,7 +176,7 @@ body {
         font-weight: normal;
         margin-left: 0.3rem;
     }
-    
+
     .fluid-web-map-icon:before{
         font-family: 'fluid-community';
         content: '\e609';
@@ -178,31 +185,31 @@ body {
         margin-left: 0.3rem;
     }
 
-    // For lists - currently used in Projects page and Community links 
+    // For lists - currently used in Projects page and Community links
     .fluid-web-list {
         background: projects-components-background;
         padding: 1rem;
         margin-top: 0.2rem;
-        
+
         h3 {
             font-family: font-secondary;
             font-weight: bold;
             font-size: 1.2rem;
         }
-        
+
         ul {
             list-style: none;
         }
-        
+
         dl {
             line-height: inherit;
         }
 
         li,
         dl dt {
-            margin-top: 0.8rem;
+            margin-bottom: 0.8rem;
         }
-        
+
         dl dd {
             margin-bottom: 1rem;
         }
@@ -225,21 +232,21 @@ body {
 /* Header and Navigation */
 .fluid-web header {
     h1 {
-        padding: 0; // remove default padding for the header. 
+        padding: 0; // remove default padding for the header.
         font-size: 4.75rem;
     }
-    
+
     .fluid-web-skip-links {
         height: 3.5rem;
         padding-top: 1rem;
     }
- 
- 
+
+
     .fluid-web-skip-links a {
         position: relative;
         left: -100rem;
     }
-    
+
     .fluid-web-skip-links a:focus {
         left: 1rem;
         background-color: color-primary;
@@ -277,13 +284,13 @@ body {
     margin-bottom: 2rem;
 
     text-transform: uppercase;
-    
-    @media only screen and (min-width: 40.063em) { 
+
+    @media only screen and (min-width: 40.063em) {
         margin-top: 7rem;
-    }    
+    }
     li {
         margin-right: 0.5rem;
-        
+
         a.button {
             background: none;
             color: color-primary;
@@ -298,22 +305,22 @@ body {
         a.button:focus {
             outline: focus-outline;
         }
-        
+
         a.button:active {
             background-color: color-primary;
             color: color-background;
         }
-        
+
         a.button.current{
             border-bottom: 0.2rem solid color-focus;
         }
-        
+
         a.button.current:hover {
             outline: none;
         }
-        
+
         a.button.current:focus {
-            border-bottom: none;  
+            border-bottom: none;
         }
     }
 }
@@ -321,11 +328,11 @@ body {
 /* Index page - Introduction */
 .fluid-web .fluid-web-index .fluid-web-intro {
     margin-bottom: 2rem;
-    
+
     a:focus {
         border: none;
         outline: focus-outline;
-    }  
+    }
 }
 
 /* Showcase - colourful tiles featuring content. */
@@ -340,8 +347,8 @@ body {
         min-height: 10rem;
         padding: 1rem;
     }
-    
-    
+
+
     /* Showcase item variant for the Projects page. Has extra text, buttons, and spans the full width of the page. */
     .fluid-web-project-description {
         a {
@@ -357,22 +364,22 @@ body {
              has a different background and padding */
             background: showcase-link-background;
         }
-        
+
         a:focus {
             border: 0.2rem solid color-focus;
             outline: 0.2rem solid showcase-link-background;
         }
-          
+
         a:hover {
             color: color-link;
         }
-            
+
         a:active {
             border: 0.2rem solid showcase-link-background;
             color: showcase-link-active;
             background: color-link;
         }
-        
+
         h3, p {
             background-color: showcase-color-text-background;
             padding: 0.2rem;
@@ -380,7 +387,7 @@ body {
             outline: 0.2rem solid showcase-color-text-background;
             // add an outline so that it matches the showcase item's links too
         }
-        
+
         h3 {
             font-family: font-secondary;
             color: color-primary;
@@ -390,7 +397,7 @@ body {
             font-weight: normal;
         }
     }
-    
+
     .fluid-web-showcase-learner-options { background: url('../images/floe-uio.jpg') no-repeat; }
     .fluid-web-showcase-metadata        { background: url('../images/floe-metadata.jpg') no-repeat; }
     .fluid-web-showcase-videoplayer     { background: url('../images/floe-videoplayer.jpg') no-repeat; }
@@ -407,21 +414,21 @@ body {
       padding-top: 6.5rem;
 }
 
-@media only screen and (min-width: 40.063em) { 
+@media only screen and (min-width: 40.063em) {
     /* For medium screens */
     /* FLUID-5514: Remove this hard-coded min-width value and replace with Foundation mixin. Foundation defines medium screens as min-width 641px */
-   
+
     .fluid-web .fluid-web-index .fluid-web-showcase {
         .fluid-web-showcase-column-left {
-            /* The showcase on the index page is 2 columns. Foundation has a default padding which we override to make it the way we want. */ 
+            /* The showcase on the index page is 2 columns. Foundation has a default padding which we override to make it the way we want. */
             padding: 0 0.5rem 0 0;
         }
-        
+
         .fluid-web-showcase-column-right {
-            /* The showcase on the index page is 2 columns. Foundation has a default padding which we override to make it the way we want. */ 
+            /* The showcase on the index page is 2 columns. Foundation has a default padding which we override to make it the way we want. */
             padding: 0 0 0 0.5rem;
         }
-        
+
         .fluid-web-showcase-item {
             /* Increase the top margin of the showcase title so it looks propotionally better. */
             padding-top: 12.5rem;
@@ -438,7 +445,7 @@ body {
         justify-content: center;
         flex-wrap: wrap;
         overflow: initial; // override Foundation overflow:hidden which was clipping the focus outline of list items.
-               
+
         li a {
             margin: 5rem 0 1rem 0;
             width: 7rem;
@@ -450,12 +457,12 @@ body {
             border: none; // remove default link underline;
         }
 
-        
+
         li a:focus .fluid-web-community-icon:before,
         li a:hover .fluid-web-community-icon:before  {
             text-shadow: community-icon-shadow;
         }
-        
+
         .fluid-web-community-wiki:before          { content: '\e602'; }
         .fluid-web-community-irc:before           { content: '\e604'; }
         .fluid-web-community-presentations:before { content: '\e600'; }
@@ -463,11 +470,11 @@ body {
         .fluid-web-community-source:before        { content: '\e601'; }
         .fluid-web-community-bugs:before          { content: '\e605'; }
         .fluid-web-community-mailinglist:before   { content: '\e603'; }
-        
+
         li a:focus {
             outline: focus-outline;
         }
-        
+
         li a:focus,
         li a:hover {
             color: color-link;
@@ -481,7 +488,7 @@ body {
         position: relative;
         margin: 0 0 2rem 0rem;
     }
-    
+
     .fluid-web-license {
         margin-bottom: 2rem;
         line-height: 1.2rem;
@@ -495,31 +502,40 @@ body {
         color: color-primary;
         border-bottom: link-underline;
     }
-    
+
     .fluid-web-prefs-framework {
         background: url("../images/floe-uio.jpg") no-repeat, #f0de00;
         background-size: 100% auto;
     }
-    
+
     .fluid-web-video-player {
         background: url("../images/floe-videoplayer.jpg") no-repeat, #53a35e;
         background-size: 100% auto;
     }
-    
+
     .fluid-web-metadata-authoring {
         background: url("../images/floe-metadata.jpg") no-repeat, #4ac39a;
         background-size: 100% auto;
     }
-    
+
     .fluid-web-projects-about-infusion .fluid-web-link-buttons {
         color: button-color;
         background: button-background;
         margin-bottom: 0.5rem;
     }
-    
+
     .fluid-web-projects-partners {
         font-style: italic;
     }
+}
+
+/* News */
+.fluid-web .fluid-web-news-index {
+    column-count: 2;
+    &.fluid-web-list {
+        background: color-background;
+    }
+
 }
 
 
@@ -537,29 +553,29 @@ body {
         color: footer-color-link;
         border: none; // remove default link underline;
     }
-    
+
     a:hover {
         text-decoration: underline;
     }
-    
+
     a:active {
         background-color: footer-color-link;
         color: footer-color-background;
     }
-    
+
     a:focus {
         outline: 0.2rem solid footer-color-link;
     }
-    
+
     p {
         font-size: font-size-smaller;
         margin-bottom: 1.5rem;
     }
-    
+
     .fluid-web-projectCoordinator-list {
         font-size: font-size-smaller;
     }
-    
+
     .fluid-web-projectCoordinator-list dt {
         margin-bottom: 0rem;
         display: inline;

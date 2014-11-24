@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <%- @partial('styles') %>
+        <%- @partial('scripts') %>
+        <link rel="icon" type="image/png" href="<%= @site.url %>/images/favicon.png">
+    </head>
+    <body>
+        <%- @partial('uio') %>
+
+        <div class="fluid-web fluid-web-news">
+            <%- @partial('header') %>
+            <section class="row">
+                <div class="medium-6 columns">
+                    <h2 class="fluid-web-emphasized-text"><%=@document.title%></h2>
+                    <p class="fluid-web-news-post-meta">
+                        Posted by <%=@document.author%> on <%= @moment(@document.postdate).format('YYYY-MM-DD') %>
+                    </p>
+                </div>
+                <div class="medium-6 columns">
+                    {{{content}}}
+                </div>
+            </section>
+            <%- @partial('footer') %>
+        </div>
+    </body>
+</html>

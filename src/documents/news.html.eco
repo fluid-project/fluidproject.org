@@ -1,0 +1,21 @@
+---
+title: "News Archive"
+navigationSlug: "News"
+navigationIndex: 4
+layout: "default"
+isPage: true
+---
+
+<section class="row">
+    <h2>News Archive</h2>
+    <div class="fluid-web-news-index fluid-web-list">
+        <ul>
+            <% for page in @getCollection("html").findAll({relativeOutDirPath:"news"},[{postdate: -1}]).toJSON(): %>
+            <li>
+                <%= @moment(page.postdate).format('YYYY-MM-DD') %> - <a href="<%= page.url %>"> <%= page.title %></a>
+            </li>
+            <% end %>
+        </ul>
+
+    </div>
+</section>

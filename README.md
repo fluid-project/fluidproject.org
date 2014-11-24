@@ -56,7 +56,9 @@ To generate the gh-pages content, the reviewer does the following:
 ```
 > docpad install ghpages
 ```
-3. Then run the github pages deploy command:
+3. Check the ``docpad.coffee`` has the proper URL for the production environment. Change the value if required.
+
+4. Then run the github pages deploy command:
 ```
 > docpad deploy-ghpages --env static
 ```

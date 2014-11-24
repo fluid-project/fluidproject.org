@@ -1,0 +1,2 @@
+<script src="<%= @site.url %>/lib/infusion/infusion-custom.js"></script>
+<script src="<%= @site.url %>/js/uio.js"></script>
