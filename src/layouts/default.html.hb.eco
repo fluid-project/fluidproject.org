@@ -3,10 +3,9 @@
 
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <%- @partial('styles') %>
         <%- @partial('scripts') %>
-        <link rel="icon" type="image/png" href="<%= @site.url %>/images/favicon.png">
-
+        <%- @partial('styles') %>
+        
         <title><%= @document.title %> | fluid</title>
     </head>
 

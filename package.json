@@ -7,14 +7,16 @@
     "npm": "1.3"
   },
   "dependencies": {
-    "docpad": "~6.69.0",
-    "docpad-plugin-eco": "~2.0.3",
+    "docpad": "~6.69.2",
+    "docpad-plugin-cleanurls": "~2.7.0",
+    "docpad-plugin-eco": "~2.1.0",
     "docpad-plugin-ghpages": "~2.4.3",
     "docpad-plugin-handlebars": "~2.3.0",
     "docpad-plugin-livereload": "~2.6.0",
     "docpad-plugin-marked": "~2.2.1",
     "docpad-plugin-moment": "~2.0.2",
     "docpad-plugin-partials": "~2.9.1",
+    "docpad-plugin-redirector": "~2.0.1",
     "docpad-plugin-stylus": "~2.8.0"
   },
   "main": "node_modules/docpad/bin/docpad-server",

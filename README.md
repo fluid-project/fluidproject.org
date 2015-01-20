@@ -4,23 +4,11 @@ This repository contains the files needed to build a copy of the Fluid Project w
 
 This is not an immediately deployable version of the website - [docpad](http://docpad.org/) is used to build the site from source files.
 
-## Requirements
+# To Build
 
-Download and install the following packages before building the Fluid website:
-
-* docpad installed - https://docpad.org/
-* docpad handlebars plugin - https://github.com/docpad/docpad-plugin-handlebars/
-* moment plugin - https://www.npmjs.org/package/docpad-plugin-moment
-* markdown plugin - https://github.com/docpad/docpad-plugin-marked
-* stylus plugin - https://www.npmjs.org/package/docpad-plugin-stylus
-* eco plugin - https://github.com/docpad/docpad-plugin-eco
-
-
-## How to Build for Local Development
-
-1. Clone the fluid website repository
+1. Edit ``docpad.coffee`` URL value to reflect your target URL (with no trailing slash). The default value is ``http://localhost:9778``. Example:
 ```
-> git clone <fluid-website-git-repo>
+url: "username.github.io/fluidproject.org"
 ```
 
 2. Run docpad from the fluid-website directory
@@ -28,47 +16,37 @@ Download and install the following packages before building the Fluid website:
 > cd fluidproject.org
 > docpad run
 ```
-   There should be output similar to this:
-```
-info: Generated 377/379 files in 13.422 seconds
-info: Watching setup starting...
-info: Watching setup
-info: The action completed successfully
-```
+3. Open ```http://localhost:9778/``` to see the website. This URL will be different if you changed the URL value in step 1.
 
-3. Open http://localhost:9778/ to see the website.
+# To deploy to gh-pages:
+1. Change the ``url:`` value in the docpad.coffee to match your deployed gh-pages URL.
+2. Deploy to your server. If using gh-pages, run: ``` > docpad deploy-ghpages --env static ```
 
-**Note:** docpad runs its own webserver for development. To create a deployable version of the website, see "Building a Deployable Version" below.
-
-## Making Changes and Deploying to Github Pages
-
-Modifications can be done to any source file or directory except for the contents of the ``out/`` directory. The ``out`` directory and its contents are not to be versioned since it contains the generated output made by docpad from the source files and are overwritten.
-
-Pull requests for the modified source files are submitted to the project master repository, and is reviewed by another contributor.
-
-Once the pull request is satisfactory, the reviewer merges the changes. The reviewer also generates the gh-pages content from the updated master.
-
-To generate the gh-pages content, the reviewer does the following:
-
-1. Clone the master repository https://github.com/fluid-project/fluidproject.org
-
-2. Install the gh-pages plugin:
-```
-> docpad install ghpages
-```
-3. Check the ``docpad.coffee`` has the proper URL for the production environment. Change the value if required.
-
-4. Then run the github pages deploy command:
-```
-> docpad deploy-ghpages --env static
-```
-
-Completeing these 3 steps will:
+This will:
 - create generate output files under the ``/out/`` directory
-- create a new ``gh-pages`` branch in the remote master github repository if it doesn't already exist
-- push the files in the ``out`` directory to the remote ``gh-pages`` branch.
+- create a new ``gh-pages`` branch in the remote origin github repository
+- push the files in the ``out`` directory to the remote ``gh-pages`` branch on origin.
 
 For more information on the gh-pages plugin, see: https://github.com/docpad/docpad-plugin-ghpages.
+
+## Notes
+
+- Modifications can be done to any source file or directory except for the contents of the ``out/`` directory. The ``out`` directory and its contents are not to be versioned since it contains the generated output made by docpad from the source files and are overwritten.
+
+- The 404 error page will only appear when deployed to the *root* of a gh-pages domain or gh-pages custom domain. It will not appear when deployed locally or when deployed through a gh-pages (sub) project. To test the 404 error page, either load the 404.html directly in a browser, or deploy to the root of a gh-pages domain.
+
+## Plugins used
+
+The following plugins are used in this website. They a provided here as a reference:
+
+* docpad installed - https://docpad.org/
+* docpad handlebars plugin - https://github.com/docpad/docpad-plugin-handlebars/
+* moment plugin - https://www.npmjs.org/package/docpad-plugin-moment
+* markdown plugin - https://github.com/docpad/docpad-plugin-marked
+* stylus plugin - https://www.npmjs.org/package/docpad-plugin-stylus
+* eco plugin - https://github.com/docpad/docpad-plugin-eco
+* gh-pages plugin - https://github.com/docpad/docpad-plugin-ghpages
+* redirector plugin - https://www.npmjs.org/package/docpad-plugin-redirector
 
 ## License
 

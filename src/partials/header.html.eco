@@ -7,11 +7,11 @@
         <h1><a href="/"><span class="fluid-web-logo-star" role="presentation"></span>fluid</a></h1>
     </header>
 
-    <nav  id="fluid-web-navigation" class="small-12 medium-5 columns fluid-web-nav">
+    <nav  id="fluid-web-navigation" class="small-12 medium-8 columns fluid-web-nav">
         <ul class="right button-group">
-            <% for page in @getCollection("html").findAll({isPage:true},[{navigationIndex: 1}]).toJSON(): %>
+            <% for page in @getCollection("sitenav").toJSON(): %>
                 <li class="">
-                    <a href="<%= @site.url %><%= page.url %>" class="button <%= if page.id is @document.id then 'current' else 'inactive' %>">
+                    <a href="<%= page.url %>" class="button <%= if page.id is @document.id then 'current' else 'inactive' %>">
                         <%= page.navigationSlug %>
                     </a>
                 </li>

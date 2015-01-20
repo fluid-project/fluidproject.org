@@ -1,2 +1,4 @@
+<!--FLUID-5588: Remove use of site.url absolute value and replace with relative URLs -->
+
 <script src="<%= @site.url %>/lib/infusion/infusion-custom.js"></script>
 <script src="<%= @site.url %>/js/uio.js"></script>

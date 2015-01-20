@@ -1,14 +1,15 @@
     $(document).ready(function () {
+        var domain = window.location.origin;
         fluid.uiOptions.prefsEditor(".flc-prefsEditor-separatedPanel", {
-            "templatePrefix": "lib/infusion/src/framework/preferences/html/",
-            "messagePrefix": "lib/infusion/src/framework/preferences/messages/",
-            "tocTemplate": "lib/infusion/src/components/tableOfContents/html/TableOfContents.html",
+            "templatePrefix": domain + "/lib/infusion/src/framework/preferences/html/",
+            "messagePrefix": domain + "/lib/infusion/src/framework/preferences/messages/",
+            "tocTemplate": domain + "/lib/infusion/src/components/tableOfContents/html/TableOfContents.html",
             components: {
                 prefsEditorLoader: {
                     options: {
                         iframeRenderer: {
                             markupProps: {
-                                src: "html/SeparatedPanelPrefsEditorFrame.html"
+                                src: domain + "/html/SeparatedPanelPrefsEditorFrame.html"
                             }
                         }
                     }
