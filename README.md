@@ -4,32 +4,38 @@ This repository contains the files needed to build a copy of the Fluid Project w
 
 This is not an immediately deployable version of the website - [docpad](http://docpad.org/) is used to build the site from source files.
 
-# To Build
+# To Build Locally
 
-1. Edit ``docpad.coffee`` URL value to reflect your target URL (with no trailing slash). The default value is ``http://localhost:9778``. Example:
+1. Install DocPad if it isn't already installed: `sudo npm install -g docpad`
+
+2. Get the required node modules: `npm install`
+
+3. Edit `docpad.coffee` URL value to reflect your target URL (with no trailing slash). The default value is `http://localhost:9778`. For local testing and development, you should keep this default value.
+
+4. Run docpad from the fluid-website directory `docpad run`.
+
+5. Open `http://localhost:9778/` to see the website.
+
+# To deploy to gh-pages:
+
+1. Start by working from a clone of the repository you want to deploy to.
+
+2. Change the ``url:`` value in the docpad.coffee to match your deployed gh-pages URL.
+
+If you intend to deploy to a personal gh-pages URL, the URL would look like this:
 ```
 url: "username.github.io/fluidproject.org"
 ```
 
-2. Run docpad from the fluid-website directory
+If you intend to deploy to a custom domain, the URL value should match the target URL:
 ```
-> cd fluidproject.org
-> docpad run
+url: "www.example.com"
 ```
-3. Open ```http://localhost:9778/``` to see the website. This URL will be different if you changed the URL value in step 1.
 
-# To deploy to gh-pages:
-1. Change the ``url:`` value in the docpad.coffee to match your deployed gh-pages URL.
-2. Deploy to gh-pages, run: ``` > docpad deploy-ghpages --env static ```
+3. Deploy to gh-pages, run: `docpad deploy-ghpages --env static`. By doing this, docpad will generate the site to the remote gh-pages branch.
 
-This will:
-- create generate output files under the ``/out/`` directory
-- create a new ``gh-pages`` branch in the remote origin github repository
-- push the files in the ``out`` directory to the remote ``gh-pages`` branch on origin.
+# To deploy to a personal webserver
 
-For more information on the gh-pages plugin, see: https://github.com/docpad/docpad-plugin-ghpages.
-
-# To deploy to a webserver
 1. Change the ``url:`` value in the docpad.coffee to match your deployed URL.
 2. Run: ``` > docpad generate --env static ```
 3. Copy the contents of ```./out/``` directory to your server.
