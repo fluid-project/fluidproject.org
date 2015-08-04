@@ -20,15 +20,8 @@ This is not an immediately deployable version of the website - [docpad](http://d
 
 1. Start by working from a clone of the repository you want to deploy to. This step is important, otherwise your output may deploy to the wrong location.
 
-2. Change the ``url:`` value in the docpad.coffee to match your deployed gh-pages URL. If you intend to deploy to a custom domain, the URL value should match the target URL:
-```
-url: "www.example.com"
-```
-If deploying to gh-pages URL, the URL would look like this:
-```
-url: "username.github.io/fluidproject.org"
-```
-
+2. Change the ``url:`` value in the docpad.coffee to match your deployed gh-pages URL. If you intend to deploy to a custom domain, the URL value should match the target URL: `url: "www.example.com"`
+If deploying to gh-pages URL, the URL would look like this: `url: "username.github.io/fluidproject.org"`
 3. Deploy to gh-pages, run: `docpad deploy-ghpages --env static`. By doing this, docpad will generate the site to the remote gh-pages branch.
 
 # To deploy to a personal webserver
