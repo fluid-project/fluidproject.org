@@ -14,7 +14,7 @@ This is not an immediately deployable version of the website - [docpad](http://d
 
 4. Run docpad from the fluid-website directory `docpad run`.
 
-5. Open `http://localhost:9778/` to see the website.
+5. Open `http://localhost:9778/` to see the website. **Note**: you must access the site through the URL defined in `docpad.coffee` at Step 3, or you will see a CORS error when loading the icon fonts.
 
 # To deploy to gh-pages:
 
