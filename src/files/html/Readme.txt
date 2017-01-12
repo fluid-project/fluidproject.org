@@ -39,4 +39,4 @@ and modified as follows:
 <         <script type="text/javascript" src="../../../lib/jquery/plugins/touchPunch/js/jquery.ui.touch-punch.js"></script>
 <         <script type="text/javascript" src="../../../lib/json/js/json2.js"></script>
 ---
->         <script type="text/javascript" src="../lib/infusion/infusion-custom.js"></script>
+>         <script type="text/javascript" src="../lib/infusion/infusion-all.js"></script>

@@ -47,7 +47,7 @@ docpadConfig = {
             ]
 
             scripts: [
-                "/lib/infusion/infusion-custom.js"
+                "/lib/infusion/infusion-all.js"
                 "/js/uio.js"
             ]
 

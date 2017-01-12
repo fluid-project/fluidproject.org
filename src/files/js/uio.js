@@ -14,8 +14,10 @@
 
 
         fluid.uiOptions.prefsEditor(".flc-prefsEditor-separatedPanel", {
-            "templatePrefix": domain + "/lib/infusion/src/framework/preferences/html/",
-            "messagePrefix": domain + "/lib/infusion/src/framework/preferences/messages/",
+            terms: {
+                "templatePrefix": domain + "/lib/infusion/src/framework/preferences/html",
+                "messagePrefix": domain + "/lib/infusion/src/framework/preferences/messages",
+            },
             "tocTemplate": domain + "/lib/infusion/src/components/tableOfContents/html/TableOfContents.html",
             components: {
                 prefsEditorLoader: {
