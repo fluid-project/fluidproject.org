@@ -17,8 +17,15 @@
     "docpad-plugin-redirector": "~2.0.3",
     "docpad-plugin-stylus": "~2.11.0",
     "grunt": "1.0.1",
+    "grunt-contrib-clean": "1.0.0",
     "grunt-contrib-copy": "1.0.0",
-    "infusion": "~2.0.0"
+    "infusion": "2.0.0",
+    "foundation-sites": "5.5.3"
+  },
+  "devDependencies": {
+    "eslint-config-fluid": "1.0.0",
+    "fluid-grunt-eslint": "18.1.2",
+    "grunt-jsonlint": "1.0.4"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {

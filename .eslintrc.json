@@ -1,0 +1,6 @@
+{
+    "extends": "eslint-config-fluid",
+    "globals": {
+        "fluid": true
+    }
+}

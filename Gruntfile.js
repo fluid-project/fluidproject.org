@@ -1,19 +1,29 @@
 /*
 Copyright 2017 OCAD University
-Licensed under the Educational Community License (ECL), Version 2.0 or the New
-BSD license. You may not use this file except in compliance with one these
-Licenses.
-You may obtain a copy of the ECL 2.0 License and BSD License at
-https://raw.githubusercontent.com/fluid-project/chartAuthoring/master/LICENSE.txt
+
+Licensed under the New BSD license. You may not use this file except in
+compliance with this License.
 */
 
+/* eslint-env node */
+"use strict";
+
 module.exports = function (grunt) {
-    "use strict";
 
     // Project configuration.
     grunt.initConfig({
         // Project package file destination.
         pkg: grunt.file.readJSON("package.json"),
+        eslint: {
+            all: ["**/*.js"]
+        },
+        jsonlint: {
+            all: ["package.json", ".eslintrc.json"]
+        },
+        clean: {
+            infusion: "src/files/lib/infusion",
+            foundation: "src/files/lib/foundation"
+        },
         copy: {
             // Copy external front end dependencies into appropriate directories
             frontEndDependencies: {
@@ -69,20 +79,25 @@ module.exports = function (grunt) {
                         dest: "./src/files/lib/infusion/src/lib/normalize/css"
                     },
                     // Foundation
-                    // {
-                    //     expand: true,
-                    //     cwd: "./node_modules/foundation-sites/dist",
-                    //     src: "**", dest: "./src/static/lib/foundation"
-                    // }
+                    {
+                        expand: true,
+                        cwd: "./node_modules/foundation-sites",
+                        src: "**",
+                        dest: "./src/files/lib/foundation"
+                    }
                 ]
             }
         }
     });
 
     // Load the plugin(s):
+    grunt.loadNpmTasks("fluid-grunt-eslint");
+    grunt.loadNpmTasks("grunt-jsonlint");
+    grunt.loadNpmTasks("grunt-contrib-clean");
     grunt.loadNpmTasks("grunt-contrib-copy");
 
     // Custom tasks:
-    grunt.registerTask("default", ["installFrontEnd"]);
+    grunt.registerTask("default", ["clean", "installFrontEnd"]);
     grunt.registerTask("installFrontEnd", "Install front-end dependencies from the node_modules directory after 'npm install'", ["copy:frontEndDependencies"]);
+    grunt.registerTask("lint", ["eslint", "jsonlint"]);
 };
