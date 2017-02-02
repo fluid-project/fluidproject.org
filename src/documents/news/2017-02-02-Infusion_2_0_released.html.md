@@ -30,4 +30,15 @@ Infusion 2.0 includes significant framework improvements and is not backwards co
 - View oriented IoC debugging tools
   - Including FluidViewDebugging.js on the page of any Infusion application gives you access to the _IoC View Inspector_. Click on the small cogwheel icon at the bottom right of the page to open a panel which shows the details of the view components and their grades, that are attached to DOM nodes in the browser pane. This interface works similarly to the _DOM Inspector_ familiar from modern web browsers, but is an experimental implementation with an engineer-level UI.
 
+## Obtaining Infusion ##
+
+  * [Fork on GitHub](https://github.com/fluid-project/infusion)
+  * [Download a Build](https://github.com/fluid-project/infusion/releases)
+  * [Install from NPM](https://www.npmjs.com/package/infusion)
+  * [Serve from a CDN](https://cdnjs.com/libraries/infusion)
+
+You can create your own custom build of Infusion using the [grunt build script](https://github.com/fluid-project/infusion/blob/infusion-2.0/README.md#how-do-i-create-an-infusion-package).
+
+## Thank You ##
+
 A lot of time and effort has gone into this release, and we'd like to thank everyone in the community for their contributions.
