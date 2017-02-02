@@ -7,7 +7,7 @@ author: Release Manager
 
 The Fluid community is pleased to announce the release of Infusion 2.0!
 
-Infusion 2.0 includes significant framework improvements and is not backwards compatible with previous versions of Infusion. Please see [API Changes from 1.5 to 2.0](http://docs.fluidproject.org/infusion/development/APIChangesFrom1_5To2_0.html) and [Deprecations in 1.5](http://docs.fluidproject.org/infusion/development/DeprecationsIn1_5.html) on the [Infusion Documentation](https://github.com/fluid-project/infusion-docs) site.
+Infusion 2.0 includes significant framework improvements and _is not backwards compatible_ with previous versions of Infusion. Please see [API Changes from 1.5 to 2.0](http://docs.fluidproject.org/infusion/development/APIChangesFrom1_5To2_0.html) and [Deprecations in 1.5](http://docs.fluidproject.org/infusion/development/DeprecationsIn1_5.html) on the [Infusion Documentation](https://github.com/fluid-project/infusion-docs) site.
 
 [Release Notes](https://github.com/fluid-project/infusion/blob/infusion-2.0/ReleaseNotes.md)
 
