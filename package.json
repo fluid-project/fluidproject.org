@@ -28,7 +28,7 @@
   "scripts": {
     "start": "node_modules/docpad/bin/docpad-server",
     "postinstall": "grunt",
-    "docpad": "node node_modules/docpad/bin/docpad run --env static --out out",
+    "docpad": "node node_modules/docpad/bin/docpad run",
     "deploy": "node node_modules/docpad/bin/docpad deploy-ghpages --env static",
     "generate": "node node_modules/docpad/bin/docpad generate --env static"
   }
