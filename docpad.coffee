@@ -42,8 +42,8 @@ docpadConfig = {
                 "lib/foundation/css/foundation.css"
                 "css/style.css"
                 "css/contrast.css"
-                "http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100"
-                "http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700"
+                "https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100"
+                "https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700"
             ]
 
             scripts: [
