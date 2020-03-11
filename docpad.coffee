@@ -30,11 +30,6 @@ docpadConfig = {
     watchOptions: preferredMethods: ['watchFile','watch']
     templateData:
         site:
-            # URL for server if it is not the root.
-            # Change this value to match your server. No trailing slash.
-            # Default: http://localhost:9778
-            url: "http://localhost:9778"
-
             styles: [
                 "lib/infusion/src/framework/preferences/css/Enactors.css"
                 "lib/infusion/src/framework/preferences/css/PrefsEditor.css"
