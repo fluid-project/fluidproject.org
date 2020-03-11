@@ -7,27 +7,20 @@ This is not an immediately deployable version of the website - [docpad](http://d
 # To Build Locally
 
 1. Get the required node modules: `npm install`
-2. Edit `docpad.coffee` URL value to reflect your target URL (with no trailing slash). The default value is
-   `http://localhost:9778`. For local testing and development, you should keep this default value.
-3. Run docpad from the fluid-website directory `npm run docpad`.
-4. Open `http://localhost:9778/` to see the website. **Note**: you must access the site through the URL defined in
-   `docpad.coffee` at Step 2, or you will see a CORS error when loading the icon fonts.
+2. Run docpad from the fluid-website directory `npm run docpad`.
+3. Open `http://localhost:9778/` to see the website. 
 
 # To deploy to gh-pages:
 
 1. Start by working from a clone of the repository you want to deploy to. This step is important, otherwise your output
    may deploy to the wrong location.
-2. Change the url:` value in the docpad.coffee to match your deployed gh-pages URL. If you intend to deploy to a custom
-   domain, the URL value should match the target URL: `url: "www.example.com"`
-   If deploying to gh-pages URL, the URL would look like this: `url: "username.github.io/fluidproject.org"`
-3. Deploy to gh-pages, run: `npm run deploy`. By doing this, docpad will generate the site to the   
+2. Deploy to gh-pages, run: `npm run deploy`. By doing this, docpad will generate the site to the   
    remote gh-pages branch.
 
 # To deploy to a personal webserver
 
-1. Change the `url:` value in the docpad.coffee to match your deployed URL.
-2. Run: `npm run generate`
-3. Copy the contents of `./out/` directory to your server.
+1. Run: `npm run generate`
+2. Copy the contents of `./out/` directory to your server.
 
 ## Notes
 
@@ -37,9 +30,6 @@ This is not an immediately deployable version of the website - [docpad](http://d
 - The 404 error page will only appear when deployed to the *root* of a gh-pages domain or gh-pages custom domain. It
   will not appear when deployed locally or when deployed through a gh-pages (sub) project. To test the 404 error page,
   either load the 404.html directly in a browser, or deploy to the root of a gh-pages domain.
-- There are known issues regarding relative and absolute paths. See
-  [FLUID-5588](http://issues.fluidproject.org/browse/FLUID-5588) and [FLUID-5570](http://issues.fluidproject.org/browse/FLUID-5590).
-
 
 ## Plugins used
 
