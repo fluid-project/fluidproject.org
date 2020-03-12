@@ -11,7 +11,7 @@
         <ul class="right button-group">
             <% for page in @getCollection("sitenav").toJSON(): %>
                 <li class="">
-                    <a href="<%= page.name %>" class="button <%= if page.id is @document.id then 'current' else 'inactive' %>">
+                    <a href="<%=@nonrooturl or ''%><%= page.name %>" class="button <%= if page.id is @document.id then 'current' else 'inactive' %>">
                         <%= page.navigationSlug %>
                     </a>
                 </li>
