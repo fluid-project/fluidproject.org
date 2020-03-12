@@ -1,0 +1,2 @@
+<script src="<%=@nonrooturl or ''%>lib/infusion/infusion-all.js"></script>
+<script src="<%=@nonrooturl or ''%>js/uio.js"></script>
