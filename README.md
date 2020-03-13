@@ -43,6 +43,7 @@ The following plugins are used in this website. They a provided here as a refere
 * eco plugin - https://github.com/docpad/docpad-plugin-eco
 * gh-pages plugin - https://github.com/docpad/docpad-plugin-ghpages
 * redirector plugin - https://www.npmjs.org/package/docpad-plugin-redirector
+* partials plugin - https://github.com/docpad/docpad-plugin-partials
 
 ## License
 
