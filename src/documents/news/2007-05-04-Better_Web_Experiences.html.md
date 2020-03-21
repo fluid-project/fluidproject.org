@@ -15,7 +15,7 @@ The project will also foster the contributions of skilled interaction designers,
 
 Although Fluid will initially focus on improving academic software, the technology may also be useful in other web software products. Rich Schwerdtfeger, chair of the IBM Accessibility Architecture Review Board says, "Fluid will be the first project to deliver a personalized Web 2.0 experience for people with disabilities. Although the Fluid Project is targeted for the learning space, what we learn should have broader web implications in the future."
 
-Many of the Fluid Project partners are founding contributors to the academic community source software movement, and bring a wealth of design and development expertise to the project. Please visit [http://fluidproject.org] for more information or to get involved.
+Many of the Fluid Project partners are founding contributors to the academic community source software movement, and bring a wealth of design and development expertise to the project. Please visit [http://fluidproject.org ] for more information or to get involved.
 
 <h3>About the Participating Software Projects</h3>
 
