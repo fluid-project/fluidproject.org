@@ -5,10 +5,15 @@ This repository contains the files needed to build a copy of the Fluid Project w
 This is not an immediately deployable version of the website - [docpad](http://docpad.org/) is used to build the site from source files.
 
 # To Build Locally
-
-1. Get the required node modules: `npm install`
-2. Run docpad from the fluid-website directory `npm run docpad`.
-3. Open `http://localhost:9778/` to see the website. 
+## Using Git
+```bash
+ $ git clone https://github.com/fluid-project/fluidproject.org.git
+ $ cd fluidproject.org
+ $ npm install
+ $ npm run docpad
+ ```
+ Open `http://localhost:9778/` to see the website. 
+ 
 
 # To deploy to gh-pages:
 
