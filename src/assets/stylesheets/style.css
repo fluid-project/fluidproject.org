@@ -1,0 +1,436 @@
+body {
+  background-color: #f2f2f2;
+  font-size: 0.875rem;
+  line-height: inherit;
+}
+@font-face {
+  font-family: 'fluid-community';
+  src: url("/assets/stylesheets/fonts/fluid-community.eot?#iefix") format('embedded-opentype'), url("/assets/stylesheets/fonts/fluid-community.eot"), url("/assets/stylesheets/fonts/fluid-community.ttf");
+}
+.fluid-web {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  padding: 0 1rem;
+/* Links that appear within text content. */
+/* Read more Link */
+}
+.fluid-web .row,
+.fluid-web .toc {
+  max-width: 66rem;
+}
+.fluid-web .toc {
+  margin: 0 auto;
+}
+.fluid-web .toc h1 {
+  font-size: 1.2rem;
+}
+.fluid-web h1,
+.fluid-web h2,
+.fluid-web h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+.fluid-web h1 {
+  font-weight: bolder;
+}
+.fluid-web h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.fluid-web p {
+  margin-bottom: 0.8rem;
+  line-height: inherit;
+}
+.fluid-web a:hover {
+  color: #009fcb;
+}
+.fluid-web a:focus {
+  outline: 0.2rem solid #fc0;
+}
+.fluid-web ul {
+  line-height: inherit;
+}
+.fluid-web .fluid-web-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.fluid-web .fluid-web-section-gap {
+  margin-top: 5rem;
+}
+.fluid-web .fluid-web-emphasized-text {
+  font-family: 'Roboto Slab', serif !important;
+  font-size: 1.6rem !important;
+  color: #333 !important;
+}
+.fluid-web .fluid-web-deemphasized-text {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: #808080;
+}
+.fluid-web .fluid-web-link-content {
+  color: #009fcb;
+}
+.fluid-web .fluid-web-link-header:hover {
+  border-bottom: 0.2rem solid #fc0;
+}
+.fluid-web .fluid-web-link-content:hover {
+  text-decoration: underline;
+}
+.fluid-web .fluid-web-link-readmore {
+  font-weight: bold;
+  border-bottom: 0.2rem solid #009fcb;
+  color: #333;
+}
+.fluid-web .fluid-web-external-link:before {
+  font-family: 'fluid-community';
+  content: '\e608';
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin-left: 0.3rem;
+}
+.fluid-web .fluid-web-mail-icon:before {
+  font-family: 'fluid-community';
+  content: '\e603';
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin-left: 0.3rem;
+}
+.fluid-web .fluid-web-map-icon:before {
+  font-family: 'fluid-community';
+  content: '\e609';
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin-left: 0.3rem;
+}
+.fluid-web .fluid-web-list {
+  background: #fff;
+  padding: 1rem;
+  margin-top: 0.2rem;
+}
+.fluid-web .fluid-web-list h3 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.fluid-web .fluid-web-list ul {
+  list-style: none;
+}
+.fluid-web .fluid-web-list dl {
+  line-height: inherit;
+}
+.fluid-web .fluid-web-list li,
+.fluid-web .fluid-web-list dl dt {
+  margin-bottom: 0.8rem;
+}
+.fluid-web .fluid-web-list dl dd {
+  margin-bottom: 1rem;
+}
+.fluid-web .fluid-web-community-icon:before {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50rem;
+  position: absolute;
+  top: -5.5rem;
+  left: 1rem;
+  font-family: 'fluid-community';
+  font-size: 2.5rem;
+  line-height: 5rem;
+  background-color: #fff;
+  box-shadow: -0.03rem -0.07rem #dfdfdf;
+}
+/* Header and Navigation */
+.fluid-web header h1 {
+  padding: 0;
+  font-size: 4.75rem;
+}
+.fluid-web header .fluid-web-skip-links {
+  height: 3.5rem;
+  padding-top: 1rem;
+}
+.fluid-web header .fluid-web-skip-links a {
+  position: relative;
+  left: -100rem;
+}
+.fluid-web header .fluid-web-skip-links a:focus {
+  left: 1rem;
+  background-color: #333;
+  padding: 0.5rem;
+  color: #fff;
+  border: 0.2rem solid #fc0;
+  outline: 0.2rem solid #333;
+  position: absolute;
+}
+.fluid-web header .fluid-web-skip-links a:hover {
+  color: #009fcb;
+}
+.fluid-web header h1 a {
+  color: #333;
+}
+.fluid-web header h1 a:hover {
+  color: #009fcb;
+}
+.fluid-web header h1 a:focus {
+  outline: 0.2rem solid #fc0;
+}
+.fluid-web header .fluid-web-logo-star:before {
+  content: '\e607';
+  font-family: 'fluid-community';
+  font-size: 3.5rem;
+}
+.fluid-web nav {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+.fluid-web nav li {
+  margin-right: 0.5rem;
+}
+.fluid-web nav li a.button {
+  background: none;
+  color: #333;
+  font-weight: bolder !important;
+  border: none;
+  padding: 0.5rem;
+  margin: 0.5rem 0 0;
+  line-height: 0.4rem;
+}
+.fluid-web nav li a.button:hover,
+.fluid-web nav li a.button:focus {
+  outline: 0.2rem solid #fc0;
+}
+.fluid-web nav li a.button:active {
+  background-color: #333;
+  color: #f2f2f2;
+}
+.fluid-web nav li a.button.current {
+  border-bottom: 0.2rem solid #fc0;
+}
+.fluid-web nav li a.button.current:hover {
+  outline: none;
+}
+.fluid-web nav li a.button.current:focus {
+  border-bottom: none;
+}
+/* Index page - Introduction */
+.fluid-web .fluid-web-index .fluid-web-intro {
+  margin-bottom: 2rem;
+}
+.fluid-web .fluid-web-index .fluid-web-intro a:focus {
+  border: none;
+  outline: 0.2rem solid #fc0;
+}
+/* Showcase - colourful tiles featuring content. */
+.fluid-web .fluid-web-showcase .fluid-web-project-description {
+  padding: 0;
+}
+.fluid-web .fluid-web-showcase .fluid-web-showcase-item {
+  margin-bottom: 1rem;
+  min-height: 10rem;
+  padding: 1rem;
+}
+.fluid-web .fluid-web-showcase .fluid-web-project-description a {
+  padding: 0.5rem;
+  color: #fff;
+  border: 0.2rem solid #333;
+  outline: 0.2rem solid #333;
+  display: inline-block;
+  margin: 0.8rem 1rem 0 0;
+/* specify the background and padding of link block for a span because the parent <a>
+             has a different background and padding */
+  background: #333;
+}
+.fluid-web .fluid-web-showcase .fluid-web-project-description a:focus {
+  border: 0.2rem solid #fc0;
+  outline: 0.2rem solid #333;
+}
+.fluid-web .fluid-web-showcase .fluid-web-project-description a:hover {
+  color: #009fcb;
+}
+.fluid-web .fluid-web-showcase .fluid-web-project-description a:active {
+  border: 0.2rem solid #333;
+  color: #333;
+  background: #009fcb;
+}
+.fluid-web .fluid-web-showcase .fluid-web-project-description h3,
+.fluid-web .fluid-web-showcase .fluid-web-project-description p {
+  background-color: #fff;
+  padding: 0.2rem;
+  display: inline-block;
+  outline: 0.2rem solid #fff;
+}
+.fluid-web .fluid-web-showcase .fluid-web-project-description h3 {
+  font-family: 'Roboto Slab', serif;
+  color: #333;
+  margin: 0;
+  text-transform: none;
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+.fluid-web .fluid-web-showcase .fluid-web-showcase-learner-options {
+  background: url("../images/floe-uio.jpg") no-repeat;
+}
+.fluid-web .fluid-web-showcase .fluid-web-showcase-metadata {
+  background: url("../images/floe-metadata.jpg") no-repeat;
+}
+.fluid-web .fluid-web-showcase .fluid-web-showcase-videoplayer {
+  background: url("../images/floe-videoplayer.jpg") no-repeat;
+}
+.fluid-web .fluid-web-showcase .fluid-web-showcase-feedback-tool {
+  background: url("../images/feedback-tool.jpg") no-repeat;
+/*
+        background-position: -176px 0px;
+*/
+}
+.fluid-web .fluid-web-index .fluid-web-showcase-item {
+/* For the index page only, shift the contents of the showcase item down */
+  padding-top: 6.5rem;
+}
+@media only screen and (min-width: 40.063em) {
+  .fluid-web .fluid-web-index .fluid-web-showcase .fluid-web-showcase-column-left {
+/* The showcase on the index page is 2 columns. Foundation has a default padding which we override to make it the way we want. */
+    padding: 0 0.5rem 0 0;
+  }
+  .fluid-web .fluid-web-index .fluid-web-showcase .fluid-web-showcase-column-right {
+/* The showcase on the index page is 2 columns. Foundation has a default padding which we override to make it the way we want. */
+    padding: 0 0 0 0.5rem;
+  }
+  .fluid-web .fluid-web-index .fluid-web-showcase .fluid-web-showcase-item {
+/* Increase the top margin of the showcase title so it looks propotionally better. */
+    padding-top: 12.5rem;
+    min-height: 16rem;
+  }
+}
+/* Community links section */
+.fluid-web .fluid-web-community .fluid-web-community-list {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: initial;
+}
+.fluid-web .fluid-web-community .fluid-web-community-list li a {
+  margin: 5rem 0 1rem 0;
+  width: 7rem;
+  display: block;
+  position: relative;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+  border: none;
+}
+.fluid-web .fluid-web-community .fluid-web-community-list li a:focus .fluid-web-community-icon:before,
+.fluid-web .fluid-web-community .fluid-web-community-list li a:hover .fluid-web-community-icon:before {
+  text-shadow: 0.01rem 0.01rem 0.1rem #afafaf;
+}
+.fluid-web .fluid-web-community .fluid-web-community-list .fluid-web-community-wiki:before {
+  content: '\e602';
+}
+.fluid-web .fluid-web-community .fluid-web-community-list .fluid-web-community-irc:before {
+  content: '\e604';
+}
+.fluid-web .fluid-web-community .fluid-web-community-list .fluid-web-community-presentations:before {
+  content: '\e600';
+}
+.fluid-web .fluid-web-community .fluid-web-community-list .fluid-web-community-meetings:before {
+  content: '\e606';
+}
+.fluid-web .fluid-web-community .fluid-web-community-list .fluid-web-community-source:before {
+  content: '\e601';
+}
+.fluid-web .fluid-web-community .fluid-web-community-list .fluid-web-community-bugs:before {
+  content: '\e605';
+}
+.fluid-web .fluid-web-community .fluid-web-community-list .fluid-web-community-mailinglist:before {
+  content: '\e603';
+}
+.fluid-web .fluid-web-community .fluid-web-community-list li a:focus {
+  outline: 0.2rem solid #fc0;
+}
+.fluid-web .fluid-web-community .fluid-web-community-list li a:focus,
+.fluid-web .fluid-web-community .fluid-web-community-list li a:hover {
+  color: #009fcb;
+}
+/* About Fluid */
+.fluid-web .fluid-web-about p {
+  position: relative;
+  margin: 0 0 2rem 0rem;
+}
+.fluid-web .fluid-web-about .fluid-web-license {
+  margin-bottom: 2rem;
+  line-height: 1.2rem;
+}
+/* Projects */
+.fluid-web .fluid-web-projects .fluid-web-link-nightly {
+  font-style: italic;
+  color: #333;
+  border-bottom: 0.2rem solid #009fcb;
+}
+.fluid-web .fluid-web-projects .fluid-web-prefs-framework {
+  background: url("/assets/images/floe-uio.jpg") no-repeat, #f0de00;
+  background-size: 100% auto;
+}
+.fluid-web .fluid-web-projects .fluid-web-video-player {
+  background: url("/assets/images/floe-videoplayer.jpg") no-repeat, #53a35e;
+  background-size: 100% auto;
+}
+.fluid-web .fluid-web-projects .fluid-web-metadata-authoring {
+  background: url("/assets/images/floe-metadata.jpg") no-repeat, #4ac39a;
+  background-size: 100% auto;
+}
+.fluid-web .fluid-web-projects .fluid-web-projects-about-infusion .fluid-web-link-buttons {
+  color: #fff;
+  background: #009fcb;
+  margin-bottom: 0.5rem;
+}
+.fluid-web .fluid-web-projects .fluid-web-projects-partners {
+  font-style: italic;
+}
+/* News */
+.fluid-web .fluid-web-news-index {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
+.fluid-web .fluid-web-news-index.fluid-web-list {
+  background: #f2f2f2;
+}
+/* Footer */
+.fluid-web .fluid-web-footer {
+  padding: 3rem;
+  background-color: #363636;
+  color: #fff;
+}
+.fluid-web .fluid-web-footer abbr {
+  color: #fff;
+}
+.fluid-web .fluid-web-footer a {
+  color: #fc0;
+  border: none;
+}
+.fluid-web .fluid-web-footer a:hover {
+  text-decoration: underline;
+}
+.fluid-web .fluid-web-footer a:active {
+  background-color: #fc0;
+  color: #363636;
+}
+.fluid-web .fluid-web-footer a:focus {
+  outline: 0.2rem solid #fc0;
+}
+.fluid-web .fluid-web-footer p {
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.fluid-web .fluid-web-footer .fluid-web-projectCoordinator-list {
+  font-size: 0.8rem;
+}
+.fluid-web .fluid-web-footer .fluid-web-projectCoordinator-list dt {
+  margin-bottom: 0rem;
+  display: inline;
+}
+.fl-prefsEditor-separatedPanel .fl-prefsEditor-showHide,
+.fl-prefsEditor-separatedPanel .fl-prefsEditor-reset {
+  margin-bottom: 0;
+  height: inherit;
+}
+
