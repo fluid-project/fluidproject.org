@@ -8,7 +8,6 @@
         <!-- Foundation flex grid -->
         <script type="text/javascript" src="{{ '/' | url }}lib/infusion/infusion-all.js"></script>
         <script type="text/javascript" src="{{ '/' | url }}assets/js/uio.js"></script>
-        
         {% include partials/foundationflexgrid.html %}
     </head>
     <body>
@@ -17,7 +16,7 @@
                 uio.setupUIO();
             });
         </script>
-        {% include partials/uiofloe.html %}
+        {% include partials/uio.html %}
         <div class="fluid-web">
             {% include partials/header.html %}
             <div class="row">
@@ -26,5 +25,6 @@
             {{ content }}
             {% include partials/footer.html %}
         </div>
+        <script type="text/javascript" src="{{ '/' | url }}assets/js/nav.js"></script>
     </body>   
 </html>

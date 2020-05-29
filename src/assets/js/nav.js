@@ -1,15 +1,29 @@
-console.log(window.location.href.split('/')[3]);
+var linkk=window.location.pathname;
 var btnContainer = document.getElementById("fluid-web-nav");
+console.log(linkk);
 
-// Get all buttons with class="btn" inside the container
-var btns = btnContainer.getElementsByClassName("button");
-
-// Loop through the buttons and add the active class to the current/clicked button
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
+var index=document.getElementById("indexnav");
+var aboutnav=document.getElementById("aboutnav");
+var projectsnav=document.getElementById("projectsnav");
+var infusionnav=document.getElementById("infusionnav");
+var newsnav=document.getElementById("newsnav");
+if(linkk==""|| linkk=="/index.html")
+{
+  index.setAttribute("class", "button current");
 }
-
+else if(linkk=="/about.html")
+{
+  aboutnav.setAttribute("class", "button current");
+}
+else if(linkk=="/projects.html")
+{
+  projectsnav.setAttribute("class", "button current");
+}
+else if(linkk=="/infusion.html")
+{
+  infusionnav.setAttribute("class","button current");
+}
+else
+{
+  newsnav.setAttribute("class","button current");
+}
