@@ -25,7 +25,6 @@
         "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1"
     },
     "devDependencies": {
-        "foundation-sites": "^6.6.3",
         "@tbranyen/jsdom": "^13.0.0",
         "debug": "^4.1.1",
         "gpii-grunt-lint-all": "^1.0.7",

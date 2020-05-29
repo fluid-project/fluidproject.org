@@ -2,7 +2,9 @@
 
 ## Copyright Holders
 
-This is the list of FLOE Project copyright holders. It does not list all individual contributors because some have assigned
+Copyright 2011-2020
+
+This is the list of Fluid Project copyright holders. It does not list all individual contributors because some have assigned
 copyright to an institution, only made minor changes, or their contributions no longer appear in the codebase.
 Please see the version control system's revision history for details on contributions.
 

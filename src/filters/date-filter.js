@@ -1,5 +1,4 @@
-/* eslint-env es6 */
-/* eslint-disable no-console */
+/* eslint-disable */
 "use strict";
 // this function is strict...
 const appendSuffix = n => {

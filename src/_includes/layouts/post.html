@@ -7,24 +7,23 @@
         <link type="image/x-icon" href="{{ '/' | url }}assets/images/favicon.ico" rel="shortcut icon"/>
         <!-- Foundation flex grid -->
         <script type="text/javascript" src="{{ '/' | url }}lib/infusion/infusion-all.js"></script>
-        <script type="text/javascript" src="{{ '/' | url }}assets/js/floe.js"></script>
+        <script type="text/javascript" src="{{ '/' | url }}assets/js/uio.js"></script>
         {% include partials/foundationflexgrid.html %}
-        </head>
-        <body>
-            <script type="text/javascript">
-                $(document).ready(function () {
-                    floe.setupUIO();
-                });
-            </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                uio.setupUIO();
+            });
+        </script>
             {% include partials/uiofloe.html %}
-            <div class="fluid-web fluid-web-news">
-               
-                    {% include partials/header.html %}
-                
-                <div class="row">
-                    <div class="flc-toc-tocContainer toc small-12 columns"> </div>
-                </div>
-                {{ content }}
-                {% include partials/footer.html %}
+        <div class="fluid-web fluid-web-news">
+            {% include partials/header.html %}
+            <div class="row">
+                <div class="flc-toc-tocContainer toc small-12 columns"> </div>
             </div>
-        </body>
+            {{ content }}
+            {% include partials/footer.html %}
+        </div>
+    </body>
+</html>

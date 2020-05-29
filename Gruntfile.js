@@ -1,10 +1,10 @@
 /*
-Copyright 2020 OCAD University
+Copyright 2011-2020 OCAD University
 Licensed under the New BSD license. You may not use this file except in
 compliance with this License.
 
 See the AUTHORS.md file at the top-level directory of this distribution and at
-https://github.com/fluid-project/floeproject.org/master/AUTHORS.md.
+https://github.com/fluid-project/fluidproject.org/master/AUTHORS.md.
 */
 
 /* eslint-env node */
@@ -19,7 +19,8 @@ module.exports = function (grunt) {
         lintAll: {
             sources: {
                 json: ["package.json", ".eslintrc.json","./src/_data/*.json"],
-                js: ["./src/transforms/*.js","./src/filters/*.js","./src/assets/js/*.js","./src/filters/*.js","./src/utils/*.js",".eleventy.js","Gruntfile.js"]
+                js: ["./src/transforms/*.js","./src/filters/*.js","./src/assets/js/*.js","./src/filters/*.js","./src/utils/*.js",".eleventy.js","Gruntfile.js"],
+                md: ["./*.md","./src/posts/*.md"]
             }
         },
         clean: {
