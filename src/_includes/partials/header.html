@@ -7,33 +7,33 @@
         <h1><a href="/"><span class="fluid-web-logo-star" role="presentation"></span>fluid</a></h1>
     </header>
     <nav id="fluid-web-navigation" class="small-12 columns fluid-web-nav">
-        <ul class="right button-group">
+        <ul class="right button-group" id="fluid-web-nav">
             <li class="">
-                <a href="{{ '/' | url }}index.html" class="button current">
+                <a href="{{ '/' | url }}index.html" {% if page.navigationIndex == "1" %}class="button current"{% endif %}>
                     Home
                 </a>
             </li>
             
             <li class="">
-                <a href="{{ '/' | url }}about.html" class="button inactive">
+                <a href="{{ '/' | url }}about.html" class="button ">
                     About
                 </a>
                 </li>
             
             <li class="">
-                <a href="{{ '/' | url }}projects.html" class="button inactive">
+                <a href="{{ '/' | url }}projects.html" class="button ">
                     Projects
                 </a>
             </li>
             
             <li class="">
-                <a href="{{ '/' | url }}infusion.html" class="button inactive">
+                <a href="{{ '/' | url }}infusion.html" class="button ">
                     Infusion
                 </a>
             </li>
             
             <li class="">
-                <a href="{{ '/' | url }}newsindex.html" class="button inactive">
+                <a href="{{ '/' | url }}newsindex.html" class="button ">
                     News
                 </a>
             </li>

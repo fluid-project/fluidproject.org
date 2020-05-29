@@ -9,7 +9,7 @@ tags: post
 <div class="medium-6 columns">
     <h2 class="fluid-web-emphasized-text">First UI Component available</h2>
         <p class="fluid-web-news-post-meta">
-                        Posted by Fluid Project on 2007-07-12
+        Posted by Fluid Project on 2007-07-12
         </p>
     </div>
 <div class="medium-6 columns">
