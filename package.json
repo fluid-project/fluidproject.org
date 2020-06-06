@@ -13,7 +13,7 @@
         "type": "git",
         "url": "git+https://github.com/fluid-project/fluidproject.org.git"
     },
-    "author": "OCAD Univesity",
+    "author": "OCAD University",
     "license": "CC-BY-4.0",
     "bugs": {
         "url": "https://github.com/fluid-project/fluidproject.org/issues"
