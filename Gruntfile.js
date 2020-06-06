@@ -1,5 +1,5 @@
 /*
-Copyright 2011-2020 OCAD University
+Copyright OCAD University
 Licensed under the New BSD license. You may not use this file except in
 compliance with this License.
 
@@ -19,12 +19,9 @@ module.exports = function (grunt) {
         lintAll: {
             sources: {
                 json: ["package.json", ".eslintrc.json","./src/_data/*.json"],
-                js: ["./src/transforms/*.js","./src/filters/*.js","./src/assets/js/*.js","./src/filters/*.js","./src/utils/*.js",".eleventy.js","Gruntfile.js"],
+                js: ["./src/assets/js/*.js","./src/transforms/*.js","./src/filters/*.js","./src/assets/js/*.js","./src/filters/*.js","./src/utils/*.js",".eleventy.js","Gruntfile.js"],
                 md: ["./*.md","./src/posts/*.md"]
             }
-        },
-        clean: {
-            infusion: "src/lib/infusion"
         },
         copy: {
             // Copy external front end dependencies into appropriate directories
@@ -127,10 +124,9 @@ module.exports = function (grunt) {
     });
     // Load the plugin(s):
     grunt.loadNpmTasks("gpii-grunt-lint-all");
-    grunt.loadNpmTasks("grunt-contrib-clean");
     grunt.loadNpmTasks("grunt-contrib-copy");
     // Custom tasks:
-    grunt.registerTask("default", ["clean", "installFrontEnd"]);
+    grunt.registerTask("default", ["installFrontEnd"]);
     grunt.registerTask("installFrontEnd", "Install front-end dependencies from the node_modules directory after 'npm install'", ["copy:frontEndDependencies"]);
     grunt.registerTask("lint", "Perform all standard lint checks.", ["lint-all"]);
 };

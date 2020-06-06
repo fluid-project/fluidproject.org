@@ -21,10 +21,10 @@ tags: post
       <ol>
          <li> <a href="http://issues.fluidproject.org/browse/FLUID-3077">Text inside inline editor is being lost after canceling the text edit.</a></li>
          <li>
-            <a style="" href="/browse/FLUID-1320">Typing &quot;Click here to edit&quot; is equivalent to erasing all the text</a>
+            <a href="/browse/FLUID-1320">Typing &quot;Click here to edit&quot; is equivalent to erasing all the text</a>
          </li>
-         <li> <a   href="/browse/FLUID-2967">Item will drop to the right of an element when it should have dropped at the left.</a></li>
-         <li><a style="" href="/browse/FLUID-3054">tiny_mce Inline Edit text editor fails when used with advanced theme</a></li>
+         <li> <a href="/browse/FLUID-2967">Item will drop to the right of an element when it should have dropped at the left.</a></li>
+         <li><a href="/browse/FLUID-3054">tiny_mce Inline Edit text editor fails when used with advanced theme</a></li>
       </ol>
       <p>See our <a href="http://issues.fluidproject.org/secure/IssueNavigator.jspa?mode=hide&requestId=10251">complete list of Known Issues</a> for more information.</p>
       <h3>What is Fluid Infusion?</h3>

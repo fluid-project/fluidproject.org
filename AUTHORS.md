@@ -13,7 +13,7 @@ Please see the version control system's revision history for details on contribu
 ## Contributors
 
 Individual contributions can be viewed on the
-[Contributors](https://github.com/fluid-project/floeproject.org/graphs/contributors) page, or through the version control
+[Contributors](https://github.com/fluid-project/fluidproject.org/graphs/contributors) page, or through the version control
 system's revision history.
 
 _**Note**: Individual authors may not hold copyright. See above "Copyright Holders" section for more information._

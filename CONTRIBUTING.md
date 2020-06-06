@@ -21,7 +21,7 @@ The Fluid Project website is built using 11ty
     - Search functionality among the site data.
     - Support for Comments.
 ### Submitting new blog posts or news articles*
-   - Go to the `src/posts` folder
+   - Go to the `src/YYYY-MM-DD-newsarticletemplate.md` file
    - Create a new Markdown file with title in the following format - `YYYY-MM-DD-{News Article Name with underscores in place for spaces}.md`.
    - Use the YYYY-MM-DD-newsarticlename.md file as template. 
    - Update the date, title and permalink in the front matter.

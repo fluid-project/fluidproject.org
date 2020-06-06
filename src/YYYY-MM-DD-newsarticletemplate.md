@@ -5,4 +5,4 @@ date: '2020-01-01'
 tags: post
 permalink: YYYY-MM-DD-newsArticleName.html
 ---
-//Content Data
+<!-- Content Data -->

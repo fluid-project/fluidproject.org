@@ -42,7 +42,7 @@ module.exports = function(config) {
       ...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)
     ];
   });
-  // The following xollection is ues to distribute posts into different pages. However, the default pagination has not been set in floeproject.org and all posts are shown on single page
+  // The following collection is ues to distribute posts into different pages. However, the default pagination has not been set in fluidproject.org and all posts are shown on single page
   config.addCollection('postFeed', collection => {
     return [...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)]
       .reverse()
