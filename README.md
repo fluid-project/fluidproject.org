@@ -12,7 +12,7 @@
 
 ## To deploy to a personal webserver
 
-1. Run: `npm run generate`
+1. Run: `npm run build`
 2. Copy the contents of `./dist/` directory to your server.
 
 ## Notes
