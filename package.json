@@ -1,35 +1,41 @@
 {
-  "name": "fluidproject.org",
-  "version": "0.1.0",
-  "description": "Fluid Project website",
-  "dependencies": {
-    "docpad": "6.79.4",
-    "docpad-plugin-eco": "2.1.0",
-    "docpad-plugin-ghpages": "2.4.4",
-    "docpad-plugin-handlebars": "2.3.0",
-    "docpad-plugin-livereload": "2.7.1",
-    "docpad-plugin-marked": "2.3.0",
-    "docpad-plugin-moment": "2.0.2",
-    "docpad-plugin-partials": "2.9.2",
-    "docpad-plugin-redirector": "2.0.3",
-    "docpad-plugin-stylus": "2.11.0",
-    "foundation-sites": "5.5.3",
-    "grunt": "1.0.1",
-    "grunt-contrib-clean": "1.0.0",
-    "grunt-contrib-copy": "1.0.0",
-    "infusion": "2.0.0"
-  },
-  "devDependencies": {
-    "eslint-config-fluid": "1.0.0",
-    "fluid-grunt-eslint": "18.1.2",
-    "grunt-jsonlint": "1.0.4"
-  },
-  "main": "node_modules/docpad/bin/docpad-server",
-  "scripts": {
-    "start": "node_modules/docpad/bin/docpad-server",
-    "postinstall": "grunt",
-    "docpad": "node node_modules/docpad/bin/docpad run",
-    "deploy": "node node_modules/docpad/bin/docpad deploy-ghpages --env static",
-    "generate": "node node_modules/docpad/bin/docpad generate --env static"
-  }
+    "name": "fluidproject.org",
+    "version": "1.0.0",
+    "description": "Fluid is an open, collaborative project to improve the user experience and inclusiveness of open source software.",
+    "scripts": {
+        "lint": "grunt lint",
+        "build": "eleventy",
+        "eleventy": "eleventy --serve",
+        "prepare": "grunt installFrontEnd",
+        "eleventyport": "eleventy --serve --port=9778"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/fluid-project/fluidproject.org.git"
+    },
+    "author": "OCAD University",
+    "license": "CC-BY-4.0",
+    "bugs": {
+        "url": "https://github.com/fluid-project/fluidproject.org/issues"
+    },
+    "homepage": "https://github.com/fluid-project/fluidproject.org#readme",
+    "dependencies": {
+        "@11ty/eleventy": "0.11.0",
+        "@11ty/eleventy-plugin-rss": "1.0.7",
+        "@11ty/eleventy-plugin-syntaxhighlight": "3.0.1"
+    },
+    "devDependencies": {
+        "@tbranyen/jsdom": "13.0.0",
+        "debug": "4.1.1",
+        "gpii-grunt-lint-all": "1.0.7",
+        "grunt": "1.1.0",
+        "grunt-contrib-clean": "2.0.0",
+        "grunt-contrib-copy": "1.0.0",
+        "html-minifier": "4.0.0",
+        "image-size": "0.8.3",
+        "infusion": "3.0.0-dev.20200326T173810Z.24ddb2718",
+        "sanitize-html": "1.24.0",
+        "sanitize.css": "11.0.1",
+        "slugify": "1.4.0"
+    }
 }

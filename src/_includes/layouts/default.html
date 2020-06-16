@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>{% if title %} {{ title }} {% else %} {{ site.title }} {% endif %}</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <link type="image/x-icon" href="{{ '/' | url }}assets/images/favicon.ico" rel="shortcut icon"/>
+        <script type="text/javascript" src="{{ '/' | url }}lib/infusion/infusion-all.js"></script>
+        <script type="text/javascript" src="{{ '/' | url }}assets/js/uio.js"></script>
+        <script type="text/javascript" src="{{ '/' | url }}assets/js/analytics.js"></script>
+        <!-- Foundation flex grid -->
+        {% include partials/foundationflexgrid.html %}
+    </head>
+    <body>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                uio.setupUIO();
+            });
+        </script>
+        {% include partials/uio.html %}
+        <div class="fluid-web">
+            {% include partials/header.html %}
+            <div class="row">
+                <div class="flc-toc-tocContainer toc small-12 columns"> </div>
+            </div>
+            {{ content }}
+            {% include partials/footer.html %}
+        </div>
+        <script type="text/javascript" src="{{ '/' | url }}assets/js/nav.js"></script>
+    </body>   
+</html>

@@ -1,0 +1,9 @@
+{
+    "name": "Fluid Project",
+    "shortDesc": "Fluid is an open, collaborative project to improve the user experience and inclusiveness of open source software.",
+    "url": "https://www.fluidproject.org",
+    "authorName": "OCAD University",
+    "authorWebsite": "https://www.ocadu.ca/",
+    "faviconPath": "{{ '/' | url }}files/images/favicon.ico",
+    "title": "Fluid Project - The Open Source Software community"
+}

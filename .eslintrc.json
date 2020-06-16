@@ -2,5 +2,14 @@
     "extends": "eslint-config-fluid",
     "globals": {
         "fluid": true
+    },
+    "env": {
+        "browser": true,
+        "amd": true,
+        "node": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 6
     }
 }

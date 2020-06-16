@@ -1,2 +1,3 @@
 **/lib/**
-out/**
+dist/**
+src/lib/infusion/infusion-all.js
