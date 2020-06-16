@@ -9,7 +9,7 @@ This repository contains the files needed to build a copy of the Fluid Project w
 1. Run [11ty](http://11ty.dev) from the fluid-website directory `npm run eleventyport`.
 1. Open `http://localhost:9778/` to see the website.
 
-# To build locally using Docker
+## To build locally using Docker
 
 You can serve the website from a [Docker](https://docs.docker.com/get-docker) container.
 
@@ -21,13 +21,6 @@ Once you have Docker installed, run the following commands to build a Docker ima
 The website will be available at [http://localhost:8000](http://localhost:8000)
 
 If you make changes to the website, repeat the steps to build the image and start a new container.
-
-# To deploy to gh-pages:
-
-1. Start by working from a clone of the repository you want to deploy to. This step is important, otherwise your output
-   may deploy to the wrong location.
-2. Deploy to gh-pages, run: `npm run deploy`. By doing this, docpad will generate the site to the   
-   remote gh-pages branch.
 
 ## To deploy to a personal webserver
 
