@@ -9,6 +9,19 @@ This repository contains the files needed to build a copy of the Fluid Project w
 1. Run [11ty](http://11ty.dev) from the fluid-website directory `npm run eleventyport`.
 1. Open `http://localhost:9778/` to see the website.
 
+## To build locally using Docker
+
+You can serve the website from a [Docker](https://docs.docker.com/get-docker) container.
+
+Once you have Docker installed, run the following commands to build a Docker image and start a container:
+
+* Build the image: `docker build -t fluidproject .`
+* Run the container: `docker run --name fluidproject -p 8000:80 fluidproject`
+
+The website will be available at [http://localhost:8000](http://localhost:8000)
+
+If you make changes to the website, repeat the steps to build the image and start a new container.
+
 ## To deploy to a personal webserver
 
 1. Run: `npm run build`
