@@ -6,9 +6,7 @@ compliance with this License.
 See the AUTHORS.md file at the top-level directory of this distribution and at
 https://github.com/fluid-project/fluidproject.org/master/AUTHORS.md.
 */
-/* eslint-disable */
 "use strict";
-// this function is strict...
 const appendSuffix = n => {
     var s = ["th", "st", "nd", "rd"],
         v = n % 100;

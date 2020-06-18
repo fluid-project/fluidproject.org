@@ -42,7 +42,7 @@ module.exports = function(config) {
       ...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)
     ];
   });
-  // The following collection is ues to distribute posts into different pages. However, the default pagination has not been set in fluidproject.org and all posts are shown on single page
+  // The following collection is used to distribute posts into different pages. However, the default pagination has not been set in fluidproject.org and all posts are shown on single page
   config.addCollection('postFeed', collection => {
     return [...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)]
       .reverse()
@@ -62,8 +62,6 @@ module.exports = function(config) {
           const content_404 = fs.readFileSync('dist/404.html');
           // Provides the 404 content without redirect.
           res.write(content_404);
-          // Add 404 http status code in request header.
-          // res.writeHead(404, { "Content-Type": "text/html" });
           res.writeHead(404);
           res.end();
         });
@@ -79,7 +77,6 @@ module.exports = function(config) {
     },
     templateFormats: ["html", "md"],
     htmlTemplateEngine: "liquid",
-    	// 1.1 Enable elventy to pass dirs specified above
     passthroughFileCopy: true
   };
 };
