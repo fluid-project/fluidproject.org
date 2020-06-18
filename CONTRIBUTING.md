@@ -16,10 +16,8 @@ The Fluid Project website is built using 11ty
 ## Contributions to the project can be made in following ways:
 
 ### Contribution towards building features for the project.
-  - There are several features that still require attention.
-    - Improving the User interface of submitted answers.
-    - Search functionality among the site data.
-    - Support for Comments.
+   - Go to [Issues page](https://github.com/fluid-project/fluidproject.org/issues) in order to report some bug or suggest an improvement/enhancement or a new feature.
+   - Use the Issues template and Pull Request template provided in the `.github` folder for reporting new issues or submitting new Pull Request.
 ### Submitting new news articles
    - Go to the `src/YYYY-MM-DD-newsarticletemplate.md` file
    - Create a new Markdown file with title in the following format - `YYYY-MM-DD-{News Article Name with underscores in place for spaces}.md`.
