@@ -6,17 +6,17 @@ This repository contains the files needed to build a copy of the Fluid Project w
 ## To Build Locally
 
 1. Get the required node modules: `npm install`
-1. Run [11ty](http://11ty.dev) from the fluid-website directory `npm run eleventyport`.
-1. Open `http://localhost:9778/` to see the website.
+2. Run [11ty](http://11ty.dev) from the fluid-website directory `npm run eleventyport`.
+3. Open `http://localhost:9778/` to see the website.
 
 ## To deploy to a personal webserver
 
 1. Run: `npm run build`
-1. Copy the contents of `./dist/` directory to your server.
+2. Copy the contents of `./dist/` directory to your server.
 
 ## Notes
 
--  Modifications can be done to any source file or directory except for the contents of the `dist/` directory.
+-  Modifications can be done to any source file or directory except for the contents of the `dist` directory.
 -  The `dist` directory is not versioned since it contains the generated output made by 11ty from the source files, and the files in `dist` are overwritten at build time
 -  The changed source files in dist directory gets overwritten at build time.
 
