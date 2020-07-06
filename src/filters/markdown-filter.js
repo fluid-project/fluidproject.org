@@ -1,4 +1,3 @@
-
 /*
 Copyright OCAD University
 Licensed under the New BSD license. You may not use this file except in

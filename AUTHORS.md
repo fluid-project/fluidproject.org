@@ -16,4 +16,4 @@ Individual contributions can be viewed on the
 [Contributors](https://github.com/fluid-project/fluidproject.org/graphs/contributors) page, or through the version control
 system's revision history.
 
-**Note**: Individual authors may not hold copyright. See above "Copyright Holders" section for more information._
+**Note**: Individual authors may not hold copyright. See above "Copyright Holders" section for more information.
