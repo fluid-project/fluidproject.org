@@ -31,7 +31,7 @@ addressed:
     text](/browse/FLUID-1320)
 3. [Item will drop to the right of an element when it should have
     dropped at the left.](/browse/FLUID-2967)
-4. [tiny\_mce Inline Edit text editor fails when used with advanced
+4. [tiny _mce Inline Edit text editor fails when used with advanced
     theme](/browse/FLUID-3054)
 
 See our [complete list of Known

@@ -18,7 +18,7 @@ Interface Options component and the Fluid Skinning System
 
 ### What's New in This Release
 
-New features of this release include:\
+New features of this release include:
 
 - Completely Refactored Uploader
 - Two new flavours of Inline Edit: Dropdown and Rich Text

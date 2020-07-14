@@ -5,7 +5,7 @@ permalink: 2007-05-04-Better_Web_Experiences.html
 date: '2007-05-04'
 tags: post
 ---
-The Fluid Project Receives \$2.5 Million for Interface Design: Better Web Experience for Users of Open Source Software {.fluid-web-emphasized-text}
+The Fluid Project Receives $2.5 Million for Interface Design: Better Web Experience for Users of Open Source Software {.fluid-web-emphasized-text}
 
 Posted by Fluid Project on 2007-05-04
 
@@ -13,7 +13,7 @@ The **Fluid Project**
 ([http://fluidproject.org)](http://fluidproject.org)), a worldwide
 collaborative project that will help to improve the usability and
 accessibility of community source software projects, was recently chosen
-by the Andrew W. Mellon Foundation for \$2.5 million in support. The
+by the Andrew W. Mellon Foundation for $2.5 million in support. The
 project is led by the Adaptive Technology Resource Centre at the
 University of Toronto along with the University of California at
 Berkeley, University of British Columbia, York University, and Cambridge
@@ -87,7 +87,7 @@ institutions and firms.
 ### About the Andrew W. Mellon Foundation
 
 The Andrew W. Mellon Foundation is a private philanthropic institution,
-with assets of approximately \$5.5 billion, that makes grants on a
+with assets of approximately $5.5 billion, that makes grants on a
 selective basis to institutions of higher education, independent
 libraries, centers for advanced study, museums, art conservation, and
 performing arts organizations. For more information, please visit
