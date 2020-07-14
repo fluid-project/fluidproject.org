@@ -5,8 +5,7 @@ permalink: 2017-02-02-Infusion_2_0_released.html
 date: '2017-02-02'
 tags: post
 ---
-Infusion 2.0 released! {.fluid-web-emphasized-text}
-----------------------
+Infusion 2.0 released!
 
 Posted by Release Manager on 2017-02-02
 
@@ -25,7 +24,6 @@ Documentation](https://github.com/fluid-project/infusion-docs) site.
 Notes](https://github.com/fluid-project/infusion/blob/infusion-2.0/ReleaseNotes.md)
 
 What's New in 2.0.0? {#what-s-new-in-2-0-0-}
---------------------
 
 - Constraint-based priorities, supported by `listeners`,
     `modelListeners`, `modelRelay`, `distributeOptions`,
@@ -69,7 +67,6 @@ What's New in 2.0.0? {#what-s-new-in-2-0-0-}
         implementation with an engineer-level UI.
 
 Obtaining Infusion
-------------------
 
 - [Fork on GitHub](https://github.com/fluid-project/infusion)
 - [Download a
@@ -81,7 +78,6 @@ You can create your own custom build of Infusion using the [grunt build
 script](https://github.com/fluid-project/infusion/blob/infusion-2.0/README.md#how-do-i-create-an-infusion-package).
 
 Thank You
----------
 
 A lot of time and effort has gone into this release, and we'd like to
 thank everyone in the community for their contributions.

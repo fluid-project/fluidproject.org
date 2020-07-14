@@ -11,8 +11,8 @@ permalink: newsindex.html
             {%- for post in collections.post -%}
             <li id="reverseneed">
                 {{post.data.date}} - <a href="{{ '/' | url }}{{ post.data.permalink }}"> {{post.data.title}}</a>
-            </li> 
-            {% endfor -%} 
+            </li>
+            {% endfor -%}
         </ul>
     </div>
 </section>

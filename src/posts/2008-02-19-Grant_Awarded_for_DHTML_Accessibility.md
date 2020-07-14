@@ -5,8 +5,7 @@ permalink: 2008-02-19-Grant_Awarded_for_DHTML_Accessibility.html
 date: '2008-02-19'
 tags: post
 ---
-Grant Awarded for DHTML Accessibility {.fluid-web-emphasized-text}
--------------------------------------
+Grant Awarded for DHTML Accessibility
 
 Posted by Colin Clark on 2008-02-19
 

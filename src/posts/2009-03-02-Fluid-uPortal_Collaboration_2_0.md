@@ -5,8 +5,7 @@ permalink: 2009-03-02-Fluid-uPortal_Collaboration_2_0.html
 date: '2009-03-02'
 tags: post
 ---
-Fluid-uPortal Collaboration 2.0 {.fluid-web-emphasized-text}
--------------------------------
+Fluid-uPortal Collaboration 2.0
 
 Posted by Colin Clark on 2009-03-02
 

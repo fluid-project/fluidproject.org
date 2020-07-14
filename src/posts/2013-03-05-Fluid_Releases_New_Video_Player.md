@@ -5,8 +5,7 @@ permalink: 2013-03-05-Fluid_Releases_New_Video_Player.html
 date: '2013-03-05'
 tags: post
 ---
-Fluid Releases New Video Player {.fluid-web-emphasized-text}
--------------------------------
+Fluid Releases New Video Player
 
 Posted by Colin Clark on 2013-03-05
 

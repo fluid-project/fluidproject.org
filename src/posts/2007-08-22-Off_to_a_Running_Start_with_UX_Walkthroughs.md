@@ -6,7 +6,6 @@ date: '2007-08-22'
 tags: post
 ---
 Off to a Running Start with UX Walkthroughs {.fluid-web-emphasized-text}
--------------------------------------------
 
 Posted by Fluid Project on 2007-08-22
 
@@ -31,7 +30,7 @@ We welcome volunteers! If you are interested in helping, you can:
     area](http://wiki.fluidproject.org/display/fluid/User+Experience+Walkthroughs)
     of our wiki as it is in need of organization and consolidation. If
     you’ve got time for some quick editing and re-organization, please
-    feel free! 
+    feel free!
 - Share your accessibility expertise and advice with the [working
     groups](http://wiki.fluidproject.org/display/fluid/UX+Walkthrough+Working+Groups).
 

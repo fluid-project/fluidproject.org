@@ -54,7 +54,7 @@ most widgets. Created by a community of developers and interaction
 designers, Infusion components are built from the ground up with
 accessibility in mind. All of our designs can be used with assistive
 technologies, are fully controllable with the keyboard, and can be
-transformed to suit your users’ personal needs. 
+transformed to suit your users’ personal needs.
  The Fluid Infusion 1.1 release includes a collection of our UI
 components, tutorials to help you get started, solid APIs to help you
 dive in, and the community to lend a hand.

@@ -6,7 +6,6 @@ date: '2007-07-12'
 tags: post
 ---
 First UI Component available {.fluid-web-emphasized-text}
-----------------------------
 
 Posted by Fluid Project on 2007-07-12
 
