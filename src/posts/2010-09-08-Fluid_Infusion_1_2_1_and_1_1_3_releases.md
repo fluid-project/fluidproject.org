@@ -42,15 +42,11 @@ tags: post
       <p>Fluid Infusion is an application framework for building usable and accessible user interfaces with JavaScript.
        Built on
          top of jQuery, Infusion takes a different approach to client-side development. At heart, Infusion is an open
-          architecture
-         designed to put you back in control of your application’s user experience. It includes a growing collection of UI
-         components—reusable interactions that go deeper than most widgets. Created by a community of developers and
-          interaction
-         designers, Infusion components are built from the ground up with accessibility in mind. All of our designs can
-          be used
-         with assistive technologies, are fully controllable with the keyboard, and can be transformed to suit your users’
-          personal
-         needs.
+         architecture designed to put you back in control of your application’s user experience. It includes a growing
+         collection of UI components—reusable interactions that go deeper than most widgets. Created by a community of
+         developers and interaction designers, Infusion components are built from the ground up with accessibility in mind.
+         All of our designs can be used with assistive technologies, are fully controllable with the keyboard, and can be
+         transformed to suit your users’ personal needs.
       </p>
       <p>Fluid Infusion includes a collection of our UI components, tutorials to help you get started,
        solid APIs to help you dive

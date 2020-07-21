@@ -15,7 +15,7 @@ tags: post
       </p>
    </div>
    <div class="medium-6 columns">
-      <p>The <strong>Fluid Project</strong> (<a href="http://fluidproject.org)">http://fluidproject.org)</a>,
+      <p>The <strong>Fluid Project</strong> (<a href="https://fluidproject.org/)">https://fluidproject.org)</a>,
          a worldwide collaborative project that will help to improve the usability and accessibility of community
          source software projects, was recently chosen by the Andrew W. Mellon Foundation for $2.5 million in
          support. The project is led by the Adaptive Technology Resource Centre at the University of Toronto
@@ -48,7 +48,7 @@ tags: post
       </p>
       <p>Many of the Fluid Project partners are founding contributors to the academic community source software
          movement, and bring a wealth of design and development expertise to the project. Please visit
-         [<a href="http://fluidproject.org]">http://fluidproject.org]</a> for more information or to get involved.
+         [<a href="https://fluidproject.org]">https://fluidproject.org]</a> for more information or to get involved.
       </p>
       <h3>About the Participating Software Projects</h3>
       <p><strong>Sakai</strong> is a free and open source online collaboration and learning environment. Many users

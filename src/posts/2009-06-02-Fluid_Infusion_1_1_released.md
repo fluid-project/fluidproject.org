@@ -20,7 +20,6 @@ tags: post
       </p>
       <p><strong> <a href="https://github.com/fluid-project/infusion">Download Fluid Infusion</a> </strong></p>
       <h3>What&#39;s new in this release?</h3>
-      <p>
       <p>This release:</p>
       </p>
       <ul>
@@ -59,10 +58,7 @@ tags: post
          <li>Changes some Framework API</li>
          <li>Fixes many bugs</li>
       </ul>
-      <p>
       <h3>What is Fluid Infusion?</h3>
-      </p>
-      <p>
       <p>
          Fluid Infusion is an application framework for building usable and accessible user interfaces
          with JavaScript. Built on top of jQuery, Infusion takes a different approach to client-side
