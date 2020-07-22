@@ -48,7 +48,7 @@ tags: post
       </p>
       <p>Many of the Fluid Project partners are founding contributors to the academic community source software
          movement, and bring a wealth of design and development expertise to the project. Please visit
-         [<a href="https://fluidproject.org]">https://fluidproject.org]</a> for more information or to get involved.
+         [<a href="https://fluidproject.org">https://fluidproject.org]</a> for more information or to get involved.
       </p>
       <h3>About the Participating Software Projects</h3>
       <p><strong>Sakai</strong> is a free and open source online collaboration and learning environment. Many users
