@@ -15,7 +15,9 @@ tags: post
    <div class="medium-6 columns">
       <p>The Fluid community is pleased to announce the release of Infusion 2.0!</p>
       <p>Infusion 2.0 includes significant framework improvements and <em>is not backwards compatible
-         </em> with previous versions of Infusion. Please see <a href="http://docs.fluidproject.org/infusion/development/APIChangesFrom1_5To2_0.html">API Changes from 1.5 to 2.0</a> and <a href="http://docs.fluidproject.org/infusion/development/DeprecationsIn1_5.html">Deprecations in 1.5</a> on the <a
+         </em> with previous versions of Infusion. Please see <a href="http://docs.fluidproject.org/infusion/development/APIChangesFrom1_5To2_0.html">
+      API Changes from 1.5 to 2.0</a> and <a href="http://docs.fluidproject.org/infusion/development/DeprecationsIn1_5.html">
+      Deprecations in 1.5</a> on the <a
             href="https://github.com/fluid-project/infusion-docs">Infusion Documentation</a> site.
       </p>
       <p><a href="https://github.com/fluid-project/infusion/blob/infusion-2.0/ReleaseNotes.md">Release

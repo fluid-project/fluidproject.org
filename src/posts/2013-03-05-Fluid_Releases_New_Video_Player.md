@@ -17,7 +17,7 @@ tags: post
       <p>Video Player is designed to be a fully accessible HTML5 video player.
          The designs for Video Player can be seen on our wiki, at
          <a href="http://wiki.fluidproject.org/display/fluid/%28Floe%29+video+player+mockups+%28final%29">
-         Video player mockups (final)</a>.
+         Video player mockups (final)</a>. [Video player mockups (final)](http://wiki.fluidproject.org/display/fluid/%28Floe%29+video+player+mockups+%28final%29)
       </p>
       <p>v0.1 is the first public release of Video Player and includes initial support for:</p>
       <ul>

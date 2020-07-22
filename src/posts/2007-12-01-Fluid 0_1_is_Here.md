@@ -13,7 +13,8 @@ tags: post
       </p>
    </div>
    <div class="medium-6 columns">
-      <p>The Fluid Project is pleased to announce the first release of the Fluid component library and User Experience (UX) Toolkit.</p>
+      <p>The Fluid Project is pleased to announce the first release of the Fluid component library and
+      User Experience (UX) Toolkit.</p>
       <h3>What&#39;s New in This Release?</h3>
       <ul>
          <li>The Reorderer, a JavaScript library for sorting DOM elements </li>
