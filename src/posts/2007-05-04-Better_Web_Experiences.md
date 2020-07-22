@@ -15,7 +15,7 @@ tags: post
       </p>
    </div>
    <div class="medium-6 columns">
-      <p>The <strong>Fluid Project</strong> (<a href="https://fluidproject.org/)">https://fluidproject.org)</a>,
+      <p>The <strong>Fluid Project</strong> (<a href="https://fluidproject.org/">https://fluidproject.org)</a>,
          a worldwide collaborative project that will help to improve the usability and accessibility of community
          source software projects, was recently chosen by the Andrew W. Mellon Foundation for $2.5 million in
          support. The project is led by the Adaptive Technology Resource Centre at the University of Toronto
