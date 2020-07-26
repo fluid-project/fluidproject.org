@@ -1,6 +1,6 @@
 ---
 layout: layouts/post
-title: "Fluid-uPortal Collaboration 2.0 | fluid"
+title: "Fluid-uPortal Collaboration 2.0"
 permalink: 2009-03-02-Fluid-uPortal_Collaboration_2_0.html
 date: '2009-03-02'
 tags: post

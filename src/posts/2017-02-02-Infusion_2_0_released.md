@@ -1,6 +1,6 @@
 ---
 layout: layouts/post
-title: "Infusion 2.0 released! | fluid"
+title: "Infusion 2.0 released!"
 permalink: 2017-02-02-Infusion_2_0_released.html
 date: '2017-02-02'
 tags: post

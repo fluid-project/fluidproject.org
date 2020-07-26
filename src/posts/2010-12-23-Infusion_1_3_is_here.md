@@ -1,6 +1,6 @@
 ---
 layout: layouts/post
-title: "Infusion 1.3 is here! | fluid"
+title: "Infusion 1.3 is here!"
 permalink: 2010-12-23-Infusion_1_3_is_here.html
 date: '2010-12-23'
 tags: post

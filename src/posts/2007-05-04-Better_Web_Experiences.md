@@ -1,6 +1,6 @@
 ---
 layout: layouts/post
-title: "The Fluid Project Receives $2.5 Million for Interface Design: Better Web Experience for Users of Open Source Software | fluid"
+title: "The Fluid Project Receives $2.5 Million for Interface Design: Better Web Experience for Users of Open Source Software"
 permalink: 2007-05-04-Better_Web_Experiences.html
 date: '2007-05-04'
 tags: post

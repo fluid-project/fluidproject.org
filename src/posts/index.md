@@ -1,6 +1,6 @@
 ---
 layout: layouts/post
-title: News | fluid
+title: News
 permalink: newsindex.html
 ---
 <div class="fluid-web">
@@ -8,7 +8,7 @@ permalink: newsindex.html
     <h2>News Archive</h2>
     <div class="fluid-web-news-index fluid-web-list">
         <ul id="reverseneed">
-            {%- for post in collections.post -%}
+            {%- for post in collections.post reversed -%}
             <li id="reverseneed">
                 {{post.data.date}} - <a href="{{ '/' | url }}{{ post.data.permalink }}"> {{post.data.title}}</a>
             </li>

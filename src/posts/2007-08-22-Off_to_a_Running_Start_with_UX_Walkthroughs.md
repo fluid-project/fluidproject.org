@@ -1,6 +1,6 @@
 ---
 layout: layouts/post
-title: "Fluid launches recruiting campaign for a Project Manager | fluid"
+title: "Off to a Running Start with UX Walkthroughs"
 permalink: 2007-08-22-Off_to_a_Running_Start_with_UX_Walkthroughs.html
 date: '2007-08-22'
 tags: post

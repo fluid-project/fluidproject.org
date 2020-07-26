@@ -1,6 +1,6 @@
 ---
 layout: layouts/post
-title: "Grant Awarded for DHTML Accessibility | fluid"
+title: "Grant Awarded for DHTML Accessibility"
 permalink: 2008-02-19-Grant_Awarded_for_DHTML_Accessibility.html
 date: '2008-02-19'
 tags: post

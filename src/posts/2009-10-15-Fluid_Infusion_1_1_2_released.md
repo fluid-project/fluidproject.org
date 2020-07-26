@@ -1,6 +1,6 @@
 ---
 layout: layouts/post
-title: "Fluid Infusion 1.1.2 released | fluid"
+title: "Fluid Infusion 1.1.2 released"
 permalink: 2009-10-15-Fluid_Infusion_1_1_2_released.html
 date: '2009-10-15'
 tags: post

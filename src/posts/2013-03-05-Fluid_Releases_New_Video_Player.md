@@ -1,6 +1,6 @@
 ---
 layout: layouts/post
-title: "Fluid Releases New Video Player | fluid"
+title: "Fluid Releases New Video Player"
 permalink: 2013-03-05-Fluid_Releases_New_Video_Player.html
 date: '2013-03-05'
 tags: post

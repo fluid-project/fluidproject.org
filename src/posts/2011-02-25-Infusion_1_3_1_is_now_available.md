@@ -1,6 +1,6 @@
 ---
 layout: layouts/post
-title: "Infusion 1.3.1 is now available | fluid"
+title: "Infusion 1.3.1 is now available"
 permalink: 2011-02-25-Infusion_1_3_1_is_now_available.html
 date: '2011-02-25'
 tags: post

@@ -1,6 +1,6 @@
 ---
 layout: layouts/post
-title: "First UI Component available | fluid"
+title: "First UI Component available"
 permalink: 2007-07-12-First_UI_Component_available.html
 date: '2007-07-12'
 tags: post

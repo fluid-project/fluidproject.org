@@ -1,6 +1,6 @@
 ---
 layout: layouts/post
-title: "Fluid 0.1 is Here! | fluid"
+title: "Fluid 0.1 is Here!"
 permalink: 2007-12-01-Fluid 0_1_is_Here.html
 date: '2007-12-01'
 tags: post
