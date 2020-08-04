@@ -19,7 +19,8 @@ Sakai and uPortal as our first subjects.
 We welcome volunteers! If you are interested in helping, you can:
 
 - Join the Sakai, Moodle, or uPortal
-  [working groups](http://wiki.fluidproject.org/display/fluid/UX+Walkthrough+Working+Groups) and help out with the walkthroughs themselves.
+  [working groups](http://wiki.fluidproject.org/display/fluid/UX+Walkthrough+Working+Groups) and
+  help out with the walkthroughs themselves.
 
 - Improve the
   [UX Walkthrough area](http://wiki.fluidproject.org/display/fluid/User+Experience+Walkthroughs) of

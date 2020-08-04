@@ -27,7 +27,8 @@ and showcases a new demo portal for easier interaction.  Here are the details:
 4. [Uploader support for Firefox 3.5](http://issues.fluidproject.org/browse/FLUID-3196) and improved
    experience for Internet Explorer
 
-See our [complete list of Known Issues](http://issues.fluidproject.org/secure/IssueNavigator.jspa?requestId=10272&tempMax=1000) for more information
+See our [complete list of Known Issues](http://issues.fluidproject.org/secure/IssueNavigator.jspa?requestId=10272&tempMax=1000)
+for more information
 
 ### What is Fluid Infusion
 

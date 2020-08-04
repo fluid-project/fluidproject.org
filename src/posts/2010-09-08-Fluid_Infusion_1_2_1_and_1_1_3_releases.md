@@ -24,7 +24,8 @@ upgrade and preserves backwards API compatibility for all production-grade compo
 8. Ubiquitous UTF-8 support
 
 For information about upgrading to Infusion 1.2, see the [Upgrading to Infusion 1.2] tutorial. Known issues in
-this release are documented on the [Infusion 1.2 Known Issues](http://issues.fluidproject.org/secure/IssueNavigator.jspa?mode=hide&requestId=10317) page.
+this release are documented on the [Infusion 1.2 Known Issues](http://issues.fluidproject.org/secure/IssueNavigator.jspa?mode=hide&requestId=10317)
+page.
 
 We have updated our supported browser matrix to harmonize it with the latest Yahoo! A-Grade support.
 For more information,
