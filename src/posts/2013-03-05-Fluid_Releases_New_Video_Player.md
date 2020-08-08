@@ -7,7 +7,9 @@ tags: post
 author: Colin Clark
 ---
 The Fluid community is happy to announce the release of Video Player v0.1.
+
 Video Player is designed to be a fully accessible HTML5 video player.
+
 The designs for Video Player can be seen on our wiki, at
 [Video player mockups (final)](http://wiki.fluidproject.org/display/fluid/%28Floe%29+video+player+mockups+%28final%29).
 

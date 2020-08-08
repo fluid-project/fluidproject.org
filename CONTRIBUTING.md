@@ -1,29 +1,36 @@
 # Fluid Project Contribution Guidelines
 
 Fluid is an open, collaborative project to improve the user experience and inclusiveness of open source software.
-The Fluid community consists of an international team of partners, individuals, and institutions focused on designing inclusive, ﬂexible, customizable, user-centered interfaces. 
-
+The Fluid community consists of an international team of partners, individuals, and institutions focused on designing
+inclusive, ﬂexible, customizable, user-centered interfaces.
 
 The Fluid Project website is built using 11ty
 
-## To run the project locally:
+## To run the project locally
+
 1. Clone the project locally using `git clone https://github.com/fluid-project/fluidproject.org.git`
 2. Go to the folder directory where you cloned the project in terminal by usin `cd fluidproject.org`
 3. Get the required Node.js modules: `npm install`
 4. Run eleventy from the fluid-website directory `npm run eleventyport`.
-5. Open `http://localhost:9778/` to see the website. 
+5. Open `http://localhost:9778/` to see the website.
 
-## Contributions to the project can be made in following ways:
+## Contributions to the project can be made in following ways-
 
-### Contribution towards building features for the project.
-   - Go to [Issues page](https://github.com/fluid-project/fluidproject.org/issues) in order to report some bug or suggest an improvement/enhancement or a new feature.
-   - Use the Issues template and Pull Request template provided in the `.github` folder for reporting new issues or submitting new Pull Request.
+### Contribution towards building features for the project
+
+- Go to [Issues page](https://github.com/fluid-project/fluidproject.org/issues) in order to report some bug or suggest
+  an improvement/enhancement or a new feature.
+- Use the Issues template and Pull Request template provided in the `.github` folder for reporting new issues or submitting
+  new Pull Request.
+
 ### Submitting new news articles
-   - Go to the `src/YYYY-MM-DD-newsarticletemplate.md` file
-   - Create a new Markdown file with title in the following format - `YYYY-MM-DD-{News Article Name with underscores in place for spaces}.md`.
-   - Use the YYYY-MM-DD-newsarticlename.md file as template. 
-   - Update the date, title and permalink in the front matter.
-   - Your article must use the following template for 11ty to process it properly:
+
+- Go to the `src/YYYY-MM-DD-newsarticletemplate.md` file
+- Create a new Markdown file with title in the following format
+  - `YYYY-MM-DD-{News Article Name with underscores in place for spaces}.md`.
+- Use the YYYY-MM-DD-newsarticlename.md file as template.
+- Update the date, title and permalink in the front matter.
+- Your article must use the following template for 11ty to process it properly:
       `---`
       `layout: layouts/post`
       `title: Title of News Article`
@@ -34,12 +41,13 @@ The Fluid Project website is built using 11ty
       `Content Data`
 
 ### Reporting Issues or Bugs in the repository
-  - Go to  `https://github.com/fluid-project/fluidproject.org/issues/new/choose`
-  - Choose the appropriate Issue template from "Bug Report" and "Feature Request"
-  - Add Title and Description as per given in the template.
-  - Click on 'Submit New Issue'.
 
-## The directory structure is as follows:
+- Go to  `https://github.com/fluid-project/fluidproject.org/issues/new/choose`
+- Choose the appropriate Issue template from "Bug Report" and "Feature Request"
+- Add Title and Description as per given in the template.
+- Click on 'Submit New Issue'.
+
+## The directory structure is as follows
 
 | File or Folder            | Description                                                                                                                                                                                                                         |
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -64,4 +72,5 @@ sign off on the PR and merge it into the project repo. You may wish to ping a Ma
 [#fluid-work](https://wiki.fluidproject.org/display/fluid/IRC+Channel) IRC channel,
 [fluid-work](https://lists.idrc.ocad.ca/mailman/listinfo/fluid-work) mailing list, and/or on the PR itself.
 
-If you have any questions or comments regarding this repository, feel free to visit [Get Involved](https://wiki.fluidproject.org/display/fluid/Get+Involved) page of our wiki to connect with us.
+If you have any questions or comments regarding this repository, feel free to visit
+[Get Involved](https://wiki.fluidproject.org/display/fluid/Get+Involved) page of our wiki to connect with us.

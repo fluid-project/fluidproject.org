@@ -7,6 +7,7 @@ tags: post
 author: Release Manager
 ---
 The Fluid community is pleased to announce the release of Infusion 2.0!
+
 Infusion 2.0 includes significant framework improvements and **is not backwards compatible**
 with previous versions of Infusion. Please see
 [API Changes from 1.5 to 2.0](http://docs.fluidproject.org/infusion/development/APIChangesFrom1_5To2_0.html) and
