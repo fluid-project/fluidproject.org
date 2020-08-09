@@ -9,7 +9,7 @@ author: Release Manager
 **The Fluid Project is pleased to announce the release of Fluid Infusionv0.3,**
 **the latest release of the Fluid  component library and User Experience (UX) Toolkit.**
 
-### [Download Fluid Infusion](https://github.com/fluid-project/infusion)
+**[Download Fluid Infusion](https://github.com/fluid-project/infusion)**
 
 ### What&#39;s New in This Release
 

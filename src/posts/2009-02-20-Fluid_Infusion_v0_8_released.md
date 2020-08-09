@@ -10,7 +10,7 @@ The Fluid team is pleased to announce the final release of Fluid Infusion 0.8, a
 our first production release of the Fluid Skinning System, a preview of User Interface Options, and many
 bug fixes.
 
-### [Download Fluid Infusion](https://github.com/fluid-project/infusion)
+**[Download Fluid Infusion](https://github.com/fluid-project/infusion)**
 
 ### What&#39;s New in This Release
 

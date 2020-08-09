@@ -10,7 +10,7 @@ Infusion 1.2 introduces support for the latest versions of jQuery and jQuery UI,
 Skinning System, and provides a smaller, faster, and more mobile-friendly package. This release is an incremental
 upgrade and preserves backwards API compatibility for all production-grade components.
 
-### [Download Fluid Infusion](https://github.com/fluid-project/infusion)
+**[Download Fluid Infusion](https://github.com/fluid-project/infusion)**
 
 ### In this release
 

@@ -10,7 +10,7 @@ Infusion 1.3.1 is a maintenance release of Fluid&#39;s JavaScript application fr
 consisting of bug fixes and minor improvements to the Uploader, Pager, and Layout Reorderer
 components. This release is fully API-compatible with Infusion 1.3.
 
-### [Download Fluid Infusion](https://github.com/fluid-project/infusion)
+**[Download Fluid Infusion](https://github.com/fluid-project/infusion)**
 
 ### In this release
 

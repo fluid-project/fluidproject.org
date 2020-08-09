@@ -10,7 +10,7 @@ The Fluid Project is pleased to announce the final release of Fluid Infusion 0.6
 completely refactored Uploader, two new flavours of Inline Edit, an updated Pager,
 and previews of the User Interface Options component and the Fluid Skinning System
 
-### [Download Fluid Infusion](https://github.com/fluid-project/infusion)
+**[Download Fluid Infusion](https://github.com/fluid-project/infusion)**
 
 ### What&#39;s New in This Release
 

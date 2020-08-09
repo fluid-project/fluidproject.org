@@ -10,7 +10,7 @@ The Fluid team is pleased to announce the release of Fluid Infusion 1.0. Inside 
 release you&#39;ll find more great Fluid components, helpful sample code, and thorough documentation.
 With accessibility and usability baked in from the start, we’ve got you covered.
 
-### [Download Fluid Infusion](https://github.com/fluid-project/infusion)
+**[Download Fluid Infusion](https://github.com/fluid-project/infusion)**
 
 ### What&#39;s new in this release
 
@@ -20,17 +20,17 @@ This release:
 - Provides the ability to create custom builds
 - Adds jQuery UI Themes for working with FSS themes
 - Adds new and powerful decorators for the Renderer:
-      - The &quot;fluid&quot; decorator instantiates any Fluid Infusion component bound to the markup
-      - New support for removing arbitrary attributes and CSS classes
+  - The &quot;fluid&quot; decorator instantiates any Fluid Infusion component bound to the markup
+  - New support for removing arbitrary attributes and CSS classes
 - Updates the Pager:
-      - Improved handing of column sorting
-      - Fixed persistence of focus
+  - Improved handing of column sorting
+  - Fixed persistence of focus
 - Updates the Uploader:
-      - User can manually switch to the standard non-Flash http file uploader
-      - Uploader Browse button now respects DOM z-index in Flash 10
+  - User can manually switch to the standard non-Flash http file uploader
+  - Uploader Browse button now respects DOM z-index in Flash 10
 - Updates the User Interface Options:
-      - Better cross browser support
-      - Better keyboard and screen reader accessibility
+  - Better cross browser support
+  - Better keyboard and screen reader accessibility
 - Changes some class names in the FSS and components
 - Changes some Framework API
 - Fixes many bugs

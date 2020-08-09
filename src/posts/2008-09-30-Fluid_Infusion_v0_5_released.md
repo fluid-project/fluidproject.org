@@ -9,7 +9,7 @@ author: Release Manager
 The Fluid Project is pleased to announce the final release of Fluid Infusion 0.5,
 featuring performance improvements, consolidated APIs, and a new Undo feature in Inline Edit.
 
-### [Download Fluid Infusion](https://github.com/fluid-project/infusion)
+**[Download Fluid Infusion](https://github.com/fluid-project/infusion)**
 
 ### What&#39;s New in This Release
 

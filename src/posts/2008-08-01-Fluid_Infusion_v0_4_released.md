@@ -8,17 +8,17 @@ tags: post
 The Fluid Project is pleased to announce the final release of Fluid Infusion 0.4,
 featuring our new Inline Edit component, improvements to the Uploader component and a preview of the Pager component.
 
-### [Download Fluid Infusion](https://github.com/fluid-project/infusion)
+**[Download Fluid Infusion](https://github.com/fluid-project/infusion)**
 
 ### What&#39;s New in This Release
 
 New features of this release include:
 
-- Preview versions of two new components:</br>
-      - Inline Edit</br>
-      - Pager
-- Improvements to the Uploader component
-- Improvements to the jQuery Keyboard Accessibility plugin
+* Preview versions of two new components:
+  * Inline Edit
+  * Pager
+* Improvements to the Uploader component
+* Improvements to the jQuery Keyboard Accessibility plugin
 
 ### What is Fluid Infusion
 

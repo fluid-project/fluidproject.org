@@ -10,7 +10,7 @@ Infusion 1.1.1 is here! This release is a maintenance release, which means no ne
 bugs were fixed for our Inline Edit and Reorderer components. Infusion 1.1.1 is an incremental upgrade and preserves
 backwards compatibility for all production-grade components.
 
-### [Download Fluid Infusion](https://github.com/fluid-project/infusion)
+**[Download Fluid Infusion](https://github.com/fluid-project/infusion)**
 
 ### In this release
 

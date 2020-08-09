@@ -13,7 +13,7 @@ compatibility for all production-grade components.
 This release addresses some pesky bugs in Uploader, provides a sneak peak at the Mobile Fluid Skinning System,
 showcases a new demo portal for easier interaction, plus...
 
-### [Download Fluid Infusion](https://github.com/fluid-project/infusion)
+**[Download Fluid Infusion](https://github.com/fluid-project/infusion)**
 
 ### In this release
 

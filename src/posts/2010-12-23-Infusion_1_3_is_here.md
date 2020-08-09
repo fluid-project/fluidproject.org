@@ -12,7 +12,7 @@ new framework features including the Inversion of Control system for creating hi
 applications. This release is an incremental upgrade and preserves backwards API compatibility for all
 production-grade components.
 
-### [Download Fluid Infusion](https://github.com/fluid-project/infusion)
+**[Download Fluid Infusion 1.3](https://github.com/fluid-project/infusion)**
 
 ### In this release
 
@@ -20,17 +20,14 @@ production-grade components.
 
 - Sneak Peek at the new Inversion of Control (IoC) system
 - Uploader support for HTML 5
-      - Flash-free for modern browsers!
-      - Substantially improved keyboard and screen reader accessibility
-      - Comprehensive automatic progressive enhancement based on browser capabilities
-
+  - Flash-free for modern browsers!
+  - Substantially improved keyboard and screen reader accessibility
+  - Comprehensive automatic progressive enhancement based on browser capabilities
 - Tons of accessibility improvements
-
-      - Better feedback for the Progress component
-      - Enhanced screen reader support for the Inline Edit component
-      - Location and movement announcements for the Reorderer component
-      - No wrap option for the Reorderer component
-
+  - Better feedback for the Progress component
+  - Enhanced screen reader support for the Inline Edit component
+  - Location and movement announcements for the Reorderer component
+  - No wrap option for the Reorderer component
 - The new [Infusion Builder site](http://builder.fluidproject.org), which allows you to create
    custom builds
 - Renderer improvements
