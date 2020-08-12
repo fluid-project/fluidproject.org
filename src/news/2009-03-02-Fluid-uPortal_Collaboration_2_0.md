@@ -1,9 +1,7 @@
 ---
-layout: layouts/post
 title: "Fluid-uPortal Collaboration 2.0"
-permalink: 2009-03-02-Fluid-uPortal_Collaboration_2_0.html
+filename: Fluid-uPortal_Collaboration_2_0
 date: '2009-03-02'
-tags: post
 author: Colin Clark
 ---
 The Fluid and uPortal communities have both benefited from nearly two years of successful collaboration on user

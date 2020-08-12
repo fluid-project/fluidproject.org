@@ -1,10 +1,7 @@
 ---
-layout: layouts/post
-title: "Infusion 1.3 is here!"
-permalink: 2010-12-23-Infusion_1_3_is_here.html
+title: Infusion 1.3 is here!
+filename: Infusion_1_3_is_here
 date: '2010-12-23'
-tags: post
-author: Release Manager
 ---
 Infusion 1.3 is a major new release of Fluid&#39;s JavaScript application framework. This version includes
 substantial accessibility improvements, plugin-free HTML 5 support for the Uploader component, and variety of

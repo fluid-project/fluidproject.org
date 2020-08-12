@@ -1,9 +1,7 @@
 ---
-layout: layouts/post
-title: "Off to a Running Start with UX Walkthroughs"
-permalink: 2007-08-22-Off_to_a_Running_Start_with_UX_Walkthroughs.html
+title: Off to a Running Start with UX Walkthroughs
+filename: Off_to_a_Running_Start_with_UX_Walkthroughs
 date: '2007-08-22'
-tags: post
 author: Fluid Project
 ---
 The Fluid team is using UX (user experience) walkthroughs of target applications to identify

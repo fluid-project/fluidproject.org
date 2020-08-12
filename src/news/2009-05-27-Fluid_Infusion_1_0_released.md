@@ -1,10 +1,7 @@
 ---
-layout: layouts/post
 title: "Fluid Infusion 1.0 released"
-permalink: 2009-05-27-Fluid_Infusion_1_0_released.html
+filename: Fluid_Infusion_1_0_released
 date: '2009-05-27'
-tags: post
-author: Release Manager
 ---
 The Fluid team is pleased to announce the release of Fluid Infusion 1.0. Inside the 1.0
 release you&#39;ll find more great Fluid components, helpful sample code, and thorough documentation.

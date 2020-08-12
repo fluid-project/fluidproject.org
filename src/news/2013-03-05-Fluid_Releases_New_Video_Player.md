@@ -1,9 +1,7 @@
 ---
-layout: layouts/post
-title: "Fluid Releases New Video Player"
-permalink: 2013-03-05-Fluid_Releases_New_Video_Player.html
+title: Fluid Releases New Video Player
+filename: Fluid_Releases_New_Video_Player
 date: '2013-03-05'
-tags: post
 author: Colin Clark
 ---
 The Fluid community is happy to announce the release of Video Player v0.1.

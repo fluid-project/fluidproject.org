@@ -1,10 +1,7 @@
 ---
-layout: layouts/post
-title: "Fluid Infusion 1.1 released"
-permalink: 2009-06-02-Fluid_Infusion_1_1_released.html
+title: Fluid Infusion 1.1 released
+filename: Fluid_Infusion_1_1_released
 date: '2009-06-02'
-tags: post
-author: Release Manager
 ---
 Infusion 1.1 is here! This release introduces a handful of new features and bug fixes
 to the framework and components, building on the solid foundation of our Infusion 1.0 release

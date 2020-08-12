@@ -1,10 +1,7 @@
 ---
-layout: layouts/post
-title: "Fluid Infusion 1.1.2 released"
-permalink: 2009-10-15-Fluid_Infusion_1_1_2_released.html
+title: Fluid Infusion 1.1.2 released
+filename: Fluid_Infusion_1_1_2_released
 date: '2009-10-15'
-tags: post
-author:
 ---
 Infusion 1.1.2 is here! This release is a combination of bug fixes to existing code plus new features aimed
 at giving Infusion users a better experience. Infusion 1.1.2 is an incremental upgrade and preserves backwards

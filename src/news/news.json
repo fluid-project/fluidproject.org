@@ -1,0 +1,6 @@
+{
+    "layout": "layouts/post",
+    "tags": "post",
+    "permalink": "/news/{{ date | slug }}{% if filename %}-{{ filename }}{% else %}-{{ title | slug }}{% endif %}.html",
+    "author": "Release Manager"
+}

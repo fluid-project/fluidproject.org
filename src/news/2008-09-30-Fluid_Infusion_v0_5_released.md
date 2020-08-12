@@ -1,10 +1,7 @@
 ---
-layout: layouts/post
 title: "Fluid Infusion v0.5 released!"
-permalink: 2008-09-30-Fluid_Infusion_v0_5_released.html
+filename: Fluid_Infusion_v0_5_released
 date: '2008-09-30'
-tags: post
-author: Release Manager
 ---
 The Fluid Project is pleased to announce the final release of Fluid Infusion 0.5,
 featuring performance improvements, consolidated APIs, and a new Undo feature in Inline Edit.

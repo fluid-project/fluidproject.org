@@ -1,9 +1,7 @@
 ---
-layout: layouts/post
 title: "Fluid 0.1 is Here!"
-permalink: 2007-12-01-Fluid 0_1_is_Here.html
+filename: Fluid 0_1_is_Here
 date: '2007-12-01'
-tags: post
 ---
 The Fluid Project is pleased to announce the first release of the Fluid component library and
 User Experience (UX) Toolkit.

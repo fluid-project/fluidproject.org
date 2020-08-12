@@ -1,9 +1,7 @@
 ---
-layout: layouts/post
 title: "The Fluid Project Receives $2.5 Million for Interface Design: Better Web Experience for Users of Open Source Software"
-permalink: 2007-05-04-Better_Web_Experiences.html
+filename: Better_Web_Experiences
 date: '2007-05-04'
-tags: post
 author: Fluid Project
 ---
 The **Fluid Project** ([https://fluidproject.org](https://fluidproject.org/)),

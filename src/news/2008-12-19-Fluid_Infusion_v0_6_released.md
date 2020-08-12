@@ -1,10 +1,7 @@
 ---
-layout: layouts/post
 title: "Fluid Infusion v0.6 released!"
-permalink: 2008-12-19-Fluid_Infusion_v0_6_released.html
+filename: Fluid_Infusion_v0_6_released
 date: '2008-12-19'
-tags: post
-author: Release Manager
 ---
 The Fluid Project is pleased to announce the final release of Fluid Infusion 0.6, featuring a
 completely refactored Uploader, two new flavours of Inline Edit, an updated Pager,

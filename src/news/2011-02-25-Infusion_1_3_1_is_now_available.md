@@ -1,9 +1,7 @@
 ---
-layout: layouts/post
 title: "Infusion 1.3.1 is now available"
-permalink: 2011-02-25-Infusion_1_3_1_is_now_available.html
+filename: Infusion_1_3_1_is_now_available
 date: '2011-02-25'
-tags: post
 author: Colin Clark
 ---
 Infusion 1.3.1 is a maintenance release of Fluid&#39;s JavaScript application framework,

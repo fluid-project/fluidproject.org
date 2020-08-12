@@ -1,10 +1,7 @@
 ---
-layout: layouts/post
-title: "Fluid Infusion 1.2 released!"
-permalink: 2010-09-08-Fluid_Infusion_1_2_1_and_1_1_3_releases.html
+title: Fluid Infusion 1.2 released!
+filename: Fluid_Infusion_1_2_1_and_1_1_3_releases
 date: '2010-09-08'
-tags: post
-author: Release Manager
 ---
 Infusion 1.2 introduces support for the latest versions of jQuery and jQuery UI, enhances the mobile Fluid
 Skinning System, and provides a smaller, faster, and more mobile-friendly package. This release is an incremental

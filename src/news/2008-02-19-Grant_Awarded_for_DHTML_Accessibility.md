@@ -1,9 +1,7 @@
 ---
-layout: layouts/post
 title: "Grant Awarded for DHTML Accessibility"
-permalink: 2008-02-19-Grant_Awarded_for_DHTML_Accessibility.html
+filename: Grant_Awarded_for_DHTML_Accessibility
 date: '2008-02-19'
-tags: post
 author: Colin Clark
 ---
 The Adaptive Technology Resource Centre at the University of Toronto has received

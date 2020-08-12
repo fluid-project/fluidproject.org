@@ -31,20 +31,20 @@ module.exports = function(config) {
    config.addPassthroughCopy({"src/assets/js": "assets/js"});
    config.addPassthroughCopy({"src/lib": "lib"});
    config.addPassthroughCopy({"src/assets/stylesheets": "assets/stylesheets"});
-   config.addPassthroughCopy({"src/posts/images": "posts/images"})
+   config.addPassthroughCopy({"src/news/images": "news/images"})
 
   const now = new Date();
 
   // Custom collections
   const livePosts = post => post.date <= now && !post.data.draft;
-  config.addCollection('posts', collection => {
+  config.addCollection('news', collection => {
     return [
-      ...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)
+      ...collection.getFilteredByGlob('./src/news/*.md').filter(livePosts)
     ];
   });
   // The following collection is used to distribute posts into different pages. However, the default pagination has not been set in fluidproject.org and all posts are shown on single page
   config.addCollection('postFeed', collection => {
-    return [...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)]
+    return [...collection.getFilteredByGlob('./src/news/*.md').filter(livePosts)]
       .reverse()
       .slice(0, site.maxPostsPerPage);
   });

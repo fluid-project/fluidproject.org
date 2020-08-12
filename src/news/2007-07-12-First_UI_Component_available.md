@@ -1,9 +1,7 @@
 ---
-layout: layouts/post
 title: "First UI Component available"
-permalink: 2007-07-12-First_UI_Component_available.html
+filename: First_UI_Component_available
 date: '2007-07-12'
-tags: post
 ---
 Fluid's first UI component, the Lightbox, has been built and was demonstrated at the June 2007 Sakai
 conference in Amsterdam and at the JA-SIG conference in Denver.

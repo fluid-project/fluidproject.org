@@ -1,9 +1,7 @@
 ---
-layout: layouts/post
-title: "Fluid Infusion v0.4 released!"
-permalink: 2008-08-01-Fluid_Infusion_v0_4_released.html
+title: Fluid Infusion v0.4 released!
+filename: Fluid_Infusion_v0_4_released
 date: '2008-08-01'
-tags: post
 ---
 The Fluid Project is pleased to announce the final release of Fluid Infusion 0.4,
 featuring our new Inline Edit component, improvements to the Uploader component and a preview of the Pager component.

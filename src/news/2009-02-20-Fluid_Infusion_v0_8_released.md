@@ -1,10 +1,7 @@
 ---
-layout: layouts/post
 title: "Fluid Infusion v0.8 released!"
-permalink: 2009-02-20-Fluid_Infusion_v0_8_released.html
+filename: Fluid_Infusion_v0_8_released
 date: '2009-02-20'
-tags: post
-author: Release Manager
 ---
 The Fluid team is pleased to announce the final release of Fluid Infusion 0.8, a new release featuring
 our first production release of the Fluid Skinning System, a preview of User Interface Options, and many

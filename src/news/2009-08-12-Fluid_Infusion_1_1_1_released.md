@@ -1,9 +1,7 @@
 ---
-layout: layouts/post
 title: "Fluid Infusion 1.1.1 released"
-permalink: 2009-08-12-Fluid_Infusion_1_1_1_released.html
+filename: Fluid_Infusion_1_1_1_released
 date: '2009-08-12'
-tags: post
 author: Jacob Farber
 ---
 Infusion 1.1.1 is here! This release is a maintenance release, which means no new features were added but several

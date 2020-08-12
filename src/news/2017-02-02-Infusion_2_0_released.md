@@ -1,10 +1,7 @@
 ---
-layout: layouts/post
-title: "Infusion 2.0 released!"
-permalink: 2017-02-02-Infusion_2_0_released.html
+title: Infusion 2.0 released!
+filename: Infusion_2_0_released
 date: '2017-02-02'
-tags: post
-author: Release Manager
 ---
 The Fluid community is pleased to announce the release of Infusion 2.0!
 
