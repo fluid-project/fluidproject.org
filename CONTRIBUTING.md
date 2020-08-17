@@ -41,13 +41,12 @@ The Fluid Project website is built using 11ty
       `---`
       `Content Data`
 
-- The URL for news articles can be generated from title and date or filename or date metadata in front matter.
-- If filename metadata is present, then filename and date will be used for creating URL else title and date would be used.
-- The filename metadata is used for creating custom URLs.
-- There is a bit of inconsistence in older blog filenames. Some old news articles have capital
-characters in their URL and hence 'filename' metadata has been set in front matter of such files.
-- You need to set 'filename' metadata in front matter only if the title of your news article is quite long and
-you need a shorter URL for the post thereby creating a custom URL as mentioned above.
+- The URL for news articles is generated from the date and title metadata.
+- If filename metadata is present, then output filename will be created using the date and filename
+  (instead of the default date and title filename). Use this option if the article title is too long
+  for a good filename, or for supporting legacy posts with unusual naming.
+- The use of filename metadata in front matter is optional and should be used only if
+  automatic filename of {date}-{title} is not sufficient.
 
 ### Reporting Issues or Bugs in the repository
 
