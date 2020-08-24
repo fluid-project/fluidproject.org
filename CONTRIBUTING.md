@@ -4,15 +4,15 @@ Fluid is an open, collaborative project to improve the user experience and inclu
 The Fluid community consists of an international team of partners, individuals, and institutions focused on designing
 inclusive, ﬂexible, customizable, user-centered interfaces.
 
-The Fluid Project website is built using 11ty
+The Fluid Project website is built using [11ty](https://www.11ty.dev/)
 
 ## To run the project locally
 
 1. Clone the project locally using `git clone https://github.com/fluid-project/fluidproject.org.git`
-2. Go to the folder directory where you cloned the project in terminal by usin `cd fluidproject.org`
-3. Get the required Node.js modules: `npm install`
-4. Run eleventy from the fluid-website directory `npm run start`.
-5. Open `http://localhost:8080/` to see the website.
+2. Go to the directory where you cloned the project in terminal using `cd fluidproject.org`
+3. Get the required Node.js modules using `npm install`
+4. Run eleventy from the fluid-website directory `npm run start`
+5. Open `http://localhost:8080/` in a browser to see the website.
 
 ## Contributions to the project can be made in following ways-
 
