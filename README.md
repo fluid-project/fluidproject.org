@@ -7,7 +7,7 @@ it is not an immediately deployable version of the website.
 ## To Build Locally
 
 1. Get the required node modules: `npm install`
-2. Run [11ty](http://11ty.dev) from the fluid-website directory `npm run eleventyport`.
+2. Run [11ty](http://11ty.dev) from the fluid-website directory `npm run start`.
 3. Open `http://localhost:8080/` to see the website.
 
 ## To build locally using Docker

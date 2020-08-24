@@ -35,8 +35,6 @@ The Fluid Project website is built using 11ty
       `layout: layouts/post`
       `title: Title of News Article`
       `date: 'YYYY-MM-DD'`
-      `tags: post`
-      `permalink: YYYY-MM-DD-newsArticleName.html`
       `filename: Short URL for news. May contain Capital Items but no spaces`
       `---`
       `Content Data`
