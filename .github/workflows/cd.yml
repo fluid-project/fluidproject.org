@@ -1,0 +1,75 @@
+name: CD
+
+on:
+  push:
+    branches: [ master ]
+
+env:
+  PROJECT_ID: 87218b57
+  PROJECT_SMOKETEST_URL: https://fluidproject.org
+  IMAGE_NAME: fluidprojectorg/fluidproject.org
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build Docker image
+        run: docker build .
+
+  release:
+    if: github.repository == 'fluid-project/fluidproject.org'
+
+    runs-on: ubuntu-latest
+
+    needs: test
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build image
+        run: docker build . --file Dockerfile --tag $IMAGE_NAME
+
+      - name: Log into registry
+        run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USER }}" --password-stdin
+
+      - name: Push image
+        run: |
+          # Strip git ref prefix from version
+          VERSION=$(echo "${{ github.ref }}" | sed -e 's,.*/\(.*\),\1,')
+
+          docker tag $IMAGE_NAME $IMAGE_NAME:$VERSION
+          docker push $IMAGE_NAME:$VERSION
+
+  deploy:
+    if: github.repository == 'fluid-project/fluidproject.org'
+
+    runs-on: ubuntu-latest
+
+    needs: release
+
+    steps:
+      - name: Deploy website
+        uses: inclusive-design/actions/ssh@master
+        with:
+          host:     ${{ secrets.SSH_HOSTNAME }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key:      ${{ secrets.SSH_PRIVATE_KEY }}
+          port:     ${{ secrets.SSH_PORT }}
+          envs:     PROJECT_ID
+          script: |
+            cd /srv/$PROJECT_ID/src                                       && \
+            git checkout master                                           && \
+            git pull                                                      && \
+            source ../deploy.env                                          && \
+            /usr/local/bin/docker-compose -p $PROJECT_ID                     \
+                                          -f docker-compose.yml              \
+                                          up --force-recreate --build -d
+
+      - name: Wait
+        run: sleep 15
+
+      - name: Smoke test
+        run: curl --location --no-buffer --retry 120 --retry-delay 1 $PROJECT_SMOKETEST_URL

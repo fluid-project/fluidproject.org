@@ -1,7 +1,8 @@
-name: Docker build
+name: CI
 
 on:
   pull_request:
+    branches: [ master ]
 
 jobs:
   build:
