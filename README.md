@@ -22,7 +22,7 @@ a container:
 
 The website will be available at [http://localhost:8000](http://localhost:8000)
 
-If you make changes to the website, repeat the steps to build the image and start a new container.
+If you make changes to the website, repeat the steps to build the image, and start a new container.
 
 ## To deploy to a personal webserver
 
@@ -34,7 +34,7 @@ If you make changes to the website, repeat the steps to build the image and star
 * Modifications can be done to any source file or directory except for the contents of the `dist` directory.
 * The `dist` directory is not versioned since it contains the generated output made by 11ty from the source files,
   and the files in `dist` are overwritten at build time.
-* The changed source files in dist directory gets overwritten at build time.
+* The changed source files in the dist directory gets overwritten at build time.
 
 ## License
 
