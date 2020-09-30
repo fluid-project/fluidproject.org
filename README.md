@@ -1,4 +1,4 @@
-# Fluid Project Website
+# Fluid web as an Amazing Project 
 
 This repository contains the files needed to build a copy of the Fluid Project website,
 it is not an immediately deployable version of the website.
