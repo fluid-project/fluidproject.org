@@ -1,4 +1,4 @@
-# Fluid Project Website
+#  Amazing Fluid Project Website
 
 This repository contains the files needed to build a copy of the Fluid Project website,
 it is not an immediately deployable version of the website.
@@ -29,7 +29,7 @@ If you make changes to the website, repeat the steps to build the image and star
 1. Run: `npm run build`
 2. Copy the contents of `./dist/` directory to your server.
 
-## Notes
+## Notes :-
 
 * Modifications can be done to any source file or directory except for the contents of the `dist` directory.
 * The `dist` directory is not versioned since it contains the generated output made by 11ty from the source files,
