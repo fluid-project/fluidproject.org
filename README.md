@@ -24,7 +24,7 @@ The website will be available at [http://localhost:8000](http://localhost:8000)
 
 If you make changes to the website, repeat the steps to build the image and start a new container.
 
-## To deploy to a personal webserver
+## To deploy to a Personal Webserver
 
 1. Run: `npm run build`
 2. Copy the contents of `./dist/` directory to your server.
