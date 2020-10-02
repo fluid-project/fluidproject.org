@@ -3,13 +3,11 @@
     "version": "1.0.0",
     "description": "Fluid is an open, collaborative project to improve the user experience and inclusiveness of open source software.",
     "scripts": {
-        "start": "npm run clean:dist && npm run serve",
+        "start": "run-s clean serve",
         "serve": "eleventy --serve",
-        "build": "npm run clean:dist && eleventy",
+        "build": "npm run clean && eleventy",
         "lint": "grunt lint",
-        "clean:dist": "rimraf dist",
-        "clean:dependencies": "rimraf node_modules",
-        "clean": "run-s clean:*"
+        "clean": "rimraf dist"
     },
     "repository": {
         "type": "git",
