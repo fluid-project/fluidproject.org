@@ -2,7 +2,7 @@ name: CD
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 env:
   PROJECT_ID: 87218b57
@@ -52,7 +52,7 @@ jobs:
 
     steps:
       - name: Deploy website
-        uses: inclusive-design/actions/ssh@master
+        uses: inclusive-design/actions/ssh@main
         with:
           host:     ${{ secrets.SSH_HOSTNAME }}
           username: ${{ secrets.SSH_USERNAME }}
@@ -61,7 +61,7 @@ jobs:
           envs:     PROJECT_ID
           script: |
             cd /srv/$PROJECT_ID/src                                       && \
-            git checkout master                                           && \
+            git checkout main                                             && \
             git pull                                                      && \
             source ../deploy.env                                          && \
             /usr/local/bin/docker-compose -p $PROJECT_ID                     \
