@@ -1,5 +1,7 @@
 # Fluid Project Website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c85cc19e-8bf7-4c7d-a6cb-f00dcd2da954/deploy-status)](https://app.netlify.com/sites/fluid-fluidproject-org/deploys)
+
 This repository contains the files needed to build a copy of the Fluid Project website,
 it is not an immediately deployable version of the website.
 [11ty](http://11ty.dev/) is used to build the site from source files.
