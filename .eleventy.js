@@ -32,6 +32,7 @@ module.exports = function(config) {
    config.addPassthroughCopy({"src/lib": "lib"});
    config.addPassthroughCopy({"src/assets/stylesheets": "assets/stylesheets"});
    config.addPassthroughCopy({"src/news/images": "news/images"})
+   config.addPassthroughCopy('_redirects');
 
   // Custom collections
   config.addCollection('news', collection => {
