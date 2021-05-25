@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>{% if title %} {{ title }} {% else %} {{ site.title }} {% endif %} | fluid</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <link type="image/x-icon" href="{{ '/' | url }}assets/images/favicon.ico" rel="shortcut icon"/>
+        <script type="text/javascript" src="{{ '/' | url }}assets/js/analytics.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+        <style>
+            body {
+                background: #f2f2f2;
+                font-family: 'Open Sans', sans-serif;
+                padding-top: 50px;
+            }
+
+            body > * {
+                margin: 0 auto;
+                max-width: 62.5rem;
+                width: 100%;
+            }
+
+            .brand {
+                border-bottom: 0;
+                font-size: 4.75rem;
+                font-weight: bolder;
+            }
+
+            .brand svg {
+                height: 3.5rem;
+                width: 3.5rem;
+            }
+
+            h1 {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: normal;
+                color: #333;
+            }
+
+            a {
+                font-weight: bold;
+                border-bottom: 0.2rem solid #009fcb;
+                color: #333;
+                text-decoration: none;
+            }
+
+            a:hover, a:focus {
+                border-bottom-color: #009fcb;
+                color: #009fcb;
+            }
+
+            a:focus {
+                outline: 0.2rem solid #fc0;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a class="brand" href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path fill="currentColor" d="M500.9,386.208c15.783-26.66,6.08-61.322-21.474-77.582l-114.391-67.527l99.556-87.874
+                    c24.039-21.249,26.883-57.195,6.468-80.369c-20.412-23.245-56.553-24.793-80.537-3.541l-99.556,87.871L238.202,35.347
+                    C225.431,5.983,192.134-7.807,163.69,4.504c-28.334,12.299-40.939,46.07-28.112,75.434l52.764,121.813L56.212,214.41
+                    c-31.957,3.041-55.439,30.398-52.427,61.102c2.956,30.829,31.066,53.36,62.995,50.35l131.377-12.662l-28.64,128.783
+                    c-6.945,31.289,11.74,62.076,41.941,68.712c30.148,6.722,60.377-13.219,67.237-44.339l29.504-128.949l114.448,67.541
+                    C450.144,421.181,485.283,412.731,500.9,386.208z" />
+                </svg>
+                fluid</a>
+        </header>
+        <main>
+            <h1>{{ title }}</h1>
+            {{ content }}
+        </main>
+    </body>   
+</html>
