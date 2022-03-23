@@ -125,3 +125,12 @@
 .fl-font-verdana .fluid-web .fluid-web-emphasized-text {
   font-family: "Verdana" !important;
 }
+
+/* mug */
+
+.fl-theme-wb,
+.fl-theme-yb,
+.fl-theme-lgdg,
+.fl-theme-gd {
+    --steamColor: #888;
+}

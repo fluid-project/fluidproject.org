@@ -5,11 +5,11 @@ permalink: news/index.html
 ---
 <div class="fluid-web" id="fluid-web-content">
 <section class="row">
-    <h2>News Archive</h2>
+    <h1>{{ title }}</h1>
     <div class="fluid-web-news-index fluid-web-list">
-        <ul id="reverseneed">
+        <ul>
             {%- for news in collections.news reversed -%}
-            <li id="reverseneed">
+            <li>
                 {{news.data.date}} - <a href="{{ news.url }}"> {{news.data.title}}</a>
             </li>
             {% endfor -%}
