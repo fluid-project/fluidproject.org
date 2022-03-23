@@ -31,6 +31,7 @@ body {
   color: #333;
 }
 .fluid-web h1 {
+  font-size: 5rem;
   font-weight: bolder;
 }
 .fluid-web h3 {
@@ -140,9 +141,10 @@ body {
   box-shadow: -0.03rem -0.07rem #dfdfdf;
 }
 /* Header and Navigation */
-.fluid-web header h1 {
+.fluid-web header .fluid-web-branding {
   padding: 0;
-  font-size: 4.75rem;
+  font-size: 3.75rem;
+  font-weight: bolder;
 }
 .fluid-web header .fluid-web-skip-links {
   height: 3.5rem;
@@ -164,19 +166,19 @@ body {
 .fluid-web header .fluid-web-skip-links a:hover {
   color: #009fcb;
 }
-.fluid-web header h1 a {
+.fluid-web header .fluid-web-branding a {
   color: #333;
 }
-.fluid-web header h1 a:hover {
+.fluid-web header .fluid-web-branding a:hover {
   color: #009fcb;
 }
-.fluid-web header h1 a:focus {
+.fluid-web header .fluid-web-branding a:focus {
   outline: 0.2rem solid #fc0;
 }
 .fluid-web header .fluid-web-logo-star:before {
   content: '\e607';
   font-family: 'fluid-community';
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 .fluid-web nav {
   margin-bottom: 2rem;
@@ -218,6 +220,11 @@ body {
 .fluid-web .fluid-web-index .fluid-web-intro a:focus {
   border: none;
   outline: 0.2rem solid #fc0;
+}
+.fluid-web .fluid-web-intro h1 {
+  font-weight: normal;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.6rem;
 }
 /* Showcase - colourful tiles featuring content. */
 .fluid-web .fluid-web-showcase .fluid-web-project-description {
@@ -385,7 +392,24 @@ body {
 .fluid-web .fluid-web-projects .fluid-web-projects-partners {
   font-style: italic;
 }
+/* Infusion */
+.fluid-web .fluid-web-infusion h1 {
+  font-size: 5rem;
+  margin-top: -5rem;
+  margin-bottom: 0;
+  padding-left: 0.5625rem;
+}
+.fluid-web .fluid-web-infusion .infusion-mug {
+  height: 10rem;
+  width: 10rem;
+  margin-top: -2rem;
+  margin-bottom: -1rem;
+  background: none !important;
+}
 /* News */
+.fluid-web.fluid-web-news h1 {
+  padding-left: 1.8rem;
+}
 .fluid-web .fluid-web-news-index {
   -webkit-column-count: 2;
   -moz-column-count: 2;
