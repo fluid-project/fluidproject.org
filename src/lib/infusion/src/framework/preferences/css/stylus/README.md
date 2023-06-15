@@ -1,6 +1,6 @@
 # Overview
 
-The "[stylus](./)" directory contains Stylus files for generating the Preference Framework stylesheets.
+The "[stylus](./)" directory contains Stylus files for generating the mework stylesheets.
 
 ## How to add a new theme
 
