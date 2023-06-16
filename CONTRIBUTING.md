@@ -80,3 +80,61 @@ sign off on the PR and merge it into the project repo. You may wish to ping a Ma
 
 If you have any questions or comments regarding this repository, feel free to visit
 [Get Involved](https://wiki.fluidproject.org/display/fluid/Get+Involved) page of our wiki to connect with us.
+
+
+Clone the Forked Repository:
+
+git clone <forked_repository_url>
+cd <forked_repository_directory>
+--------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+Configure the Upstream Remote:
+
+ 
+git remote add upstream <original_repository_url>
+--------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+Create a New Branch and Switch to It:
+
+ 
+git checkout -b <new_branch_name>
+--------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+Make Changes and Commit Them:
+
+ 
+git status  # Optional: to view the status of your changes
+git add <file(s)_to_add>  # Add specific files or use "." to add all changes
+git commit -m "Commit message"
+--------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+Fetch Upstream Changes and Rebase Your Branch:
+
+ 
+git fetch upstream
+git rebase upstream/master
+--------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+
+Push the Changes to Your Forked Repository:
+
+git push origin <new_branch_name>
+--------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+Create a Pull Request:
+
+Go to your forked repository on GitHub and create a pull request from your newly pushed branch to the original repository.
+
+Update Your Forked Branch:
+
+If the original repository has new changes after you created the pull request, you can update your forked branch by following these steps:
+
+php
+ 
+git checkout <new_branch_name>
+git fetch upstream
+git rebase upstream/master
+git push origin <new_branch_name> --force
+--------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
