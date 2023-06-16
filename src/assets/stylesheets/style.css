@@ -31,7 +31,7 @@ body {
   color: #333;
 }
 .fluid-web h1 {
-  font-size: 5rem;
+  font-size:5rem;
   font-weight: bolder;
 }
 .fluid-web h3 {
@@ -222,8 +222,9 @@ body {
   outline: 0.2rem solid #fc0;
 }
 .fluid-web .fluid-web-intro h1 {
-  font-weight: normal;
+ 
   font-family: 'Roboto Slab', serif;
+  font-weight: normal;
   font-size: 1.6rem;
 }
 /* Showcase - colourful tiles featuring content. */
