@@ -463,3 +463,12 @@ body {
   margin-top: 50px;
 }
 
+#fluid-web-nav li:first-child a {
+  color: yellow;
+  text-decoration: underline;
+}
+
+#fluid-web-nav li:first-child a:hover {
+  background-color: #000;
+  color: #fff;
+}
