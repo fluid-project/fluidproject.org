@@ -21,19 +21,22 @@
     "homepage": "https://github.com/fluid-project/fluidproject.org#readme",
     "dependencies": {
         "@11ty/eleventy": "2.0.1",
-        "@11ty/eleventy-plugin-rss": "1.0.7",
-        "@11ty/eleventy-plugin-syntaxhighlight": "3.0.1"
+        "@11ty/eleventy-plugin-rss": "1.2.0",
+        "@11ty/eleventy-plugin-syntaxhighlight": "5.0.0",
+        "install": "0.13.0",
+        "npm": "9.7.2"
     },
     "devDependencies": {
         "@tbranyen/jsdom": "13.0.0",
         "debug": "4.1.1",
-        "gpii-grunt-lint-all": "1.0.7",
-        "grunt": "1.1.0",
+        "fluid-lint-all": "1.2.9",
+        "grunt": "1.6.1",
         "grunt-contrib-clean": "2.0.0",
         "grunt-contrib-copy": "1.0.0",
         "html-minifier": "4.0.0",
         "image-size": "0.8.3",
         "infusion": "3.0.0-dev.20200326T173810Z.24ddb2718",
+        "markdown-it": "13.0.1",
         "npm-run-all": "4.1.5",
         "rimraf": "3.0.2",
         "sanitize-html": "1.24.0",
