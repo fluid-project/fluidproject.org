@@ -22,20 +22,16 @@
     "dependencies": {
         "@11ty/eleventy": "2.0.1",
         "@11ty/eleventy-plugin-rss": "1.2.0",
-        "@11ty/eleventy-plugin-syntaxhighlight": "5.0.0",
-        "install": "0.13.0",
-        "npm": "9.7.2"
+        "@11ty/eleventy-plugin-syntaxhighlight": "5.0.0"
     },
     "devDependencies": {
-        "@tbranyen/jsdom": "13.0.0",
-        "debug": "4.1.1",
         "fluid-lint-all": "1.2.9",
         "html-minifier": "4.0.0",
         "image-size": "0.8.3",
         "infusion": "3.0.0-dev.20200326T173810Z.24ddb2718",
+        "linkedom": "0.6.2",
         "markdown-it": "13.0.1",
         "npm-run-all": "4.1.5",
-        "rimraf": "3.0.2",
-        "slugify": "1.4.0"
+        "rimraf": "3.0.2"
     }
 }
