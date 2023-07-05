@@ -8,7 +8,7 @@ RUN npm install
 
 COPY . ./
 
-RUN npm run build && $(npm bin)/grunt installFrontEnd
+RUN npm run build
 
 
 FROM nginx:1.18.0-alpine
