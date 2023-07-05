@@ -9,7 +9,7 @@
         <script type="text/javascript" src="{{ '/' | url }}assets/js/uio.js"></script>
         <script type="text/javascript" src="{{ '/' | url }}assets/js/analytics.js"></script>
         <!-- Foundation flex grid -->
-        {% include partials/foundationflexgrid.html %}
+        {% include 'partials/foundationflexgrid.html' %}
     </head>
     <body>
         <script type="text/javascript">
@@ -17,9 +17,9 @@
                 uio.setupUIO("../");
             });
         </script>
-        {% include partials/uio.html %}
+        {% include 'partials/uio.html' %}
         <div class="fluid-web fluid-web-news">
-            {% include partials/header.html %}
+            {% include 'partials/header.html' %}
             <div class="row">
                 <div class="flc-toc-tocContainer toc small-12 columns"> </div>
             </div>
@@ -34,7 +34,7 @@
                 {{ content }}
                 </div>
             </section>
-            {% include partials/footer.html %}
+            {% include 'partials/footer.html' %}
         </div>
         <script type="text/javascript" src="{{ '/' | url }}assets/js/nav.js"></script>
     </body>
