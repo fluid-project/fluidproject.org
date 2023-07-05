@@ -1,0 +1,40 @@
+{
+    "lintspaces": {
+        "jsonindentation": {
+            "excludes": [
+                "./src/_data/*.json",
+                "./package.json"
+            ]
+        },
+        "newlines": {
+            "excludes": [
+                "*.ico",
+                "*.jpg",
+                "*.jpeg",
+                "*.png",
+                "*.webp",
+                "*.pdf",
+                "*.docx",
+                "*.pptx",
+                "*.ttf",
+                "*.gif",
+                "*.zip",
+                "./src/_data/*.json",
+                "./src/news/*.md",
+                "./CHANGELOG.md"
+            ]
+        }
+    },
+    "markdownlint": {
+        "excludes": [
+            "./src/news/*.md",
+            "./CHANGELOG.md"
+        ]
+    },
+    "stylelint": {
+        "excludes": [
+            "./src/assets/stylesheets/*.css",
+            "./src/assets/stylesheets/foundation/*.css"
+        ]
+    }
+}

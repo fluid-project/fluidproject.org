@@ -7,7 +7,6 @@ See the AUTHORS.md file at the top-level directory of this distribution and at
 https://github.com/fluid-project/fluidproject.org/main/AUTHORS.md.
 */
 /* jslint browser: true */
-/* global window document */
 "use strict";
 var link = window.location.pathname;
 var index = document.getElementById("indexnav");
