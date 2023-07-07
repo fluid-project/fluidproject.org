@@ -5,8 +5,7 @@
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <link type="image/x-icon" href="{{ '/' | url }}assets/images/favicon.ico" rel="shortcut icon"/>
-        <script type="text/javascript" src="{{ '/' | url }}lib/infusion/infusion-all.js"></script>
-        <script type="text/javascript" src="{{ '/' | url }}assets/js/uio.js"></script>
+        <script type="text/javascript" src="{{ '/' | url }}lib/infusion/infusion-uio.js"></script>
         <script type="text/javascript" src="{{ '/' | url }}assets/js/analytics.js"></script>
         <!-- Foundation flex grid -->
         {% include 'partials/foundationflexgrid.html' %}
@@ -17,7 +16,7 @@
                 uio.setupUIO("../");
             });
         </script>
-        {% include 'partials/uio.html' %}
+        {% uioTemplate %}
         <div class="fluid-web fluid-web-news">
             {% include 'partials/header.html' %}
             <div class="row">
@@ -37,5 +36,6 @@
             {% include 'partials/footer.html' %}
         </div>
         <script type="text/javascript" src="{{ '/' | url }}assets/js/nav.js"></script>
+        {% uioInit %}
     </body>
 </html>
