@@ -1,0 +1,13 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {% set pages = ["index.html", "404.html", "about.html", "infusion.html", "news/index.html", "projects.html"] %}
+    {% for page in pages %}
+    <url>
+        <loc>{{ site.url }}/{{ page }}</loc>
+    </url>
+    {%- endfor -%}
+</urlset>

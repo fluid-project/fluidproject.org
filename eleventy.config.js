@@ -1,18 +1,16 @@
 "use strict";
 
-const fs = require("fs");
-
 const rssPlugin = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const fluidPlugin = require("eleventy-plugin-fluid");
 
 // Import filters
-const dateFilter = require("./src/filters/date-filter.js");
-const markdownFilter = require("./src/filters/markdown-filter.js");
-const w3DateFilter = require("./src/filters/w3-date-filter.js");
+const dateFilter = require("./src/_filters/date-filter.js");
+const markdownFilter = require("./src/_filters/markdown-filter.js");
+const w3DateFilter = require("./src/_filters/w3-date-filter.js");
 
 // Import transforms
-const parseTransform = require("./src/transforms/parse-transform.js");
+const parseTransform = require("./src/_transforms/parse-transform.js");
 
 // Import data files
 const site = require("./src/_data/site.json");
@@ -50,31 +48,20 @@ module.exports = function (config) {
     // Plugins
     config.addPlugin(rssPlugin);
     config.addPlugin(syntaxHighlight);
-    config.addPlugin(fluidPlugin);
-
-    // 404
-    config.setBrowserSyncConfig({
-        callbacks: {
-            ready: function (err, bs) {
-
-                bs.addMiddleware("*", (req, res) => {
-                    const content_404 = fs.readFileSync("dist/404.html");
-                    // Provides the 404 content without redirect.
-                    res.write(content_404);
-                    res.writeHead(404);
-                    res.end();
-                });
-            }
+    config.addPlugin(fluidPlugin, {
+        css: {
+            enabled: false
+        },
+        sass: {
+            enabled: false
         }
     });
 
     return {
         dir: {
-            input: "src",
-            output: "dist",
-            includes: "_includes"
+            input: "src"
         },
-        templateFormats: ["html", "md"],
+        templateFormats: ["html", "md", "njk"],
         htmlTemplateEngine: "liquid",
         passthroughFileCopy: true
     };

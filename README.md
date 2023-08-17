@@ -29,14 +29,14 @@ If you make changes to the website, repeat the steps to build the image and star
 ## To deploy to a personal webserver
 
 1. Run: `npm run build`
-2. Copy the contents of `./dist/` directory to your server.
+2. Copy the contents of `./_site/` directory to your server.
 
 ## Notes
 
-* Modifications can be done to any source file or directory except for the contents of the `dist` directory.
-* The `dist` directory is not versioned since it contains the generated output made by 11ty from the source files,
-  and the files in `dist` are overwritten at build time.
-* The changed source files in dist directory gets overwritten at build time.
+* Modifications can be done to any source file or directory except for the contents of the `_site` directory.
+* The `_site` directory is not versioned since it contains the generated output made by 11ty from the source files,
+  and the files in `_site` are overwritten at build time.
+* The changed source files in _site directory gets overwritten at build time.
 
 ## License
 
