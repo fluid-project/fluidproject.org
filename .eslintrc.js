@@ -6,7 +6,7 @@ module.exports = {
         "plugin:yml/standard",
         "plugin:markdown/recommended"
     ],
-    ignorePatterns: ["_site/", "src/_locales/messages.js", "!.*.cjs", "!.*.js", "!.github/"],
+    ignorePatterns: ["_site/", "!.*.cjs", "!.*.js", "!.github/"],
     env: {
         amd: true,
         browser: true,

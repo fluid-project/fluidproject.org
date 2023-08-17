@@ -52,6 +52,7 @@ module.exports = function (config) {
         css: {
             enabled: false
         },
+        i18n: false,
         sass: {
             enabled: false
         }
