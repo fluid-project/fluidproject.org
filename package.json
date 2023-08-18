@@ -3,11 +3,18 @@
     "version": "1.0.0",
     "description": "Fluid is an open, collaborative project to improve the user experience and inclusiveness of open source software.",
     "scripts": {
-        "start": "run-s clean serve",
-        "serve": "eleventy --serve",
-        "build": "npm run clean && eleventy",
-        "lint": "fluid-lint-all",
-        "clean": "rimraf dist"
+        "build": "npm-run-all -l clean -p build:*",
+        "build:eleventy": "cross-env NODE_ENV=production eleventy",
+        "clean": "rimraf _site",
+        "debug": "DEBUG=Eleventy* eleventy",
+        "lint": "run-s -l lint:*",
+        "lint:styles": "stylelint \"**/*.css\"",
+        "lint:scripts": "eslint \"**/*.{js,md}\"",
+        "lint:markdown": "markdownlint-cli2 \"**/*.md\"",
+        "lint:yml": "eslint \"**/*.yml\"",
+        "start": "npm-run-all -l clean -p start:*",
+        "start:eleventy": "cross-env NODE_ENV=development eleventy --serve",
+        "prepare": "husky install"
     },
     "repository": {
         "type": "git",
@@ -23,15 +30,37 @@
         "@11ty/eleventy": "2.0.1",
         "@11ty/eleventy-plugin-rss": "1.2.0",
         "@11ty/eleventy-plugin-syntaxhighlight": "5.0.0",
-        "eleventy-plugin-fluid": "1.2.0"
+        "eleventy-plugin-fluid": "2.5.0"
     },
     "devDependencies": {
-        "fluid-lint-all": "1.2.9",
+        "@commitlint/cli": "17.7.1",
+        "@commitlint/config-conventional": "17.7.0",
+        "cross-env": "7.0.3",
+        "eslint": "8.47.0",
+        "eslint-config-fluid": "2.1.1",
+        "eslint-plugin-jsdoc": "46.4.5",
+        "eslint-plugin-markdown": "3.0.1",
+        "eslint-plugin-yml": "1.8.0",
+        "husky": "8.0.3",
         "image-size": "0.8.3",
         "infusion": "4.6.0",
         "linkedom": "0.14.26",
+        "lint-staged": "13.2.3",
         "markdown-it": "13.0.1",
+        "markdownlint-cli2": "0.8.1",
+        "markdownlint-config-fluid": "0.1.5",
         "npm-run-all": "4.1.5",
-        "rimraf": "5.0.1"
+        "rimraf": "5.0.1",
+        "stylelint": "14.16.1",
+        "stylelint-config-fluid": "1.0.0",
+        "stylelint-use-logical-spec": "5.0.0"
+    },
+    "lint-staged": {
+        "*.css": "stylelint --fix",
+        "*.{js,yml}": "eslint --fix",
+        "*.md": [
+            "markdownlint-cli2 --fix",
+            "eslint --fix"
+        ]
     }
 }

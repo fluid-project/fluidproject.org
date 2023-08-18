@@ -1,6 +1,6 @@
 "use strict";
 const {parseHTML} = require("linkedom");
-const minify = require("../utils/minify.js");
+const minify = require("html-minifier");
 const getSize = require("image-size");
 const slugify = require("@sindresorhus/slugify");
 
