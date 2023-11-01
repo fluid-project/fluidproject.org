@@ -30,7 +30,7 @@
         "@11ty/eleventy": "2.0.1",
         "@11ty/eleventy-plugin-rss": "1.2.0",
         "@11ty/eleventy-plugin-syntaxhighlight": "5.0.0",
-        "eleventy-plugin-fluid": "2.5.0"
+        "eleventy-plugin-fluid": "2.7.0"
     },
     "devDependencies": {
         "@commitlint/cli": "17.7.1",
