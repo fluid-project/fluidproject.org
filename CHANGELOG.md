@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/fluid-project/fluidproject.org/compare/v1.0.0...v1.1.0) (2023-11-23)
+
+
+### Features
+
+* remove analytics (resolves [#124](https://github.com/fluid-project/fluidproject.org/issues/124)) ([#125](https://github.com/fluid-project/fluidproject.org/issues/125)) ([38cbc37](https://github.com/fluid-project/fluidproject.org/commit/38cbc379f607e1bc9b24b77e4f8dbe76b4cb6abf))
+
+
+### Bug Fixes
+
+* ignore CHANGELOG in Markdown linting ([#109](https://github.com/fluid-project/fluidproject.org/issues/109)) ([00f9f22](https://github.com/fluid-project/fluidproject.org/commit/00f9f22462c44757742bfe231d9db991f5976f69))
+
 ## 1.0.0 (2023-08-18)
 
 
