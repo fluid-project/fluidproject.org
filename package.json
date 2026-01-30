@@ -1,6 +1,6 @@
 {
     "name": "fluidproject.org",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Fluid is an open, collaborative project to improve the user experience and inclusiveness of open source software.",
     "scripts": {
         "build": "npm-run-all -l clean -p build:*",
